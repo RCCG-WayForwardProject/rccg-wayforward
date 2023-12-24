@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.header {
+  &__wrapper {
+    background-color: $col-blue-1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+  }
+
+  &__link {
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
