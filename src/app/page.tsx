@@ -1,3 +1,7 @@
 export default function Page() {
-  return <h1>Hello World, this is the refactored next page</h1>;
+  return (
+    <div style={{ backgroundColor: "lightdark", paddingTop: "100px" }}>
+      <h1>This is the custom page props, where the name is </h1>;
+    </div>
+  );
 }

@@ -1,19 +1,29 @@
 @import "../../styles/variables";
+@import "../../styles/base/mixins";
 
 .header {
-  &__wrapper {
-    background-color: $col-blue-1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 93px;
+  height: 70px;
+  flex-shrink: 0;
+  gap: 173px;
+  &[data-page="home"] {
+    background-color: transparent;
+    position: absolute;
+    left: 0px;
+    right: 0px;
   }
 
-  &__link {
+  &__logo {
     &-wrapper {
       display: flex;
       align-items: center;
-      gap: 20px;
+    }
+  }
+  &__link {
+    &-wrapper {
+      display: flex;
     }
   }
 }

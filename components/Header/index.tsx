@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { usePathname } from "next/navigation";
 
 import NavLink from "@/components/Link";
 import Icon from "@/components/Icon";
@@ -7,14 +9,15 @@ import { pageRoutes } from "@/utils/routes";
 
 import styles from "./header.module.scss";
 
-type HeaderType = "light" | "dark";
-interface HeaderProps {
-  headerType?: HeaderType;
-}
+interface HeaderProps {}
 
-const Header: React.FC<HeaderProps> = ({ headerType }) => {
+const Header: React.FC<HeaderProps> = ({}) => {
+  const pathname = usePathname();
+  const homePage = pathname === "/";
+  const headerPage = homePage ? "home" : "default";
+
   return (
-    <header className={styles["header"]} data-type={headerType}>
+    <header className={styles["header"]} data-page={headerPage}>
       <div className={styles["header__logo-wrapper"]}>
         <Icon icon="appLogo" />
         <div className={styles["header__logo-name"]}>Wayforward Cathedral</div>
