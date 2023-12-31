@@ -1,18 +1,35 @@
 import React from "react";
+
+import NavLink from "@/components/Link";
+import Icon from "@/components/Icon";
+
+import { pageRoutes } from "@/utils/routes";
+
 import styles from "./header.module.scss";
 
-interface HeaderProps {}
+type HeaderType = "light" | "dark";
+interface HeaderProps {
+  headerType?: HeaderType;
+}
 
-const Header: React.FC<HeaderProps> = ({}) => {
+const Header: React.FC<HeaderProps> = ({ headerType }) => {
   return (
-    <div className={styles["header__wrapper"]}>
-      <h1 className={styles["header__name"]}>Header</h1>
+    <header className={styles["header"]} data-type={headerType}>
+      <div className={styles["header__logo-wrapper"]}>
+        <Icon icon="appLogo" />
+        <div className={styles["header__logo-name"]}>Wayforward Cathedral</div>
+      </div>
+
       <ul className={styles["header__link-wrapper"]}>
-        <li>Home</li>
-        <li>Home</li>
-        <li>Home</li>
+        {pageRoutes?.map((element, index) => {
+          return (
+            <li className={styles["header__link"]} key={index + 1}>
+              <NavLink path={element.path!} text={element?.name} />
+            </li>
+          );
+        })}
       </ul>
-    </div>
+    </header>
   );
 };
 

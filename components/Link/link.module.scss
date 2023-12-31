@@ -1,0 +1,9 @@
+@import "../../styles/base/mixins";
+@import "../../styles/variables";
+
+.link {
+  color: red;
+  &__active {
+    color: green;
+  }
+}
