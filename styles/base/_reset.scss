@@ -7,7 +7,7 @@
   -webkit-box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
-  font-family: $WorkSans;
+  font-family: $Montserrat;
   /* 2 */
 }
 
@@ -26,7 +26,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: $WorkSans;
+  font-family: $Montserrat;
 }
 
 main {
@@ -183,7 +183,7 @@ dd {
 }
 
 p {
-  font-family: $WorkSans;
+  font-family: $Montserrat;
   display: block;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -197,7 +197,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-family: $WorkSans;
+  font-family: $Montserrat;
 }
 
 /* Remove list styles on ul, ol */
