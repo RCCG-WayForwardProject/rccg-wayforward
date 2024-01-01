@@ -30,7 +30,7 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat Light Italic"), local("Montserrat-LightItalic"),
-    url("../../public/assets/fonts/Montserrat-LightItalic.ttf")
+    url("../../public/assests/fonts/Montserrat-LightItalic.ttf")
       format("truetype");
   font-weight: 300;
   font-style: italic;
@@ -39,7 +39,7 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat Regular"), local("Montserrat-Regular"),
-    url("../../public/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+    url("../../public/assests/fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -47,7 +47,7 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat Italic"), local("Montserrat-Italic"),
-    url("../../public/assets/fonts/Montserrat-Italic.ttf") format("truetype");
+    url("../../public/assests/fonts/Montserrat-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
@@ -55,7 +55,7 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat Semi Bold"), local("Montserrat-SemiBold"),
-    url("../../public/assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+    url("../../public/assests/fonts/Montserrat-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
@@ -63,7 +63,7 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat Semi Bold Italic"), local("Montserrat-SemiBoldItalic"),
-    url("../../public/assets/fonts/Montserrat-SemiBoldItalic.ttf")
+    url("../../public/assests/fonts/Montserrat-SemiBoldItalic.ttf")
       format("truetype");
   font-weight: 600;
   font-style: italic;
@@ -72,7 +72,7 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat Bold Italic"), local("Montserrat-Bold"),
-    url("../../public/assets/fonts/Montserrat-Bold.ttf") format("truetype");
+    url("../../public/assests/fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -80,7 +80,7 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat Bold Italic"), local("Montserrat-BoldItalic"),
-    url("../../public/assets/fonts/Montserrat-BoldItalic.ttf")
+    url("../../public/assests/fonts/Montserrat-BoldItalic.ttf")
       format("truetype");
   font-weight: bold;
   font-style: italic;
@@ -89,7 +89,8 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat Extra Bold"), local("Montserrat-ExtraBold"),
-    url("../../public/assets/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+    url("../../public/assests/fonts/Montserrat-ExtraBold.ttf")
+      format("truetype");
   font-weight: 800;
   font-style: normal;
 }
@@ -98,7 +99,7 @@
   font-family: "Montserrat";
   src: local("Montserrat Extra Bold Italic"),
     local("Montserrat-ExtraBoldItalic"),
-    url("../../public/assets/fonts/Montserrat-ExtraBoldItalic.ttf")
+    url("../../public/assests/fonts/Montserrat-ExtraBoldItalic.ttf")
       format("truetype");
   font-weight: 800;
   font-style: italic;
@@ -107,7 +108,7 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat Black"), local("Montserrat-Black"),
-    url("../../public/assets/fonts/Montserrat-Black.ttf") format("truetype");
+    url("../../public/assests/fonts/Montserrat-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -115,8 +116,32 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat Black Italic"), local("Montserrat-BlackItalic"),
-    url("../../public/assets/fonts/Montserrat-BlackItalic.ttf")
+    url("../../public/assests/fonts/Montserrat-BlackItalic.ttf")
       format("truetype");
   font-weight: 900;
   font-style: italic;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Italic"), local("Segoe-UI-Italic"),
+    url("../../public/assests/fonts/Segoe-UI-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Regular"), local("Segoe-UI"),
+    url("../../public/assests/fonts/Segoe-UI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Bold"), local("Segoe-UI"),
+    url("../../public/assests/fonts/Segoe-UI-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }

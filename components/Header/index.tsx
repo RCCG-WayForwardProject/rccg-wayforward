@@ -27,7 +27,20 @@ const Header: React.FC<HeaderProps> = ({}) => {
         {pageRoutes?.map((element, index) => {
           return (
             <li className={styles["header__link"]} key={index + 1}>
-              <NavLink path={element.path!} text={element?.name} />
+              {element?.children ? (
+                <div>
+                  <p>{element?.name} </p>
+                  <ul>
+                    {element?.children?.map((children, index) => {
+                      return (
+                        <NavLink path={children?.path} text={children.name} />
+                      );
+                    })}
+                  </ul>
+                </div>
+              ) : (
+                <NavLink path={element.path!} text={element?.name} />
+              )}
             </li>
           );
         })}

@@ -24,7 +24,7 @@ const NavLink: React.FC<LinkProps> = ({ path, text }) => {
       {Boolean(path || text) ? (
         <p className={styles["link__name"]}>{text} </p>
       ) : null}
-      <div className={styles["link__border"]}></div>
+      <div className={styles["link__border"]} data-active={isActive}></div>
     </Link>
   );
 };

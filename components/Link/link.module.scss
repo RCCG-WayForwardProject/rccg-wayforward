@@ -2,8 +2,28 @@
 @import "../../styles/variables";
 
 .link {
-  color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  //   color: $col-white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   &__active {
-    color: green;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    color: $col-green-1;
+  }
+  &__name {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  }
+  &__border {
+    height: 4px;
+    border: 2px 2px 0px 0px;
+    &[data-active="true"] {
+      background-color: $col-green-1;
+    }
   }
 }

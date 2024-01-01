@@ -4,13 +4,7 @@ interface PageProps {}
 
 const Page: React.FC<PageProps> = () => {
   return (
-    <div
-      style={{
-        backgroundColor: "blue",
-        height: "40000px",
-        paddingTop: "100px",
-      }}
-    >
+    <div>
       <h1>This is the custom page props, where the name is </h1>;
     </div>
   );
