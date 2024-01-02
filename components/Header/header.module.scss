@@ -8,8 +8,10 @@
   height: 70px;
   flex-shrink: 0;
   gap: 173px;
+  background-color: dimgray;
+  border: 1px solid $col-dark-2;
   &[data-page="home"] {
-    background-color: transparent;
+    // background-color: transparent;
     position: absolute;
     left: 0px;
     right: 0px;
@@ -19,13 +21,60 @@
     &-wrapper {
       display: flex;
       align-items: center;
+      gap: 10px;
+    }
+    &-name {
+      font-family: "Segoe UI", sans-serif;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: capitalize;
+      color: $col-white;
+
+      & span {
+        color: #219653;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
     }
   }
   &__link {
     &-wrapper {
       display: flex;
-      align-items: center;
       gap: 47px;
+    }
+    &-dropdown {
+      position: absolute;
+      top: 31px;
+      right: -90%;
+      background-color: $col-white;
+      display: flex;
+      flex-direction: column;
+      gap: 19px;
+      padding: 31px 40px;
+      @include border-radius(16px);
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
+      &-list {
+        &-item {
+          color: $col-dark-1;
+          font-size: 13px;
+          font-weight: 400;
+        }
+      }
+      &-wrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+      }
+      &-name {
+        font-family: "Segoe UI", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: $col-white;
+      }
     }
   }
 }

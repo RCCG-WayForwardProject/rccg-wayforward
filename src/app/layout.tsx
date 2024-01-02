@@ -12,8 +12,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body>
+    <html lang="en">
+      <head>
+        <link rel="icon" type="image/png" href="/logo.svg"></link>
+      </head>
+      <body suppressHydrationWarning>
         <Header />
         {children}
       </body>

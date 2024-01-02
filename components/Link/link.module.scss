@@ -5,18 +5,21 @@
   display: flex;
   flex-direction: column;
   gap: 9px;
-  //   color: $col-white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: $col-white;
+  font-family: $Segoe-UI;
   &__active {
     display: flex;
     flex-direction: column;
     gap: 9px;
     color: $col-green-1;
+    & p {
+      font-weight: 700;
+    }
   }
   &__name {
     font-size: 14px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
   }
   &__border {
