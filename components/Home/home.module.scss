@@ -24,8 +24,6 @@
       }
     }
     &-cross-icon {
-      left: 12vw;
-      top: 17%;
       @include respond(mobile-screen) {
         position: absolute;
         z-index: 0;
