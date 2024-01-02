@@ -50,9 +50,9 @@ const Header: React.FC<HeaderProps> = ({}) => {
     <header className={styles["header"]} data-page={headerPage}>
       <div className={styles["header__logo-wrapper"]}>
         <Icon icon="appLogo" />
-        <div className={styles["header__logo-name"]}>
+        <p className={styles["header__logo-name"]}>
           Wayforward <br /> <span>Cathedral</span>
-        </div>
+        </p>
       </div>
 
       <ul className={styles["header__link-wrapper"]}>

@@ -17,8 +17,12 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="/logo.svg"></link>
       </head>
       <body suppressHydrationWarning>
-        <Header />
-        {children}
+        {typeof window === undefined ? null : (
+          <>
+            <Header />
+            {children}
+          </>
+        )}
       </body>
     </html>
   );
