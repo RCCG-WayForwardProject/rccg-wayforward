@@ -5,7 +5,7 @@ interface PageProps {}
 const Page: React.FC<PageProps> = () => {
   return (
     <div>
-      <h1>This is the custom page props, where the name is </h1>;
+      <h1>This is the custom page props, where the name is Hello World</h1>;
     </div>
   );
 };

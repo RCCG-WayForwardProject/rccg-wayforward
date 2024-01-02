@@ -1,7 +1,12 @@
+import styles from "./page.module.scss";
+
 export default function Page() {
   return (
-    <div style={{ backgroundColor: "lightdark", paddingTop: "100px" }}>
-      <h1>This is the custom page props, where the name is </h1>;
+    <div className={styles["home"]}>
+      <h1>
+        This is the custom page props, where the name is Hello World and the
+        page is edited
+      </h1>
     </div>
   );
 }

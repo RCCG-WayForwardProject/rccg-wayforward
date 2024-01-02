@@ -5,18 +5,20 @@
   display: flex;
   align-items: center;
   padding-left: 93px;
-  height: 70px;
+  height: 95px;
   flex-shrink: 0;
   gap: 173px;
   background-color: dimgray;
   border: 1px solid $col-dark-2;
   &[data-page="home"] {
-    // background-color: transparent;
+    background-color: transparent;
     position: absolute;
     left: 0px;
     right: 0px;
   }
-
+  @include respond(mobile-screen) {
+    padding: 0px 31px;
+  }
   &__logo {
     &-wrapper {
       display: flex;
@@ -43,6 +45,9 @@
     &-wrapper {
       display: flex;
       gap: 47px;
+      @include respond(mobile-screen) {
+        display: none;
+      }
     }
     &-dropdown {
       position: absolute;
@@ -74,6 +79,14 @@
         font-style: normal;
         font-weight: 400;
         color: $col-white;
+      }
+    }
+  }
+  &__mobile-link {
+    &-wrapper {
+      display: none;
+      @include respond(mobile-screen) {
+        display: flex;
       }
     }
   }

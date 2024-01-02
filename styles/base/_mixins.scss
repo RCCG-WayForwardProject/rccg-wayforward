@@ -35,6 +35,27 @@ $z-index: (
   transform: translate(-50%, -50%);
 }
 
+// Responsive
+@mixin respond($breakpoint) {
+  @if ($breakpoint == mobile-screen) {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == tablet-screen) {
+    @media (min-width: 768px) and (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == responsive) {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  }
+}
+
 @mixin border-radius($pixel...) {
   border-radius: $pixel;
   -webkit-border-radius: $pixel;

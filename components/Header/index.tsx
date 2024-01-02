@@ -78,6 +78,12 @@ const Header: React.FC<HeaderProps> = ({}) => {
           );
         })}
       </ul>
+
+      <ul className={styles["header__mobile-link-wrapper"]}>
+        <button className={styles["header__mobile-link-button"]}>
+          <Icon icon="navToggleIcon" />
+        </button>
+      </ul>
     </header>
   );
 };

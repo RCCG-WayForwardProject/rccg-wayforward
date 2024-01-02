@@ -12,4 +12,5 @@ export type IconNames =
   | "wave"
   | "inbox"
   | "phone"
-  | "email";
+  | "email"
+  | "navToggleIcon";
