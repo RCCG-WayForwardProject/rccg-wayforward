@@ -1,0 +1,32 @@
+@import "../../styles/base/mixins";
+@import "../../styles/variables";
+
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: $col-white;
+  font-family: $Segoe-UI;
+  &__active {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    color: $col-green-1;
+    & p {
+      font-weight: 700;
+    }
+  }
+  &__name {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  }
+  &__border {
+    height: 4px;
+    border: 2px 2px 0px 0px;
+    &[data-active="true"] {
+      background-color: $col-green-1;
+    }
+  }
+}

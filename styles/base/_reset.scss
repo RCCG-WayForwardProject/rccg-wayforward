@@ -7,7 +7,8 @@
   -webkit-box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
-  font-family: $WorkSans;
+  font-family: $Montserrat;
+  overflow-x: hidden !important;
   /* 2 */
 }
 
@@ -26,7 +27,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: $WorkSans;
+  font-family: $Montserrat;
 }
 
 main {
@@ -90,13 +91,6 @@ button::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
-}
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 [type="number"]::-webkit-inner-spin-button,
@@ -183,7 +177,7 @@ dd {
 }
 
 p {
-  font-family: $WorkSans;
+  font-family: $Montserrat;
   display: block;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -197,7 +191,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-family: $WorkSans;
+  font-family: $Montserrat;
 }
 
 /* Remove list styles on ul, ol */
@@ -235,9 +229,9 @@ button:hover {
   }
 }
 
-::-webkit-scrollbar {
-  width: toRem(3px);
-}
+// ::-webkit-scrollbar {
+//   width: toRem(3px);
+// }
 
 ::-webkit-scrollbar-track {
   background-color: #d9d9d9;
@@ -245,7 +239,6 @@ button:hover {
 
 ::-webkit-scrollbar-thumb {
   height: 42px;
-  width: toRem(0px);
   background-color: #39cdcc;
 }
 

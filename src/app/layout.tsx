@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import "../../styles/style.scss";
 
 export const metadata = {
@@ -14,10 +13,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <Header />
-        {children}
-        <Footer />
+      <head>
+        <link rel="icon" type="image/png" href="/logo.svg"></link>
+      </head>
+      <body suppressHydrationWarning>
+        {typeof window === undefined ? null : (
+          <>
+            <Header />
+            {children}
+          </>
+        )}
       </body>
     </html>
   );

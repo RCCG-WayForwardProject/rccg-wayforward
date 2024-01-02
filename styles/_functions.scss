@@ -1,0 +1,13 @@
+@use "sass:math";
+
+@function toRem($size) {
+  $rem-size: math.div($size, 16px);
+  @return #{$rem-size}rem;
+  @debug "toRem: #{$toRem}";
+}
+
+@function toEm($size) {
+  $em-size: math.div($size, 16px);
+  @return #{$em-size}em;
+  @debug "toEm: #{$toEm}";
+}
