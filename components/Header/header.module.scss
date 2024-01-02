@@ -9,12 +9,13 @@
   flex-shrink: 0;
   gap: 173px;
   background-color: dimgray;
-  border: 1px solid $col-dark-2;
+  border-bottom: 1px solid $col-dark-2;
   &[data-page="home"] {
     background-color: transparent;
     position: absolute;
     left: 0px;
     right: 0px;
+    @include z-index(overlay);
   }
   @include respond(mobile-screen) {
     padding: 0px 31px;

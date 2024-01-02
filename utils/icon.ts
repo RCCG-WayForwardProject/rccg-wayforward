@@ -1,7 +1,6 @@
 export type IconNames =
   | "appLogo"
   | "mouseDown"
-  | "arrowDownAnimation"
   | "cross"
   | "worshipWordIcon"
   | "calendar"
