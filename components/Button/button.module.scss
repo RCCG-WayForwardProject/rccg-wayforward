@@ -14,6 +14,7 @@
   background-color: $col-green-1;
   color: $col-white;
   width: fit-content;
+  transition: all 0.3s;
   @include border-radius(8px);
   &[data-size="small"] {
     height: 38px;

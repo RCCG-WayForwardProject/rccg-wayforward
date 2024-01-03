@@ -42,10 +42,16 @@
         color: $col-green-1;
         font-weight: 700;
       }
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+        padding-left: calc(8%);
+      }
     }
     &-description {
       @include description;
-      width: 70%;
+      width: 75%;
     }
     &-carousel {
       &-wrapper {

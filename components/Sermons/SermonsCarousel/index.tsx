@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useRef, Suspense } from "react";
-import Image from "next/image";
 import dynamic from "next/dynamic";
 import AliceCarousel from "react-alice-carousel";
 
@@ -39,8 +38,8 @@ const SermonCarousel: React.FC<SermonCarouselProps> = ({ sermonsList }) => {
   const carouselRef = useRef<AliceCarousel>(null);
   const [responsive] = useState({
     0: { items: 1 },
-    500: { items: 3 },
-    1000: { items: 4 },
+    500: { items: 2 },
+    1000: { items: 3 },
   });
 
   const handlePrevButtonClick = () => {
@@ -59,8 +58,10 @@ const SermonCarousel: React.FC<SermonCarouselProps> = ({ sermonsList }) => {
     <div className={styles["sermon__wrapper"]}>
       <CarouselButton icon="arrowLeftCircle" onClick={handlePrevButtonClick} />
       <AliceCarousel
+        autoPlay
+        autoPlayInterval={7000}
         disableDotsControls
-        // disableButtonsControls
+        disableButtonsControls
         mouseTracking
         responsive={responsive}
         ref={carouselRef}
@@ -69,19 +70,11 @@ const SermonCarousel: React.FC<SermonCarouselProps> = ({ sermonsList }) => {
           return (
             <div key={index + 1} className={styles["sermon"]}>
               <div className={styles["sermon__image"]}>
-                {/* <Image
-                  src={`/images/${sermon?.img}`}
-                  fill
-                  priority={false}
-                  loading={"lazy"}
-                  style={{ borderRadius: "13px" }}
-                  alt="Picture of the senior pastor"
-                /> */}
-                <Suspense>
+                <Suspense fallback={<h3>Loading</h3>}>
                   <img
                     src={`/images/${sermon?.img}`}
                     loading="lazy"
-                    alt="image of the sermon"
+                    alt="Sermon Image"
                   />
                 </Suspense>
               </div>

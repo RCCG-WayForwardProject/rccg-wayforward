@@ -25,15 +25,17 @@ const Sermons: React.FC<SermonsProps> = ({}) => {
         </div>
       </div>
       <div className={styles["sermons__sermons-wrapper"]}>
-        <p className={styles["sermons__sermons-heading"]}>
-          Catch up on our <span>Recent Sermons</span>
-        </p>
-        <p className={styles["sermons__sermons-description"]}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus
-          accumsan hac purus volutpat ultrices. Vitae, sem dignissim vitae nunc
-          aliquet integer ac suspendisse aliquet. Vulputate dictum egestas
-          potenti mi amet. Aenean convallis ut vel in viverra.
-        </p>
+        <div className={styles["sermons__sermons-heading-wrapper"]}>
+          <p className={styles["sermons__sermons-heading"]}>
+            Catch up on our <span>Recent Sermons</span>
+          </p>
+          <p className={styles["sermons__sermons-description"]}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus
+            accumsan hac purus volutpat ultrices. Vitae, sem dignissim vitae
+            nunc aliquet integer ac suspendisse aliquet. Vulputate dictum
+            egestas potenti mi amet. Aenean convallis ut vel in viverra.
+          </p>
+        </div>
         <div className={styles["sermons__sermons-carousel-wrapper"]}>
           <SermonCarousel sermonsList={sermonsList} />
         </div>
