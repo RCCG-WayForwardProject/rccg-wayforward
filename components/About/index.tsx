@@ -9,7 +9,7 @@ interface AboutUsProps {}
 
 const AboutUs: React.FC<AboutUsProps> = () => {
   return (
-    <div className={styles["about-us"]}>
+    <section className={styles["about-us"]}>
       <div className={styles["about-us__image-wrapper"]}>
         <div className={styles["about-us__image-cross-icon"]}>
           <Icon icon="cross" />
@@ -39,7 +39,7 @@ const AboutUs: React.FC<AboutUsProps> = () => {
           ordinary. <br /> Our Bible studies and worship ...
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
