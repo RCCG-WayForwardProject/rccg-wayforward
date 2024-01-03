@@ -73,7 +73,7 @@
       justify-content: center;
       gap: 40px;
       @include respond(mobile-screen) {
-        gap: 0px;
+        gap: 29px;
         justify-content: initial;
         height: fit-content;
       }

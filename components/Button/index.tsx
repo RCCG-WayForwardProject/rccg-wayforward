@@ -6,7 +6,7 @@ interface ButtonProps {
   label: string;
   disabled?: boolean;
   type: "button" | "submit";
-  variant?: "primary" | "secondary";
+  variant: "primary" | "secondary";
   size?: "small" | "medium" | "large";
   buttonStyle?: React.CSSProperties;
   handleClick?: () => void;

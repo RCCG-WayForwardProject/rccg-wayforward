@@ -1,13 +1,21 @@
+"use client";
 import React from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-import Icon from "../Icon";
+import Icon from "@/components/Icon";
+import Button from "@/components/Button";
 
 import styles from "./about.module.scss";
 
 interface AboutUsProps {}
 
 const AboutUs: React.FC<AboutUsProps> = () => {
+  const { push } = useRouter();
+
+  const handleRouteToAboutPage = () => {
+    push("/about-us");
+  };
   return (
     <section className={styles["about-us"]}>
       <div className={styles["about-us__image-wrapper"]}>
@@ -38,6 +46,13 @@ const AboutUs: React.FC<AboutUsProps> = () => {
           profound way we worship, creating an atmosphere that transcends the
           ordinary. <br /> Our Bible studies and worship ...
         </p>
+        <Button
+          label="View More"
+          type="button"
+          variant="primary"
+          size="small"
+          handleClick={handleRouteToAboutPage}
+        />
       </div>
     </section>
   );
