@@ -28,6 +28,7 @@ const AboutUs: React.FC<AboutUsProps> = () => {
             src={"/images/teamImage.svg"}
             fill={true}
             priority={false}
+            loading={"lazy"}
             alt="Mixed image of people with different color"
           />
         </div>
