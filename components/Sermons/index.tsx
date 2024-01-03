@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
+import Icon from "@/components/Icon";
 import SermonCarousel from "./SermonsCarousel";
 import { sermonsList } from "@/utils/constants";
 
@@ -11,6 +12,9 @@ interface SermonsProps {}
 const Sermons: React.FC<SermonsProps> = ({}) => {
   return (
     <section className={styles["sermons"]}>
+      <div className={styles["sermons__cross-icon"]}>
+        <Icon icon="cross" />
+      </div>
       <div className={styles["sermons__image-wrapper"]}>
         <p className={styles["sermons__image-heading"]}>Sermons</p>
         <div className={styles["sermons__image-container"]}>

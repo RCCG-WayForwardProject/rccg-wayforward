@@ -59,7 +59,7 @@ const SermonCarousel: React.FC<SermonCarouselProps> = ({ sermonsList }) => {
       <CarouselButton icon="arrowLeftCircle" onClick={handlePrevButtonClick} />
       <AliceCarousel
         autoPlay
-        autoPlayInterval={7000}
+        autoPlayInterval={10000}
         disableDotsControls
         disableButtonsControls
         mouseTracking
