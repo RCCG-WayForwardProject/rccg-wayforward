@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
+import SermonCarousel from "./SermonsCarousel";
+import { sermonsList } from "@/utils/constants";
+
 import styles from "./sermons.module.scss";
 
 interface SermonsProps {}
@@ -31,6 +34,9 @@ const Sermons: React.FC<SermonsProps> = ({}) => {
           aliquet integer ac suspendisse aliquet. Vulputate dictum egestas
           potenti mi amet. Aenean convallis ut vel in viverra.
         </p>
+        <div className={styles["sermons__sermons-carousel-wrapper"]}>
+          <SermonCarousel sermonsList={sermonsList} />
+        </div>
       </div>
     </section>
   );
