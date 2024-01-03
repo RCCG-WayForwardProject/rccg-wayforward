@@ -8,6 +8,15 @@
   color: #e2e2e2;
 }
 
+@mixin heading-mobile {
+  color: $col-grey-2;
+  font-size: toRem(53px);
+  font-style: normal;
+  font-weight: 900;
+  line-height: 72px;
+  letter-spacing: 0.5px;
+}
+
 @mixin description {
   color: $col-grey-1;
   text-align: justify;

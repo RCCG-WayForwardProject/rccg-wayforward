@@ -10,7 +10,7 @@ import styles from "./home.module.scss";
 
 const Home: React.FC = () => {
   return (
-    <>
+    <section>
       <AliceCarousel
         animationType="fadeout"
         animationDuration={2000}
@@ -57,7 +57,7 @@ const Home: React.FC = () => {
           );
         })}
       </AliceCarousel>
-    </>
+    </section>
   );
 };
 
