@@ -1,5 +1,10 @@
+@import "../../styles/base/mixins";
+
 .page {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  @include respond(mobile-screen) {
+    gap: 20px;
+  }
 }

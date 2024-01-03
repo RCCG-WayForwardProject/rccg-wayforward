@@ -9,6 +9,7 @@
   align-items: center;
   @include respond(mobile-screen) {
     overflow-x: hidden;
+    background-position: 50%;
   }
   &__content {
     &-wrapper {

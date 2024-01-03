@@ -14,6 +14,7 @@ const AboutUs: React.FC<AboutUsProps> = () => {
         <div className={styles["about-us__image-cross-icon"]}>
           <Icon icon="cross" />
         </div>
+        <p className={styles["about-us__image-heading"]}>About Us</p>
         <div className={styles["about-us__image-container"]}>
           <Image
             src={"/images/teamImage.svg"}
