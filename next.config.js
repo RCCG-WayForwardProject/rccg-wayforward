@@ -2,7 +2,17 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["drive.google.com"],
+    dangerouslyAllowSVG: true,
+    contentDispositionType: "attachment",
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    // remotePatterns: [
+    //   {
+    //     protocol: "https",
+    //     hostname: "drive.google.com",
+    //     port: "",
+    //     pathname: "/file/**",
+    //   },
+    // ],
   },
 };
 

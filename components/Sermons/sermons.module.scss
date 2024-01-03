@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+@import "../../styles/functions.scss";
+@import "../../styles/base/mixins";
+@import "../../styles/typography";
+
+.sermons {
+  height: 90vh;
+  padding: 0px 95px;
+  display: flex;
+  gap: 26px;
+  &__image {
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    &-heading {
+      @include heading;
+    }
+    &-container {
+      background-color: $col-green-1;
+      width: 90%;
+    }
+  }
+  &__sermons {
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+    &-heading {
+      color: $col-dark-3;
+      font-size: toRem(32px);
+      font-style: normal;
+      font-weight: 500;
+      & span {
+        color: $col-green-1;
+        font-weight: 700;
+      }
+    }
+    &-description {
+      @include description;
+      width: 70%;
+    }
+  }
+}
