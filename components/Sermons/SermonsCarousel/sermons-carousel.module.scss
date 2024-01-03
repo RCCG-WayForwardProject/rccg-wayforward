@@ -1,0 +1,42 @@
+@import "../../../styles/variables";
+@import "../../../styles/functions.scss";
+@import "../../../styles/base/mixins";
+@import "../../../styles/typography";
+
+.sermon {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    & ul {
+      display: flex;
+      gap: 25px;
+    }
+  }
+  &__image {
+    width: 160px;
+    height: 160px;
+    & img {
+      width: 100%;
+      height: 100%;
+      @include border-radius(13px);
+    }
+  }
+  &__name {
+    color: $col-green-1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  &__carousel-controls {
+    & span {
+      & svg {
+        width: 44px;
+      }
+    }
+  }
+}
