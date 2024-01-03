@@ -8,6 +8,14 @@
   padding: 0px 95px;
   display: flex;
   gap: 26px;
+  position: relative;
+  &__cross-icon {
+    position: absolute;
+    z-index: -1;
+    right: -7%;
+    top: 15%;
+    opacity: 0.25;
+  }
   &__image {
     &-wrapper {
       display: flex;
@@ -42,10 +50,16 @@
         color: $col-green-1;
         font-weight: 700;
       }
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+        padding-left: calc(8%);
+      }
     }
     &-description {
       @include description;
-      width: 70%;
+      width: 75%;
     }
     &-carousel {
       &-wrapper {
