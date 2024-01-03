@@ -28,5 +28,10 @@
   &[data-variant="secondary"] {
     border: 1px solid $col-green-1;
     color: $col-green-1;
+    background-color: initial;
+    &:hover {
+      background-color: $col-green-1;
+      color: $col-white;
+    }
   }
 }
