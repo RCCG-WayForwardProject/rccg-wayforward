@@ -45,12 +45,18 @@ export const services = [
   {
     img: "worshipImage_3.jpg",
     name: "Bible Study",
-    day: "Thursday",
+    day: "Wednesday",
     location: "Gotham Fan 221b , New York",
   },
   {
     img: "worshipImage_2.jpg",
     name: "Prayer Service",
+    day: "Thursday",
+    location: "Gotham Fan 221b , New York",
+  },
+  {
+    img: "worshipImage_3.jpg",
+    name: "Bible Study",
     day: "Wednesday",
     location: "Gotham Fan 221b , New York",
   },

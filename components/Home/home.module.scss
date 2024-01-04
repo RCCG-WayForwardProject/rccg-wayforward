@@ -20,22 +20,25 @@
       @include respond(mobile-screen) {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
         margin-top: initial;
+        margin-left: initial;
+        align-items: flex-start;
       }
     }
     &-cross-icon {
       @include respond(mobile-screen) {
         position: absolute;
         z-index: 0;
-        left: 35vw;
+        left: -25%;
       }
     }
     &-container {
       width: 670px;
       @include respond(mobile-screen) {
-        width: 80%;
+        width: 85%;
         z-index: 1;
+        padding-left: calc(6%);
       }
     }
     &-worship-icon {
@@ -70,6 +73,7 @@
       @include respond(mobile-screen) {
         line-height: 20px;
         font-size: 13px;
+        margin-top: 30px;
       }
     }
     &-mouse-animation {

@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         animationType="fadeout"
         animationDuration={2000}
         animationEasingFunction="ease-in-out"
-        autoPlay
+        // autoPlay
         autoPlayInterval={10000}
         infinite
         disableButtonsControls
