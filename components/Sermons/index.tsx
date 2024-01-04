@@ -47,7 +47,7 @@ const Sermons: React.FC<SermonsProps> = ({}) => {
         <div className={styles["sermons__sermons-carousel-wrapper"]}>
           <SermonCarousel sermonsList={sermonsList} />
         </div>
-        {sermonsList?.length >= 1 ? (
+        {sermonsList?.length > 0 ? (
           <div className={styles["sermons__sermons-button-mobile"]}>
             <Button
               label="View More"
