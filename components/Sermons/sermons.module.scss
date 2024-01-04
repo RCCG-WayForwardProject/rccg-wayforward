@@ -9,12 +9,23 @@
   display: flex;
   gap: 26px;
   position: relative;
+  @include respond(mobile-screen) {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    height: initial;
+    padding-bottom: 20px;
+  }
   &__cross-icon {
     position: absolute;
     z-index: -1;
     right: -7%;
     top: 15%;
     opacity: 0.25;
+    @include respond(mobile-screen) {
+      display: none;
+    }
   }
   &__image {
     &-wrapper {
@@ -25,10 +36,17 @@
     }
     &-heading {
       @include heading;
+      @include respond(mobile-screen) {
+        @include heading-mobile;
+        padding-left: calc(6%);
+      }
     }
     &-container {
       background-color: $col-green-1;
       width: 90%;
+      @include respond(mobile-screen) {
+        display: none;
+      }
     }
   }
   &__sermons {
@@ -40,12 +58,18 @@
       gap: 40px;
       overflow: hidden;
       padding-top: 27px;
+      @include respond(mobile-screen) {
+        padding-top: 0px;
+      }
     }
     &-heading {
       color: $col-dark-3;
       font-size: toRem(32px);
       font-style: normal;
       font-weight: 500;
+      @include respond(mobile-screen) {
+        display: none;
+      }
       & span {
         color: $col-green-1;
         font-weight: 700;
@@ -55,15 +79,43 @@
         flex-direction: column;
         gap: 34px;
         padding-left: calc(8%);
+        @include respond(mobile-screen) {
+          padding-left: calc(6%);
+        }
+      }
+      &-mobile {
+        color: $col-green-1;
+        font-weight: 700;
+        font-size: toRem(24px);
+        font-style: normal;
+        display: none;
+        @include respond(mobile-screen) {
+          display: block;
+        }
       }
     }
     &-description {
       @include description;
       width: 75%;
+      @include respond(mobile-screen) {
+        width: 92%;
+      }
     }
     &-carousel {
       &-wrapper {
         width: 80%;
+        @include respond(mobile-screen) {
+          width: 100%;
+        }
+      }
+    }
+    &-button-mobile {
+      display: none;
+      @include respond(mobile-screen) {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
       }
     }
   }

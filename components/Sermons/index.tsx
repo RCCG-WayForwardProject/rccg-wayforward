@@ -6,6 +6,7 @@ import SermonCarousel from "./SermonsCarousel";
 import { sermonsList } from "@/utils/constants";
 
 import styles from "./sermons.module.scss";
+import Button from "../Button";
 
 interface SermonsProps {}
 
@@ -33,6 +34,9 @@ const Sermons: React.FC<SermonsProps> = ({}) => {
           <p className={styles["sermons__sermons-heading"]}>
             Catch up on our <span>Recent Sermons</span>
           </p>
+          <p className={styles["sermons__sermons-heading-mobile"]}>
+            Recent Sermons
+          </p>
           <p className={styles["sermons__sermons-description"]}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus
             accumsan hac purus volutpat ultrices. Vitae, sem dignissim vitae
@@ -43,6 +47,16 @@ const Sermons: React.FC<SermonsProps> = ({}) => {
         <div className={styles["sermons__sermons-carousel-wrapper"]}>
           <SermonCarousel sermonsList={sermonsList} />
         </div>
+        {sermonsList?.length >= 1 ? (
+          <div className={styles["sermons__sermons-button-mobile"]}>
+            <Button
+              label="View More"
+              variant="primary"
+              size="small"
+              type="button"
+            />
+          </div>
+        ) : null}
       </div>
     </section>
   );
