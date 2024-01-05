@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+@import "../../styles/functions.scss";
+@import "../../styles/base/mixins";
+@import "../../styles/typography";
+
+.songs {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+  padding: 0px 95px;
+  &__heading {
+    @include heading;
+    &-wrapper {
+      display: flex;
+      align-items: flex-end;
+      gap: 24px;
+      padding-left: 21px;
+    }
+  }
+  &__subheading {
+    font-size: toRem(32px);
+    font-style: normal;
+    font-weight: 500;
+    & span {
+      color: $col-green-1;
+      font-size: toRem(32px);
+      font-weight: 700;
+    }
+  }
+  &__song {
+    // width: 177px;
+    height: 281px;
+    flex-shrink: 0;
+    @include border-radius(13px);
+  }
+}

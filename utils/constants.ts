@@ -61,3 +61,48 @@ export const services = [
     location: "Gotham Fan 221b , New York",
   },
 ];
+
+export const musics = [
+  {
+    name: "Glory to your name",
+    img: "worshipImage_2.jpg",
+    authorName: "Bose Adamson",
+    musicLength: "11:15",
+  },
+  {
+    name: "Not to be moved",
+    img: "worshipImage_2.jpg",
+    authorName: "Bose Adamson",
+    musicLength: "11:15",
+  },
+  {
+    name: "Not to be moved",
+    img: "worshipImage_2.jpg",
+    authorName: "Bose Adamson",
+    musicLength: "11:15",
+  },
+  {
+    name: "Not to be moved",
+    img: "worshipImage_2.jpg",
+    authorName: "Bose Adamson",
+    musicLength: "11:15",
+  },
+  {
+    name: "Not to be moved",
+    img: "worshipImage_2.jpg",
+    authorName: "Bose Adamson",
+    musicLength: "11:15",
+  },
+  {
+    name: "Not to be moved",
+    img: "worshipImage_2.jpg",
+    authorName: "Bose Adamson",
+    musicLength: "11:15",
+  },
+  {
+    name: "Not to be moved",
+    img: "worshipImage_2.jpg",
+    authorName: "Bose Adamson",
+    musicLength: "11:15",
+  },
+];
