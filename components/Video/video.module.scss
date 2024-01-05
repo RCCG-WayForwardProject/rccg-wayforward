@@ -1,0 +1,65 @@
+@import "../../styles/variables";
+@import "../../styles/functions.scss";
+@import "../../styles/base/mixins";
+@import "../../styles/typography";
+
+.video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  &__container {
+    height: 85vh;
+    position: relative;
+    @include respond(mobile-screen) {
+      height: 83vh;
+    }
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-content {
+      &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        width: 80%;
+        @include respond(mobile-screen) {
+          width: 90%;
+          gap: 23px;
+          line-height: 38px;
+        }
+      }
+      &-heading {
+        @include h2;
+        color: $col-white;
+        text-align: center;
+        @include respond(mobile-screen) {
+          @include h3;
+        }
+        & span {
+          color: $col-green-1;
+        }
+      }
+    }
+    &-play-button {
+      width: 83px;
+      height: 83px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid $col-green-1;
+      background: rgba(33, 150, 83, 0.25);
+      @include border-radius(50%);
+    }
+  }
+}

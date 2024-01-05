@@ -24,6 +24,12 @@
   font-weight: 600;
 }
 
+@mixin h3 {
+  font-size: toRem(24px);
+  font-style: normal;
+  font-weight: 600;
+}
+
 @mixin description {
   color: $col-grey-1;
   text-align: justify;
