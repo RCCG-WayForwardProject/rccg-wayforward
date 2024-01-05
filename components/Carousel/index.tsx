@@ -4,6 +4,7 @@ import AliceCarousel, { Responsive } from "react-alice-carousel";
 import Icon from "@/components/Icon";
 import { IconNames } from "@/utils/icon";
 
+import "react-alice-carousel/lib/alice-carousel.css";
 import styles from "./carousel.module.scss";
 
 interface CarouseButtonProps {
@@ -73,4 +74,4 @@ const Carousel: React.FC<CarouselProps> = ({
 };
 
 export default Carousel;
-// export default dynamic(() => Promise.resolve(SermonCarousel), { ssr: false });
+// export default dynamic(() => Promise.resolve(Carousel), { ssr: false });
