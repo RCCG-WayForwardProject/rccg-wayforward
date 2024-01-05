@@ -29,9 +29,30 @@
     }
   }
   &__song {
+    position: relative;
     // width: 177px;
     height: 281px;
     flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
     @include border-radius(13px);
+    &-carousel {
+      &-wrapper {
+        width: 88%;
+      }
+    }
+  }
+  &__wave-icon {
+    position: absolute;
+    width: 82vw;
+    & span {
+      & svg {
+        width: 100%;
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
   }
 }

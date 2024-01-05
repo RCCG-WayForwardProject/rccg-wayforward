@@ -1,15 +1,18 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 import Carousel from "../Carousel";
 import { musics } from "@/utils/constants";
 
 import styles from "./songs.module.scss";
+import MusicCard from "./MusicCard";
+import Icon from "../Icon";
+import Button from "../Button";
 
 const Songs: React.FC = () => {
   const [responsive] = useState({
     0: { items: 2 },
-    1400: { items: 5 },
+    1400: { items: 4 },
   });
 
   return (
@@ -32,11 +35,27 @@ const Songs: React.FC = () => {
                   width: "200px",
                 }}
               >
-                <h1>Hello World</h1>
+                <MusicCard
+                  src={music?.src}
+                  name={music?.name}
+                  authorName={music?.authorName}
+                  duration={music?.musicLength}
+                />
               </div>
             );
           })}
         </Carousel>
+        <div className={styles["songs__wave-icon"]}>
+          <Icon icon="wave" />
+        </div>
+      </div>
+      <div className={styles["songs__button"]}>
+        <Button
+          label="View More"
+          type="button"
+          variant="primary"
+          size="small"
+        />
       </div>
     </section>
   );
