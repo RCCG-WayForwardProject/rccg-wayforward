@@ -1,14 +1,22 @@
 "use client";
-import React from "react";
-
-import styles from "./service.module.scss";
-import Carousel from "../Carousel";
-import { services } from "@/utils/constants";
+import React, { useState } from "react";
 import Image from "next/image";
+
+import { services } from "@/utils/constants";
+
+import Carousel from "../Carousel";
 import Icon from "../Icon";
 import Button from "../Button";
 
+import styles from "./service.module.scss";
+
 const Services: React.FC = () => {
+  const [responsive] = useState({
+    0: { items: 1 },
+    1000: { items: 2 },
+    1400: { items: 2 },
+  });
+
   return (
     <div className={styles["services"]}>
       <h1 className={styles["services__heading"]}>Services</h1>
@@ -23,17 +31,17 @@ const Services: React.FC = () => {
             transcends the ordinary. Our Bible studies and worship ...
           </p>
         </div>
-        <Carousel>
+        <Carousel responsive={responsive} contentGap={16}>
           {services?.map((service, index) => {
             return (
               <div key={index + 1} className={styles["services__service"]}>
                 <div className={styles["services__service-image"]}>
                   <Image
                     src={`/images/${service.img}`}
-                    height={165}
-                    width={192}
+                    fill
                     alt="Service image"
                     loading="lazy"
+                    style={{ borderRadius: "13px" }}
                   />
                 </div>
                 <div className={styles["services__service-content-wrapper"]}>
@@ -56,13 +64,21 @@ const Services: React.FC = () => {
                     type="button"
                     label="Set Reminder"
                     variant="primary"
-                    size="medium"
+                    size="small"
                   />
                 </div>
               </div>
             );
           })}
         </Carousel>
+        <div className={styles["services__view-button"]}>
+          <Button
+            label="View More"
+            variant="primary"
+            size="small"
+            type="button"
+          />
+        </div>
       </div>
     </div>
   );

@@ -63,6 +63,7 @@ const Carousel: React.FC<CarouselProps> = ({
         mouseTracking
         responsive={responsive}
         ref={carouselRef}
+        keyboardNavigation
       >
         {children}
       </AliceCarousel>
