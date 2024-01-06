@@ -113,3 +113,31 @@ export const musics = [
     src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
   },
 ];
+
+export const testimonies = [
+  {
+    name: "John Doe Taiwo",
+    testimony:
+      "Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor.",
+  },
+  {
+    name: "John Taiwo",
+    testimony:
+      "Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor. Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor.",
+  },
+  {
+    name: "John Doe Taiwo",
+    testimony:
+      "Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor.",
+  },
+  {
+    name: "John Doe Taiwo",
+    testimony:
+      "Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor.",
+  },
+  {
+    name: "John Doe Taiwo",
+    testimony:
+      "Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor.",
+  },
+];

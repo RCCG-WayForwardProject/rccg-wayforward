@@ -10,7 +10,7 @@ import styles from "./carousel.module.scss";
 
 interface CarouseButtonProps {
   icon: string;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 interface CarouselProps {

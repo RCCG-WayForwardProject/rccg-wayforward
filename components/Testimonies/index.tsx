@@ -1,7 +1,9 @@
 import React from "react";
 
-import styles from "./testimonies.module.scss";
 import Button from "../Button";
+import TestimoniesCarousel from "./TestimoniesCarousel";
+
+import styles from "./testimonies.module.scss";
 
 const Testimonies: React.FC = () => {
   return (
@@ -30,6 +32,9 @@ const Testimonies: React.FC = () => {
             size="mini"
           />
         </div>
+      </div>
+      <div className={styles["testimonies__carousel-wrapper"]}>
+        <TestimoniesCarousel />
       </div>
     </div>
   );
