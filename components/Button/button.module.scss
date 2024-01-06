@@ -16,6 +16,11 @@
   width: fit-content;
   transition: all 0.3s;
   @include border-radius(8px);
+  &[data-size="mini"] {
+    height: 40px;
+    font-size: 14px;
+    padding: 11px 24px;
+  }
   &[data-size="small"] {
     height: 38px;
     font-size: 13px;

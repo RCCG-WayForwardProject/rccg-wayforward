@@ -8,6 +8,12 @@
   color: #e2e2e2;
 }
 
+@mixin heading-vertical {
+  @include heading;
+  writing-mode: tb;
+  transform: rotate(180deg);
+}
+
 @mixin heading-mobile {
   color: $col-grey-2;
   font-size: toRem(53px);

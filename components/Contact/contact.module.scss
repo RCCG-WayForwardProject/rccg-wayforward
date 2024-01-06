@@ -1,0 +1,98 @@
+@import "../../styles/variables";
+@import "../../styles/functions.scss";
+@import "../../styles/base/mixins";
+@import "../../styles/typography";
+
+.contact {
+  //   height: 90vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 95px 65px 95px;
+  @include respond(mobile-screen) {
+    height: fit-content;
+    padding: 10px 6% 45px 6%;
+  }
+  &__heading {
+    @include heading;
+    @include respond(mobile-screen) {
+      @include heading-mobile;
+      font-size: toRem(50px);
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    width: 40%;
+    @include respond(mobile-screen) {
+      width: 100%;
+    }
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include respond(mobile-screen) {
+        flex-direction: column-reverse;
+        gap: 22px;
+      }
+    }
+    &-info {
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      &-heading {
+        color: $col-dark-8;
+        font-size: toRem(14px);
+        font-weight: 600;
+      }
+      &-input {
+        font-size: 14px;
+        padding: 4px 16px;
+        height: 24px;
+        box-sizing: content-box;
+        border: 1px solid $col-grey-4;
+        background: $col-white;
+        @include border-radius(8px);
+        &::placeholder {
+          color: #999ca0;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+      &-textarea {
+        font-size: 14px;
+        padding: 7px 16px;
+        height: 76px;
+        box-sizing: content-box;
+        border: 1px solid $col-grey-4;
+        background: $col-white;
+        @include border-radius(8px);
+        &::placeholder {
+          color: #999ca0;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+    }
+    &-image {
+      @include respond(mobile-screen) {
+      }
+    }
+    &-button {
+      margin-top: 16px;
+      align-self: center;
+      @include respond(mobile-screen) {
+        width: 50%;
+        & button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

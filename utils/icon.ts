@@ -12,4 +12,11 @@ export type IconNames =
   | "inbox"
   | "phone"
   | "email"
-  | "navToggleIcon";
+  | "navToggleIcon"
+  | "audioWave"
+  | "pause"
+  | "questionMark"
+  | "facebook"
+  | "instagram"
+  | "youtube"
+  | "twitter";

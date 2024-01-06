@@ -1,0 +1,83 @@
+@import "../../styles/variables";
+@import "../../styles/functions.scss";
+@import "../../styles/base/mixins";
+@import "../../styles/typography";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 74px;
+  padding: 0px 95px 65px 95px;
+  @include respond(mobile-screen) {
+    padding: 0px 6% 65px 6%;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &-wrapper {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      @include respond(mobile-screen) {
+        display: flex;
+        flex-direction: column;
+        gap: 53px;
+      }
+    }
+    &-container {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+    }
+    &-button {
+      width: 58px;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background-color: rgba(33, 150, 83, 0.28);
+      @include border-radius(50%);
+      & span {
+        & svg {
+          fill: $col-green-1;
+        }
+      }
+    }
+    &-heading {
+      color: $col-dark-7;
+      font-size: toRem(15px);
+      font-weight: 500;
+      font-style: normal;
+    }
+    &-description {
+      color: rgba(0, 0, 0, 0.56);
+      font-size: toRem(13px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      width: 80%;
+    }
+  }
+  &__link {
+    color: initial;
+    text-decoration: none;
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+    &-button {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $col-green-1;
+      @include border-radius(50%);
+    }
+  }
+}
