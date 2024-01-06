@@ -1,8 +1,9 @@
 import React from "react";
+import Image from "next/image";
+
+import Button from "../Button";
 
 import styles from "./contact.module.scss";
-import Button from "../Button";
-import Image from "next/image";
 
 const Contact: React.FC = () => {
   return (
