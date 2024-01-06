@@ -5,6 +5,7 @@ import Services from "@/components/Service";
 import VideoPlayer from "@/components/Video";
 import Songs from "@/components/Songs";
 import Testimonies from "@/components/Testimonies";
+import Donation from "@/components/Donation";
 
 import styles from "./page.module.scss";
 
@@ -18,6 +19,7 @@ export default function Page() {
       <VideoPlayer />
       <Songs />
       <Testimonies />
+      <Donation />
     </div>
   );
 }
