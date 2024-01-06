@@ -169,3 +169,40 @@ export const faq = [
       "Lorem ipsum dolor sit amet consectetur. Nullam sit dignissim felis et neque est. Odio sit placerat quisque mi tempor diam morbi nibh volutpat. Sed elit sit eget et lorem risus tincidunt sed. Et iaculis ullamcorper fringilla ultricies. Turpis sit congue nunc purus ante.",
   },
 ];
+
+export const footerInfo = [
+  {
+    icon: "phone",
+    title: "Phone Number",
+    description: "(704) 493-5062",
+  },
+  {
+    icon: "location",
+    title: "Address",
+    description: "7156 Weddington Rd, Suite 170, Concord,North Carolina, 28027",
+  },
+  {
+    icon: "email",
+    title: "Email",
+    description: "ddd.enterprise@yahoo.com",
+  },
+];
+
+export const footerLink = [
+  {
+    icon: "facebook",
+    link: "",
+  },
+  {
+    icon: "instagram",
+    link: "",
+  },
+  {
+    icon: "youtube",
+    link: "",
+  },
+  {
+    icon: "twitter",
+    link: "",
+  },
+];

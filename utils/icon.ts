@@ -15,4 +15,8 @@ export type IconNames =
   | "navToggleIcon"
   | "audioWave"
   | "pause"
-  | "questionMark";
+  | "questionMark"
+  | "facebook"
+  | "instagram"
+  | "youtube"
+  | "twitter";

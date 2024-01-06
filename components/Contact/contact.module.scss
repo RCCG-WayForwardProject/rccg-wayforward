@@ -4,10 +4,10 @@
 @import "../../styles/typography";
 
 .contact {
-  height: 90vh;
+  //   height: 90vh;
   display: flex;
   flex-direction: column;
-  padding: 0px 95px;
+  padding: 0px 95px 65px 95px;
   @include respond(mobile-screen) {
     height: fit-content;
     padding: 10px 6% 45px 6%;
