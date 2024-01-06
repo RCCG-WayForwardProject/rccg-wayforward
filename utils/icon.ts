@@ -14,4 +14,5 @@ export type IconNames =
   | "email"
   | "navToggleIcon"
   | "audioWave"
-  | "pause";
+  | "pause"
+  | "questionMark";

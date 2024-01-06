@@ -141,3 +141,31 @@ export const testimonies = [
       "Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor.",
   },
 ];
+
+export const faq = [
+  {
+    title: "Lorem ipsum dolor",
+    content:
+      "Lorem ipsum dolor sit amet consectetur. Nullam sit dignissim felis et neque est. Odio sit placerat quisque mi tempor diam morbi nibh volutpat. Sed elit sit eget et lorem risus tincidunt sed. Et iaculis ullamcorper fringilla ultricies. Turpis sit congue nunc purus ante.",
+  },
+  {
+    title: "Lorem ipsum dolor",
+    content:
+      "Lorem ipsum dolor sit amet consectetur. Nullam sit dignissim felis et neque est. Odio sit placerat quisque mi tempor diam morbi nibh volutpat. Sed elit sit eget et lorem risus tincidunt sed. Et iaculis ullamcorper fringilla ultricies. Turpis sit congue nunc purus ante.",
+  },
+  {
+    title: "Lorem ipsum dolor sit amet",
+    content:
+      "Lorem ipsum dolor sit amet consectetur. Nullam sit dignissim felis et neque est. Odio sit placerat quisque mi tempor diam morbi nibh volutpat. Sed elit sit eget et lorem risus tincidunt sed. Et iaculis ullamcorper fringilla ultricies. Turpis sit congue nunc purus ante.",
+  },
+  {
+    title: "Lorem ipsum dolor",
+    content:
+      "Lorem ipsum dolor sit amet consectetur. Nullam sit dignissim felis et neque est. Odio sit placerat quisque mi tempor diam morbi nibh volutpat. Sed elit sit eget et lorem risus tincidunt sed. Et iaculis ullamcorper fringilla ultricies. Turpis sit congue nunc purus ante.",
+  },
+  {
+    title: "Lorem ipsum dolor",
+    content:
+      "Lorem ipsum dolor sit amet consectetur. Nullam sit dignissim felis et neque est. Odio sit placerat quisque mi tempor diam morbi nibh volutpat. Sed elit sit eget et lorem risus tincidunt sed. Et iaculis ullamcorper fringilla ultricies. Turpis sit congue nunc purus ante.",
+  },
+];

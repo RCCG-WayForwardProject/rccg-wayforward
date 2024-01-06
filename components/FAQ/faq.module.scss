@@ -1,0 +1,38 @@
+@import "../../styles/variables";
+@import "../../styles/functions.scss";
+@import "../../styles/base/mixins";
+@import "../../styles/typography";
+
+.faq {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 95px;
+  gap: 32px;
+
+  &__heading {
+    @include heading;
+  }
+  &__image {
+    width: 50%;
+    position: relative;
+    &-icon {
+      position: absolute;
+      top: 16%;
+      left: 62%;
+    }
+  }
+
+  &__content {
+    &-wrapper {
+      display: flex;
+      gap: 35px;
+    }
+  }
+  &__accordion-wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

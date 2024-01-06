@@ -1,0 +1,39 @@
+@import "../../../styles/variables";
+@import "../../../styles/functions.scss";
+@import "../../../styles/base/mixins";
+@import "../../../styles/typography";
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  border-bottom: 1px solid $col-grey-3;
+  padding-bottom: 7px;
+
+  &__heading {
+    color: $col-dark-7;
+    font-size: 15px;
+    font-weight: 500;
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-button {
+      color: #219653;
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+  &__content {
+    color: rgba(0, 0, 0, 0.56);
+    font-size: toRem(13px);
+    font-weight: 400;
+    line-height: 20px;
+    &-wrapper {
+      margin-bottom: 7px;
+    }
+  }
+}
