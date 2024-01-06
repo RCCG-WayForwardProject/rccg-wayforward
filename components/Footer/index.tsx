@@ -34,6 +34,7 @@ const Footer: React.FC = () => {
               <a
                 href={element?.link}
                 target="_blank"
+                rel="noopener noreferrer"
                 className={styles["footer__link"]}
               >
                 <Icon icon={element?.icon as IconNames} />

@@ -50,9 +50,13 @@ const Header: React.FC<HeaderProps> = ({}) => {
     <header className={styles["header"]} data-page={headerPage}>
       <div className={styles["header__logo-wrapper"]}>
         <Icon icon="appLogo" />
-        <p className={styles["header__logo-name"]}>
-          Wayforward <br /> <span>Cathedral</span>
-        </p>
+        {headerPage === "home" ? (
+          <Icon icon="appName" />
+        ) : (
+          <p className={styles["header__logo-name"]}>
+            Wayforward <br /> <span>Cathedral</span>
+          </p>
+        )}
       </div>
 
       <ul className={styles["header__link-wrapper"]}>

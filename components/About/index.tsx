@@ -8,9 +8,12 @@ import Button from "@/components/Button";
 
 import styles from "./about.module.scss";
 
-interface AboutUsProps {}
+interface AboutUsProps {
+  showViewButton?: boolean;
+  showFullText?: boolean;
+}
 
-const AboutUs: React.FC<AboutUsProps> = () => {
+const AboutUs: React.FC<AboutUsProps> = ({ showViewButton, showFullText }) => {
   const { push } = useRouter();
 
   const handleRouteToAboutPage = () => {
@@ -47,13 +50,24 @@ const AboutUs: React.FC<AboutUsProps> = () => {
           profound way we worship, creating an atmosphere that transcends the
           ordinary. <br /> Our Bible studies and worship ...
         </p>
-        <Button
-          label="View More"
-          type="button"
-          variant="primary"
-          size="small"
-          handleClick={handleRouteToAboutPage}
-        />
+        {showFullText ? (
+          <p className={styles["about-us__description"]}>
+            Welcome to The Redeemed Christian Church of God WayForward in
+            Concord, where our worship is truly exceptional, and the pure Word
+            of God is a guiding light in impacting lives. We take pride in the
+            unique and profound way we worship, creating an atmosphere that
+            transcends the ordinary. <br /> Our Bible studies and worship ...
+          </p>
+        ) : null}
+        {showViewButton ? (
+          <Button
+            label="View More"
+            type="button"
+            variant="primary"
+            size="small"
+            handleClick={handleRouteToAboutPage}
+          />
+        ) : null}
       </div>
     </section>
   );
