@@ -5,8 +5,9 @@ import Image from "next/image";
 import Icon from "../Icon";
 import Accordion from "./Accordion";
 
-import styles from "./faq.module.scss";
 import { faq } from "@/utils/constants";
+
+import styles from "./faq.module.scss";
 
 const FAQ: React.FC = () => {
   return (

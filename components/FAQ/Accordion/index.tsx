@@ -22,7 +22,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
           className={styles["accordion__heading-button"]}
           onClick={handleToggleAccordion}
         >
-          {openAccordion ? "+" : "-"}
+          {openAccordion ? "-" : "+"}
         </button>
       </div>
       {openAccordion ? (
