@@ -1,8 +1,9 @@
 import React from "react";
 
-import styles from "./newsletter.module.scss";
 import Icon from "../Icon";
 import Button from "../Button";
+
+import styles from "./newsletter.module.scss";
 
 const Newsletter: React.FC = () => {
   return (
