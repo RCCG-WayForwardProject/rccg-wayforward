@@ -19,6 +19,7 @@ const Songs: React.FC = () => {
     <section className={styles["songs"]}>
       <div className={styles["songs__heading-wrapper"]}>
         <h1 className={styles["songs__heading"]}>Gospel Songs</h1>
+        <h1 className={styles["songs__heading-mobile"]}> Songs</h1>
         <h3 className={styles["songs__subheading"]}>
           Songs to strengthen <span>God's Presence</span>
         </h3>

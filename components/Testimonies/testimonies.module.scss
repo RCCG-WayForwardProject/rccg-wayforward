@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+@import "../../styles/functions.scss";
+@import "../../styles/base/mixins";
+@import "../../styles/typography";
+
+.testimonies {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 0px 95px;
+  &__heading {
+    @include heading;
+    &-container {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+  &__subheading {
+    font-size: toRem(32px);
+    font-style: normal;
+    font-weight: 500;
+    & span {
+      color: $col-green-1;
+      font-weight: 700;
+    }
+    @include respond(mobile-screen) {
+      font-size: toRem(24px);
+    }
+  }
+  &__description {
+    @include description;
+    width: 70%;
+    &-container {
+      display: flex;
+      align-items: center;
+      gap: 70px;
+    }
+  }
+}

@@ -9,13 +9,34 @@
   flex-direction: column;
   gap: 65px;
   padding: 0px 95px;
+  @include respond(mobile-screen) {
+    height: auto;
+    padding: 45px 0px;
+    gap: 31px;
+  }
   &__heading {
     @include heading;
+    @include respond(mobile-screen) {
+      display: none;
+    }
+    &-mobile {
+      display: none;
+      @include respond(mobile-screen) {
+        display: block;
+        @include heading-mobile;
+      }
+    }
     &-wrapper {
       display: flex;
       align-items: flex-end;
       gap: 24px;
       padding-left: 21px;
+      @include respond(mobile-screen) {
+        flex-direction: column;
+        align-items: initial;
+        gap: 0px;
+        padding-left: calc(6%);
+      }
     }
   }
   &__subheading {
@@ -24,8 +45,10 @@
     font-weight: 500;
     & span {
       color: $col-green-1;
-      font-size: toRem(32px);
       font-weight: 700;
+    }
+    @include respond(mobile-screen) {
+      font-size: toRem(24px);
     }
   }
   &__song {
@@ -36,9 +59,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     @include border-radius(13px);
+    @include respond(mobile-screen) {
+      width: 100% !important;
+    }
     &-carousel {
       &-wrapper {
         width: 88%;
+        @include respond(mobile-screen) {
+          width: 100%;
+        }
       }
     }
   }
@@ -49,6 +78,9 @@
       & svg {
         width: 100%;
       }
+    }
+    @include respond(mobile-screen) {
+      display: none;
     }
   }
   &__button {

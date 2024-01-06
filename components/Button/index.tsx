@@ -7,7 +7,7 @@ interface ButtonProps {
   disabled?: boolean;
   type: "button" | "submit";
   variant: "primary" | "secondary";
-  size?: "small" | "medium" | "large";
+  size?: "mini" | "small" | "medium" | "large";
   buttonStyle?: React.CSSProperties;
   handleClick?: () => void;
 }

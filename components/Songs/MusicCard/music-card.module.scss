@@ -1,0 +1,89 @@
+@import "../../../styles/variables";
+@import "../../../styles/functions.scss";
+@import "../../../styles/base/mixins";
+@import "../../../styles/typography";
+
+.music-card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 17px;
+  background: linear-gradient(0deg, #000 27.12%, rgba(0, 0, 0, 0) 88.44%);
+  @include border-radius(13px);
+
+  &__content {
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 90%;
+    }
+  }
+  &__name {
+    color: $col-white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  &__author {
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    &-name {
+      color: $col-white;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 500;
+    }
+  }
+  &__player {
+    &-wrapper {
+      position: relative;
+      display: flex;
+      background-color: rgba(73, 70, 70, 0.52);
+      height: 20px;
+      width: 100%;
+      @include border-radius(20px);
+    }
+    &-icon {
+      @include respond(mobile-screen) {
+        width: 86%;
+        & span {
+          & svg {
+          }
+        }
+      }
+    }
+    &-button {
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $col-green-1;
+      @include border-radius(50%);
+      & span {
+        & svg {
+          width: 16px;
+        }
+      }
+    }
+    &-duration {
+      position: absolute;
+      top: 27%;
+      right: 27%;
+      color: $col-white;
+      font-size: toRem(8px);
+      font-style: normal;
+      font-weight: 500;
+      @include respond(mobile-screen) {
+        right: 18%;
+      }
+    }
+  }
+}
