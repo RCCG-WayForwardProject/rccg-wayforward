@@ -5,9 +5,12 @@ import TestimoniesCarousel from "./TestimoniesCarousel";
 
 import styles from "./testimonies.module.scss";
 
-const Testimonies: React.FC = () => {
+interface TestimoniesProps {
+  style?: React.CSSProperties;
+}
+const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
   return (
-    <div className={styles["testimonies"]}>
+    <div className={styles["testimonies"]} style={style}>
       <div className={styles["testimonies__heading-container"]}>
         <h1 className={styles["testimonies__heading"]}>Testimonies</h1>
         <h3 className={styles["testimonies__subheading"]}>
