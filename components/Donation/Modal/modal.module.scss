@@ -37,7 +37,7 @@
         color: $col-white;
       }
       @include respond(mobile-screen) {
-        font-size: 12px;
+        font-size: 11px;
       }
     }
   }

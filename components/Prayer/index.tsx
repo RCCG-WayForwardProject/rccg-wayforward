@@ -1,14 +1,24 @@
 import React from "react";
+import Image from "next/image";
+
+import Button from "../Button";
 
 import styles from "./prayer.module.scss";
-import Button from "../Button";
-import Image from "next/image";
 
 const Prayer: React.FC = () => {
   return (
     <div className={styles["prayer"]}>
       <div className={styles["prayer__heading-wrapper"]}>
+        <h1 className={styles["prayer__heading-mobile"]}>Prayer</h1>
         <h1 className={styles["prayer__heading"]}>Prayer Request</h1>
+        <div className={styles["prayer__form-image-mobile"]}>
+          <Image
+            src={"/images/prayer.png"}
+            fill
+            loading="lazy"
+            alt="A praying woman"
+          />
+        </div>
         <p className={styles["prayer__heading-description"]}>
           Welcome to The Redeemed Christian Church of God WayForward in Concord,
           where our worship is truly exceptional, and the pure Word of God is a
