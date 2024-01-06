@@ -9,19 +9,38 @@
   flex-direction: column;
   gap: 44px;
   padding: 0px 95px;
+  @include respond(mobile-screen) {
+    @include heading-mobile;
+    padding: 45px 6%;
+    height: initial;
+  }
   &__heading {
     @include heading;
+    @include respond(mobile-screen) {
+      @include heading-mobile;
+    }
   }
   &__form {
     display: flex;
     flex-direction: column;
     gap: 29px;
     width: 35%;
+    @include respond(mobile-screen) {
+      width: 100%;
+    }
     &-icon {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 35%;
+      @include respond(mobile-screen) {
+        & span {
+          & svg {
+            width: 156px;
+            height: 131px;
+          }
+        }
+      }
     }
     &-wrapper {
       height: 356px;
@@ -31,10 +50,18 @@
       gap: 100px;
       background-color: $col-blue-2;
       @include border-radius(39px);
+      @include respond(mobile-screen) {
+        background-color: initial;
+        flex-direction: column;
+        gap: 44px;
+      }
     }
     &-heading {
       @include h3;
       font-weight: 500;
+      @include respond(mobile-screen) {
+        display: none;
+      }
     }
     &-input {
       width: 100%;
@@ -51,6 +78,14 @@
         color: $col-dark-6;
         font-size: toRem(13px);
         font-weight: 400;
+        @include respond(mobile-screen) {
+          height: 50px;
+        }
+      }
+    }
+    &-button {
+      @include respond(mobile-screen) {
+        align-self: center;
       }
     }
   }
