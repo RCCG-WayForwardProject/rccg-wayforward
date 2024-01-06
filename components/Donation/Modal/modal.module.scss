@@ -1,0 +1,63 @@
+@import "../../../styles/variables";
+@import "../../../styles/functions.scss";
+@import "../../../styles/base/mixins";
+@import "../../../styles/typography";
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  width: 687px;
+  height: 427px;
+  padding: 67px;
+  background-color: $col-white;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
+  @include border-radius(20px);
+
+  &__header {
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &-button {
+      color: #585858;
+      font-size: toRem(13px);
+      font-weight: 500;
+      padding: 10px 20px;
+      @include border-radius(6px);
+      &[data-active="true"] {
+        background-color: $col-green-1;
+        color: $col-white;
+      }
+    }
+  }
+
+  &__content {
+    &-container {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+    &-details {
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      &-heading {
+        color: #575555;
+        text-align: justify;
+        font-size: toRem(14px);
+        font-weight: 700;
+      }
+      &-description {
+        color: #404040;
+        text-align: justify;
+        font-size: toRem(14px);
+        font-weight: 400;
+      }
+    }
+  }
+}

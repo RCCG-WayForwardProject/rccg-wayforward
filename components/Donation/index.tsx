@@ -1,10 +1,22 @@
-import React from "react";
+"use client";
+import React, { useRef, useState } from "react";
 
 import styles from "./donation.module.scss";
 import Image from "next/image";
 import Button from "../Button";
+import Modal from "./Modal";
+import { useClickOutside } from "@/utils/useClickOutside";
 
 const Donation: React.FC = () => {
+  const [openModal, setOpenModal] = useState<boolean>(false);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  const handleOpenModal = () => {
+    setOpenModal(!openModal);
+  };
+
+  useClickOutside(modalRef, setOpenModal, false);
+
   return (
     <div className={styles["donation__page"]}>
       <div className={styles["donation__content-wrapper"]}>
@@ -28,9 +40,20 @@ const Donation: React.FC = () => {
             et facilisis. Risus at phasellus sem cum elementum molestie. Eget
             sit.
           </p>
-          <Button label="Donate" type="button" size="mini" variant="primary" />
+          <Button
+            label="Donate"
+            type="button"
+            size="mini"
+            variant="primary"
+            handleClick={handleOpenModal}
+          />
         </div>
       </div>
+      {openModal && (
+        <div className={styles["donation__modal-wrapper"]} ref={modalRef}>
+          <Modal />
+        </div>
+      )}
     </div>
   );
 };
