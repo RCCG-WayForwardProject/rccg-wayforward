@@ -1,0 +1,104 @@
+@import "../../styles/variables";
+@import "../../styles/functions.scss";
+@import "../../styles/base/mixins";
+@import "../../styles/typography";
+
+.prayer {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 0px 95px;
+
+  &__heading {
+    @include h2;
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    &-description {
+      @include description;
+      width: 65%;
+    }
+  }
+  &__form {
+    height: 407px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 51px;
+    padding: 19px 20px;
+    background-color: $col-blue-1;
+    @include border-radius(26px);
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 80px;
+    }
+    &-heading {
+      @include heading-vertical;
+    }
+    &-image {
+      height: 100%;
+      width: 40%;
+      position: relative;
+    }
+    &-container {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+    &-info {
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+      }
+      &-name-column {
+        display: flex;
+        gap: 13px;
+      }
+      &-container {
+        width: 100%;
+      }
+      &-heading {
+        color: #4f4f4f;
+        font-size: toRem(13px);
+        font-weight: 400;
+      }
+      &-input {
+        width: 100%;
+        display: flex;
+        padding: 7px 14px;
+        align-items: center;
+        gap: 12px;
+        flex: 1 0 0;
+        font-size: 14px;
+        background-color: initial;
+        border: 1px solid #dbdade;
+        @include border-radius(6px);
+      }
+      &-textarea {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 0 0;
+        height: 121px;
+        padding: 7px 14px;
+        font-size: 14px;
+        background-color: initial;
+        border: 1px solid #dbdade;
+        @include border-radius(6px);
+      }
+    }
+    &-button {
+      width: fit-content;
+      align-self: center;
+      & button {
+        font-weight: 600;
+      }
+    }
+  }
+}
