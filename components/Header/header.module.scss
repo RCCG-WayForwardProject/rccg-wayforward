@@ -51,7 +51,7 @@
       }
       &[data-page="default"] {
         & li {
-          &a {
+          & a {
             color: #4a4a4a;
           }
         }
@@ -87,6 +87,9 @@
         font-style: normal;
         font-weight: 400;
         color: $col-white;
+        &[data-page="default"] {
+          color: #4a4a4a;
+        }
       }
     }
   }

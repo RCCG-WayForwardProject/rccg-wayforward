@@ -59,7 +59,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
         )}
       </div>
 
-      <ul className={styles["header__link-wrapper"]}>
+      <ul className={styles["header__link-wrapper"]} data-page={headerPage}>
         {pageRoutes?.map((element, index) => {
           return (
             <li className={styles["header__link"]} key={index + 1}>
@@ -70,7 +70,10 @@ const Header: React.FC<HeaderProps> = ({}) => {
                   className={styles["header__link-dropdown-wrapper"]}
                   onClick={handleDropdownToggle}
                 >
-                  <p className={styles["header__link-dropdown-name"]}>
+                  <p
+                    className={styles["header__link-dropdown-name"]}
+                    data-page={headerPage}
+                  >
                     {element?.name}
                   </p>
                   {toggleDropdown ? (
