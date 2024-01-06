@@ -40,13 +40,15 @@ const Donation: React.FC = () => {
             et facilisis. Risus at phasellus sem cum elementum molestie. Eget
             sit.
           </p>
-          <Button
-            label="Donate"
-            type="button"
-            size="mini"
-            variant="primary"
-            handleClick={handleOpenModal}
-          />
+          <div className={styles["donation__content-button"]}>
+            <Button
+              label="Donate"
+              type="button"
+              size="mini"
+              variant="primary"
+              handleClick={handleOpenModal}
+            />
+          </div>
         </div>
       </div>
       {openModal && (

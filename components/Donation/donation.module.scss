@@ -10,12 +10,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include respond(mobile-screen) {
+      padding: 0px;
+      height: fit-content;
+    }
   }
   &__content {
     &-icon {
       width: 50%;
       height: 100%;
       position: relative;
+      @include respond(mobile-screen) {
+        display: none;
+      }
     }
     &-wrapper {
       display: flex;
@@ -24,6 +31,12 @@
       width: 100%;
       background: #f2f2f2;
       @include border-radius(39px);
+      @include respond(mobile-screen) {
+        padding: 80px calc(6%);
+        height: 100%;
+        width: 100%;
+        border-radius: initial;
+      }
     }
     &-container {
       width: 100%;
@@ -33,6 +46,9 @@
       justify-content: center;
       gap: 28px;
       padding-right: 56px;
+      @include respond(mobile-screen) {
+        padding-right: 0px;
+      }
     }
     &-heading {
       color: $col-green-1;
@@ -41,6 +57,17 @@
     }
     &-description {
       @include description;
+    }
+    &-button {
+      @include respond(mobile-screen) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & button {
+          width: 50%;
+          font-size: 16px !important;
+        }
+      }
     }
   }
   &__modal-wrapper {

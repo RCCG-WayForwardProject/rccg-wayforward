@@ -13,6 +13,11 @@
   background-color: $col-white;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
   @include border-radius(20px);
+  @include respond(mobile-screen) {
+    width: 95%;
+    padding: 30px;
+    height: 50%;
+  }
 
   &__header {
     &-wrapper {
@@ -30,6 +35,9 @@
       &[data-active="true"] {
         background-color: $col-green-1;
         color: $col-white;
+      }
+      @include respond(mobile-screen) {
+        font-size: 12px;
       }
     }
   }
