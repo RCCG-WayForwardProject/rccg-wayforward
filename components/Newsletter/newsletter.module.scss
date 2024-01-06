@@ -1,0 +1,57 @@
+@import "../../styles/variables";
+@import "../../styles/functions.scss";
+@import "../../styles/base/mixins";
+@import "../../styles/typography";
+
+.newsletter {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  padding: 0px 95px;
+  &__heading {
+    @include heading;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    width: 35%;
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35%;
+    }
+    &-wrapper {
+      height: 356px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      background-color: $col-blue-2;
+      @include border-radius(39px);
+    }
+    &-heading {
+      @include h3;
+      font-weight: 500;
+    }
+    &-input {
+      width: 100%;
+      display: flex;
+      padding: 7px 14px;
+      align-items: center;
+      gap: 12px;
+      flex: 1 0 0;
+      font-size: 14px;
+      background-color: initial;
+      border: 1px solid #dbdade;
+      @include border-radius(6px);
+      &-label {
+        color: $col-dark-6;
+        font-size: toRem(13px);
+        font-weight: 400;
+      }
+    }
+  }
+}

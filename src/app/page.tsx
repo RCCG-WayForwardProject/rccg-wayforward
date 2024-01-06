@@ -7,6 +7,7 @@ import Songs from "@/components/Songs";
 import Testimonies from "@/components/Testimonies";
 import Donation from "@/components/Donation";
 import Prayer from "@/components/Prayer";
+import Newsletter from "@/components/Newsletter";
 
 import styles from "./page.module.scss";
 
@@ -22,6 +23,7 @@ export default function Page() {
       <Testimonies />
       <Donation />
       <Prayer />
+      <Newsletter />
     </div>
   );
 }
