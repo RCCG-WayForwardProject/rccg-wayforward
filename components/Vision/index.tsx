@@ -14,9 +14,9 @@ const Vision: React.FC = () => {
           We have vision and passion for the outcast, the forgotten, the
           ex-convict, the orphans, and the motherless. the less privileged, the
           old people. Our pastor has a dream; he has a dream to turn the whole
-          world around and put smile on people's faces, to bring hope to the
-          hopeless, and to make sure that the old people still see themselves as
-          relevant in society.
+          world around and put smile on people&apos;s faces, to bring hope to
+          the hopeless, and to make sure that the old people still see
+          themselves as relevant in society.
         </p>
       </div>
       <div className={styles["vision__content-wrapper"]}>
