@@ -9,6 +9,8 @@ import Icon from "../Icon";
 import Button from "../Button";
 
 import styles from "./service.module.scss";
+import SermonCarousel from "../Sermons/SermonsCarousel";
+import ServicesCarousel from "./ServiceCarousel";
 
 const Services: React.FC = () => {
   const [responsive] = useState({
@@ -31,46 +33,7 @@ const Services: React.FC = () => {
             transcends the ordinary. Our Bible studies and worship ...
           </p>
         </div>
-        <Carousel responsive={responsive} contentGap={16}>
-          {services?.map((service, index) => {
-            return (
-              <div key={index + 1} className={styles["services__service"]}>
-                <div className={styles["services__service-image"]}>
-                  <Image
-                    src={`/images/${service.img}`}
-                    fill
-                    alt="Service image"
-                    loading="lazy"
-                    style={{ borderRadius: "13px" }}
-                  />
-                </div>
-                <div className={styles["services__service-content-wrapper"]}>
-                  <p className={styles["services__service-name"]}>
-                    {service?.name}
-                  </p>
-                  <div className={styles["services__service-day-wrapper"]}>
-                    <Icon icon="calendar" />
-                    <p className={styles["services__service-day"]}>
-                      Every {service?.day}
-                    </p>
-                  </div>
-                  <div className={styles["services__service-location-wrapper"]}>
-                    <Icon icon="location" />
-                    <p className={styles["services__service-location"]}>
-                      {service?.location}
-                    </p>
-                  </div>
-                  <Button
-                    type="button"
-                    label="Set Reminder"
-                    variant="primary"
-                    size="small"
-                  />
-                </div>
-              </div>
-            );
-          })}
-        </Carousel>
+        <ServicesCarousel />
         <div className={styles["services__view-button"]}>
           <Button
             label="View More"

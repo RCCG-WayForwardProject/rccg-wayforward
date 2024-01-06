@@ -1,0 +1,52 @@
+@import "../../styles/variables";
+@import "../../styles/functions.scss";
+@import "../../styles/base/mixins";
+@import "../../styles/typography";
+
+.mission {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  padding: 65px 95px 0px 95px;
+  @include respond(mobile-screen) {
+    height: initial;
+    padding: 0px 6%;
+  }
+  &__heading {
+    @include heading;
+    @include respond(mobile-screen) {
+      @include heading-mobile;
+    }
+  }
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  &__bullet {
+    background-color: $col-green-1;
+    width: 18px;
+    height: 17px;
+    flex-shrink: 0;
+    margin-top: 7px;
+    @include border-radius(50%);
+  }
+  &__statement {
+    color: $col-grey-1;
+    text-align: justify;
+    font-size: toRem(14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    width: 59%;
+    @include respond(mobile-screen) {
+      width: 100%;
+    }
+  }
+}

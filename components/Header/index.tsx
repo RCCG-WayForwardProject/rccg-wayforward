@@ -50,12 +50,16 @@ const Header: React.FC<HeaderProps> = ({}) => {
     <header className={styles["header"]} data-page={headerPage}>
       <div className={styles["header__logo-wrapper"]}>
         <Icon icon="appLogo" />
-        <p className={styles["header__logo-name"]}>
-          Wayforward <br /> <span>Cathedral</span>
-        </p>
+        {headerPage === "home" ? (
+          <Icon icon="appName" />
+        ) : (
+          <p className={styles["header__logo-name"]}>
+            Wayforward <br /> <span>Cathedral</span>
+          </p>
+        )}
       </div>
 
-      <ul className={styles["header__link-wrapper"]}>
+      <ul className={styles["header__link-wrapper"]} data-page={headerPage}>
         {pageRoutes?.map((element, index) => {
           return (
             <li className={styles["header__link"]} key={index + 1}>
@@ -66,7 +70,10 @@ const Header: React.FC<HeaderProps> = ({}) => {
                   className={styles["header__link-dropdown-wrapper"]}
                   onClick={handleDropdownToggle}
                 >
-                  <p className={styles["header__link-dropdown-name"]}>
+                  <p
+                    className={styles["header__link-dropdown-name"]}
+                    data-page={headerPage}
+                  >
                     {element?.name}
                   </p>
                   {toggleDropdown ? (

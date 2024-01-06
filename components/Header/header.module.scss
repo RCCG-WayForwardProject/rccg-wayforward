@@ -8,8 +8,8 @@
   height: 95px;
   flex-shrink: 0;
   gap: 173px;
-  background-color: dimgray;
-  border-bottom: 1px solid $col-dark-2;
+  background-color: $col-white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.03);
   &[data-page="home"] {
     background-color: transparent;
     position: absolute;
@@ -33,7 +33,7 @@
       font-weight: 400;
       line-height: 24px;
       text-transform: capitalize;
-      color: $col-white;
+      color: #4a4a4a;
 
       & span {
         color: #219653;
@@ -48,6 +48,13 @@
       gap: 47px;
       @include respond(mobile-screen) {
         display: none;
+      }
+      &[data-page="default"] {
+        & li {
+          & a {
+            color: #4a4a4a;
+          }
+        }
       }
     }
     &-dropdown {
@@ -80,6 +87,9 @@
         font-style: normal;
         font-weight: 400;
         color: $col-white;
+        &[data-page="default"] {
+          color: #4a4a4a;
+        }
       }
     }
   }

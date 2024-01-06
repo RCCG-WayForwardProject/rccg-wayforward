@@ -1,5 +1,6 @@
 export type IconNames =
   | "appLogo"
+  | "appName"
   | "mouseDown"
   | "cross"
   | "worshipWordIcon"

@@ -1,33 +1,33 @@
-import Home from "@/components/Home";
+import React from "react";
+
 import AboutUs from "@/components/About";
-import Sermons from "@/components/Sermons";
+import Mission from "@/components/Mission";
+import Vision from "@/components/Vision";
 import Services from "@/components/Service";
 import VideoPlayer from "@/components/Video";
-import Songs from "@/components/Songs";
 import Testimonies from "@/components/Testimonies";
 import Donation from "@/components/Donation";
 import Prayer from "@/components/Prayer";
-import Newsletter from "@/components/Newsletter";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 
-import styles from "./page.module.scss";
+import styles from "./about-us.module.scss";
 
-export default function Page() {
+const AboutPage: React.FC = () => {
   return (
-    <div className={styles["page"]}>
-      <Home />
-      <AboutUs showViewButton />
-      <Sermons />
+    <div className={styles["about-us"]}>
+      <AboutUs showViewButton={false} showFullText />
+      <Mission />
+      <Vision />
       <Services />
       <VideoPlayer />
-      <Songs />
-      <Testimonies />
+      <Testimonies style={{ justifyContent: "center" }} />
       <Donation />
       <Prayer />
-      <Newsletter />
       <FAQ />
       <Contact />
     </div>
   );
-}
+};
+
+export default AboutPage;
