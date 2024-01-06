@@ -11,7 +11,7 @@ const Testimonies: React.FC = () => {
       <div className={styles["testimonies__heading-container"]}>
         <h1 className={styles["testimonies__heading"]}>Testimonies</h1>
         <h3 className={styles["testimonies__subheading"]}>
-          <span>Inspiring testimonies</span> you shouldn't miss
+          <span>Inspiring testimonies</span> you shouldn&apos;t miss
         </h3>
       </div>
       <div className={styles["testimonies__description-container"]}>

@@ -1,13 +1,14 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 
 import Carousel from "../Carousel";
-import { musics } from "@/utils/constants";
-
-import styles from "./songs.module.scss";
 import MusicCard from "./MusicCard";
 import Icon from "../Icon";
 import Button from "../Button";
+
+import { musics } from "@/utils/constants";
+
+import styles from "./songs.module.scss";
 
 const Songs: React.FC = () => {
   const [responsive] = useState({
@@ -21,7 +22,7 @@ const Songs: React.FC = () => {
         <h1 className={styles["songs__heading"]}>Gospel Songs</h1>
         <h1 className={styles["songs__heading-mobile"]}> Songs</h1>
         <h3 className={styles["songs__subheading"]}>
-          Songs to strengthen <span>God's Presence</span>
+          Songs to strengthen <span>God&apos;s Presence</span>
         </h3>
       </div>
       <div className={styles["songs__song-carousel-wrapper"]}>

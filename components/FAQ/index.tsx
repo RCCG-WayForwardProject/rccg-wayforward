@@ -12,7 +12,7 @@ import styles from "./faq.module.scss";
 const FAQ: React.FC = () => {
   return (
     <div className={styles["faq"]}>
-      <h1 className={styles["faq__heading"]}>FAQ's</h1>
+      <h1 className={styles["faq__heading"]}>FAQ&apos;s</h1>
       <div className={styles["faq__content-wrapper"]}>
         <div className={styles["faq__image"]}>
           <Image
