@@ -1,0 +1,38 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/functions";
+@import "../../../../styles/typography";
+@import "../../../../styles/base/mixins";
+
+.testimony-card {
+  display: flex;
+  flex-direction: column;
+  padding: 23px 33px;
+  border: 1px solid #cdcdcd;
+  @include border-radius(8px);
+  margin-right: 29px;
+
+  &__name {
+    color: #232323;
+    font-size: toRem(16px);
+    font-style: normal;
+    font-weight: 400;
+  }
+  &__content {
+    color: rgba(0, 0, 0, 0.56);
+    text-align: justify;
+    font-size: toRem(14px);
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 16px;
+    height: 84px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__button {
+    color: $col-green-1;
+    align-self: flex-end;
+    font-size: toRem(14px);
+    font-weight: 600;
+    margin-top: 5px;
+  }
+}

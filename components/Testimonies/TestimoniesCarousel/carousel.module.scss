@@ -1,0 +1,31 @@
+@import "../../../styles/variables";
+@import "../../../styles/functions";
+@import "../../../styles/typography";
+@import "../../../styles/base/mixins";
+
+.testimony {
+  &__carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    @include respond(mobile-screen) {
+      gap: 26px;
+    }
+    &-buttons-wrapper {
+      display: flex;
+      gap: 20px;
+    }
+  }
+  &__button {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}
