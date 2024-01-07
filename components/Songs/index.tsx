@@ -29,19 +29,14 @@ const Songs: React.FC = () => {
         <Carousel responsive={responsive}>
           {musics?.map((music, index) => {
             return (
-              <div
-                key={index + 1}
-                className={styles["songs__song"]}
-                style={{
-                  backgroundImage: `url(/images/${music?.img})`,
-                  width: "200px",
-                }}
-              >
+              <div className={styles["songs__song"]}>
                 <MusicCard
+                  key={index + 1}
                   src={music?.src}
                   name={music?.name}
                   authorName={music?.authorName}
                   duration={music?.musicLength}
+                  img={music?.img}
                 />
               </div>
             );

@@ -15,12 +15,8 @@ export const pageRoutes = [
     name: "Archive",
     children: [
       {
-        path: "gallery",
-        name: "Gallery",
-      },
-      {
-        path: "music",
-        name: "Music",
+        path: "musics",
+        name: "Musics",
       },
       {
         path: "books",

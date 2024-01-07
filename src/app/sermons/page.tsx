@@ -2,7 +2,6 @@ import React from "react";
 
 import Button from "@/components/Button";
 import { SermonCard } from "@/components/Sermons/SermonsCarousel";
-import Contact from "@/components/Contact";
 
 import { sermonsList } from "@/utils/constants";
 
@@ -38,7 +37,6 @@ const SermonsPage: React.FC = () => {
           })}
         </div>
       </div>
-      <Contact />
     </>
   );
 };
