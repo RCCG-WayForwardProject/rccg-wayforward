@@ -250,3 +250,11 @@ export const vision = [
     content: `We have passion for them; we will rehabilitate them; we will introduce someone to them, Jesus Christ; we will make sure that they learn handwork; or if they still want to go to school, we will make the provision; and we will also make sure that there is no room for discrimination.`,
   },
 ];
+
+export const booksList = [
+  {
+    name: "Commander In Chief",
+    img: "commander_in_chief.jpg",
+    link: "https://amzn.to/3DmKmHn",
+  },
+];
