@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 
 import Button from "@/components/Button";
+import Icon from "@/components/Icon";
 import { ServiceCard } from "@/components/Service/ServiceCarousel";
 
 import { services, upComingEvents } from "@/utils/constants";
 
 import styles from "./events.module.scss";
-import Icon from "@/components/Icon";
 
 type EventTabType = "Our Services" | "Upcoming Events";
 

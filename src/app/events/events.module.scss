@@ -120,15 +120,5 @@
         padding-bottom: 0px;
       }
     }
-    &-card {
-      height: 280px;
-      width: 200px;
-      @include respond(mobile-screen) {
-        width: 100%;
-        & div:first-child {
-          width: 90%;
-        }
-      }
-    }
   }
 }
