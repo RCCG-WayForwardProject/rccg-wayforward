@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, Suspense } from "react";
+import Image from "next/image";
 import dynamic from "next/dynamic";
 
 import Button from "@/components/Button";
@@ -20,9 +21,7 @@ export const SermonCard: React.FC<SermonCardProps> = ({ name, img }) => {
   return (
     <div className={styles["sermon"]}>
       <div className={styles["sermon__image"]}>
-        <Suspense fallback={<h3>Loading</h3>}>
-          <img src={`/images/${img}`} loading="lazy" alt="Sermon Image" />
-        </Suspense>
+        <Image src={`/images/${img}`} fill loading="lazy" alt="Sermon Image" />
       </div>
       <p className={styles["sermon__name"]}>{name}</p>
       <Button
@@ -45,7 +44,13 @@ const SermonCarousel: React.FC<SermonCarouselProps> = ({ sermonsList }) => {
     <div className={styles["sermon__wrapper"]}>
       <Carousel responsive={responsive}>
         {sermonsList?.map((sermon, index) => {
-          return <SermonCard img={sermon?.img!} name={sermon?.name!} />;
+          return (
+            <SermonCard
+              img={sermon?.img!}
+              name={sermon?.name!}
+              key={index + 1}
+            />
+          );
         })}
       </Carousel>
     </div>
