@@ -12,7 +12,52 @@ import { services } from "@/utils/constants";
 import "react-alice-carousel/lib/alice-carousel.css";
 import styles from "./carousel.module.scss";
 
+interface ServiceCardProps {
+  img: string;
+  name: string;
+  day: string;
+  location: string;
+}
+
 interface ServicesCarouselProps {}
+
+export const ServiceCard: React.FC<ServiceCardProps> = ({
+  img,
+  name,
+  day,
+  location,
+}) => {
+  return (
+    <div className={styles["services__service"]}>
+      <div className={styles["services__service-image"]}>
+        <Image
+          src={`/images/${img}`}
+          fill
+          alt="Service image"
+          loading="lazy"
+          style={{ borderRadius: "13px" }}
+        />
+      </div>
+      <div className={styles["services__service-content-wrapper"]}>
+        <p className={styles["services__service-name"]}>{name}</p>
+        <div className={styles["services__service-day-wrapper"]}>
+          <Icon icon="calendar" />
+          <p className={styles["services__service-day"]}>{day}</p>
+        </div>
+        <div className={styles["services__service-location-wrapper"]}>
+          <Icon icon="location" />
+          <p className={styles["services__service-location"]}>{location}</p>
+        </div>
+        <Button
+          type="button"
+          label="Set Reminder"
+          variant="primary"
+          size="small"
+        />
+      </div>
+    </div>
+  );
+};
 
 const ServicesCarousel: React.FC<ServicesCarouselProps> = ({}) => {
   const [responsive] = useState({
@@ -45,40 +90,13 @@ const ServicesCarousel: React.FC<ServicesCarouselProps> = ({}) => {
       >
         {services?.map((service, index) => {
           return (
-            <div key={index + 1} className={styles["services__service"]}>
-              <div className={styles["services__service-image"]}>
-                <Image
-                  src={`/images/${service.img}`}
-                  fill
-                  alt="Service image"
-                  loading="lazy"
-                  style={{ borderRadius: "13px" }}
-                />
-              </div>
-              <div className={styles["services__service-content-wrapper"]}>
-                <p className={styles["services__service-name"]}>
-                  {service?.name}
-                </p>
-                <div className={styles["services__service-day-wrapper"]}>
-                  <Icon icon="calendar" />
-                  <p className={styles["services__service-day"]}>
-                    Every {service?.day}
-                  </p>
-                </div>
-                <div className={styles["services__service-location-wrapper"]}>
-                  <Icon icon="location" />
-                  <p className={styles["services__service-location"]}>
-                    {service?.location}
-                  </p>
-                </div>
-                <Button
-                  type="button"
-                  label="Set Reminder"
-                  variant="primary"
-                  size="small"
-                />
-              </div>
-            </div>
+            <ServiceCard
+              key={index + 1}
+              name={service?.name}
+              img={service?.img}
+              location={service?.location}
+              day={service?.day}
+            />
           );
         })}
       </AliceCarousel>

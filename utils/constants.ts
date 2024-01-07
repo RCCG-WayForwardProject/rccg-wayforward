@@ -45,6 +45,45 @@ export const services = [
   {
     img: "worshipImage_3.jpg",
     name: "Bible Study",
+    day: "Every Wednesday",
+    location: "Gotham Fan 221b , New York",
+  },
+  {
+    img: "worshipImage_2.jpg",
+    name: "Prayer Service",
+    day: "Every Thursday",
+    location: "Gotham Fan 221b , New York",
+  },
+  {
+    img: "worshipImage_3.jpg",
+    name: "Bible Study",
+    day: "Every Wednesday",
+    location: "Gotham Fan 221b , New York",
+  },
+  {
+    img: "worshipImage_2.jpg",
+    name: "Prayer Service",
+    day: "Every Thursday",
+    location: "Gotham Fan 221b , New York",
+  },
+];
+
+export const upComingEvents = [
+  {
+    img: "worshipImage_3.jpg",
+    name: "Praise Night",
+    day: "Wednesday 22, 2024",
+    location: "Gotham Fan 221b , New York",
+  },
+  {
+    img: "worshipImage_2.jpg",
+    name: "Let's go a fishing",
+    day: "Thursday May 22, 2024",
+    location: "Gotham Fan 221b , New York",
+  },
+  {
+    img: "worshipImage_3.jpg",
+    name: "Bible Study",
     day: "Wednesday",
     location: "Gotham Fan 221b , New York",
   },
@@ -52,12 +91,6 @@ export const services = [
     img: "worshipImage_2.jpg",
     name: "Prayer Service",
     day: "Thursday",
-    location: "Gotham Fan 221b , New York",
-  },
-  {
-    img: "worshipImage_3.jpg",
-    name: "Bible Study",
-    day: "Wednesday",
     location: "Gotham Fan 221b , New York",
   },
 ];
