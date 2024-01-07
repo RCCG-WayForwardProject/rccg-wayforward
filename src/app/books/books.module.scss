@@ -1,0 +1,111 @@
+@import "../../../styles/functions";
+@import "../../../styles/typography";
+@import "../../../styles/variables";
+@import "../../../styles/base/mixins";
+
+.books {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 55px 95px;
+  @include respond(mobile-screen) {
+    padding: 45px 6%;
+  }
+
+  &__heading {
+    @include heading;
+    @include respond(mobile-screen) {
+      @include heading-mobile;
+    }
+    &-wrapper {
+      display: flex;
+      align-items: flex-end;
+      gap: 66px;
+      @include respond(mobile-screen) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+    &-description {
+      color: $col-dark-3;
+      font-size: toRem(32px);
+      font-style: normal;
+      font-weight: 500;
+      @include respond(mobile-screen) {
+        font-size: toRem(18px);
+      }
+      & span {
+        color: $col-green-1;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__input {
+    width: 358px;
+    height: 46px;
+    padding: 0px 11px;
+    flex-shrink: 0;
+    border: 1px solid $col-grey-5;
+    &::placeholder {
+      color: #bdbdbd;
+      font-size: toRem(15px);
+    }
+    @include border-radius(6px);
+    @include respond(mobile-screen) {
+      width: 100%;
+    }
+    &-wrapper {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      margin-top: 13px;
+      @include respond(mobile-screen) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  &__book {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @include respond(mobile-screen) {
+      align-items: center;
+    }
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 38px;
+      @include respond(mobile-screen) {
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+    &-image {
+      width: 180px;
+      height: 193px;
+      position: relative;
+      @include respond(mobile-screen) {
+        width: 100%;
+        height: 290px;
+      }
+      & img {
+        width: 100%;
+        height: 100%;
+        @include border-radius(13px);
+      }
+    }
+    &-name {
+      color: $col-green-1;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+    }
+    & button {
+      align-self: center;
+    }
+  }
+}

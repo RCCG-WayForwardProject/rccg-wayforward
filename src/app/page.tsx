@@ -9,7 +9,6 @@ import Donation from "@/components/Donation";
 import Prayer from "@/components/Prayer";
 import Newsletter from "@/components/Newsletter";
 import FAQ from "@/components/FAQ";
-import Contact from "@/components/Contact";
 
 import styles from "./page.module.scss";
 
@@ -27,7 +26,6 @@ export default function Page() {
       <Prayer />
       <Newsletter />
       <FAQ />
-      <Contact />
     </div>
   );
 }

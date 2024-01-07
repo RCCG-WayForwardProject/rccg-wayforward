@@ -1,0 +1,124 @@
+@import "../../../styles/functions";
+@import "../../../styles/typography";
+@import "../../../styles/variables";
+@import "../../../styles/base/mixins";
+
+.events {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 55px 95px;
+  @include respond(mobile-screen) {
+    padding: 45px 6%;
+  }
+  &__cross-icon {
+    position: absolute;
+    right: -7%;
+    opacity: 0.25;
+    @include respond(mobile-screen) {
+      display: none;
+    }
+  }
+  &__heading {
+    @include heading;
+    @include respond(mobile-screen) {
+      @include heading-mobile;
+    }
+    &-wrapper {
+      display: flex;
+      align-items: flex-end;
+      gap: 66px;
+      @include respond(mobile-screen) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+    &-description {
+      color: $col-dark-3;
+      font-size: toRem(32px);
+      font-style: normal;
+      font-weight: 500;
+      @include respond(mobile-screen) {
+        font-size: toRem(18px);
+      }
+      & span {
+        color: $col-green-1;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__tab-header {
+    &-wrapper {
+      width: 82%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      @include respond(mobile-screen) {
+        flex-direction: column;
+        width: 100%;
+        align-items: initial;
+        gap: 25px;
+      }
+    }
+    &-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &-button {
+      color: #585858;
+      font-size: toRem(13px);
+      font-weight: 500;
+      padding: 10px 20px;
+      @include border-radius(6px);
+      &[data-active="true"] {
+        background-color: $col-green-1;
+        color: $col-white;
+      }
+      @include respond(mobile-screen) {
+        font-size: 11px;
+      }
+    }
+  }
+  &__input {
+    width: 358px;
+    height: 46px;
+    padding: 0px 11px;
+    flex-shrink: 0;
+    border: 1px solid $col-grey-5;
+    &::placeholder {
+      color: #bdbdbd;
+      font-size: toRem(15px);
+    }
+    @include border-radius(6px);
+    @include respond(mobile-screen) {
+      width: 100%;
+    }
+    &-wrapper {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      margin-top: 13px;
+      @include respond(mobile-screen) {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+      }
+    }
+  }
+
+  &__content {
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 38px;
+      padding-bottom: 50px;
+      @include respond(mobile-screen) {
+        flex-direction: column;
+        padding-bottom: 0px;
+      }
+    }
+  }
+}

@@ -1,24 +1,12 @@
 "use client";
-import React, { useState } from "react";
-import Image from "next/image";
+import React from "react";
 
-import { services } from "@/utils/constants";
-
-import Carousel from "../Carousel";
-import Icon from "../Icon";
 import Button from "../Button";
-
-import styles from "./service.module.scss";
-import SermonCarousel from "../Sermons/SermonsCarousel";
 import ServicesCarousel from "./ServiceCarousel";
 
-const Services: React.FC = () => {
-  const [responsive] = useState({
-    0: { items: 1 },
-    1000: { items: 2 },
-    1400: { items: 2 },
-  });
+import styles from "./service.module.scss";
 
+const Services: React.FC = () => {
   return (
     <div className={styles["services"]}>
       <h1 className={styles["services__heading"]}>Services</h1>

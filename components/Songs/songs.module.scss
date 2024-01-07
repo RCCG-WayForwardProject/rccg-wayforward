@@ -52,12 +52,7 @@
     }
   }
   &__song {
-    position: relative;
-    // width: 177px;
     height: 281px;
-    flex-shrink: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
     @include border-radius(13px);
     @include respond(mobile-screen) {
       width: 100% !important;

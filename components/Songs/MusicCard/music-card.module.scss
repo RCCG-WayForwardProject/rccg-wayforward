@@ -13,6 +13,13 @@
   padding-bottom: 17px;
   background: linear-gradient(0deg, #000 27.12%, rgba(0, 0, 0, 0) 88.44%);
   @include border-radius(13px);
+  &__wrapper {
+    height: 100%;
+    width: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include border-radius(13px);
+  }
 
   &__content {
     &-wrapper {
