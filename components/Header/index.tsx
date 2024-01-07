@@ -22,12 +22,16 @@ const HeaderDropdown: React.FC<HeaderDropdownProps> = ({ dropdownList }) => {
       {dropdownList?.map((dropdownListItem, index) => {
         return (
           <li className={styles["header__link-dropdown-list"]} key={index + 1}>
-            <Link
+            {/* <Link
               href={`/${dropdownListItem.path}`}
               className={styles["header__link-dropdown-list-item"]}
             >
               {dropdownListItem.name}
-            </Link>
+            </Link> */}
+            <NavLink
+              path={dropdownListItem?.path!}
+              text={dropdownListItem?.name}
+            />
           </li>
         );
       })}
@@ -36,14 +40,16 @@ const HeaderDropdown: React.FC<HeaderDropdownProps> = ({ dropdownList }) => {
 };
 
 const Header: React.FC<HeaderProps> = ({}) => {
-  const [toggleDropdown, setToggleDropdown] = useState(false);
+  const [dropdownIndex, setDropdownIndex] = useState<number | null>(null);
 
   const pathname = usePathname();
   const homePage = pathname === "/";
   const headerPage = homePage ? "home" : "default";
 
-  const handleDropdownToggle = () => {
-    setToggleDropdown(!toggleDropdown);
+  const handleDropdownToggle = (index: number) => {
+    setDropdownIndex((prev) => {
+      return prev === index ? null : index;
+    });
   };
 
   return (
@@ -59,16 +65,20 @@ const Header: React.FC<HeaderProps> = ({}) => {
         )}
       </div>
 
-      <ul className={styles["header__link-wrapper"]} data-page={headerPage}>
+      <ul className={styles["header__link-wrapper"]}>
         {pageRoutes?.map((element, index) => {
           return (
-            <li className={styles["header__link"]} key={index + 1}>
+            <li
+              className={styles["header__link"]}
+              key={index + 1}
+              data-page={headerPage}
+            >
               {element?.path ? (
                 <NavLink path={element.path!} text={element?.name} />
               ) : element?.children ? (
                 <div
                   className={styles["header__link-dropdown-wrapper"]}
-                  onClick={handleDropdownToggle}
+                  onClick={() => handleDropdownToggle(index)}
                 >
                   <p
                     className={styles["header__link-dropdown-name"]}
@@ -76,9 +86,12 @@ const Header: React.FC<HeaderProps> = ({}) => {
                   >
                     {element?.name}
                   </p>
-                  {toggleDropdown ? (
+                  <div
+                    className={styles["header__link-dropdown-container"]}
+                    data-toggle={Boolean(dropdownIndex === index) === true}
+                  >
                     <HeaderDropdown dropdownList={element?.children} />
-                  ) : null}
+                  </div>
                 </div>
               ) : null}
             </li>

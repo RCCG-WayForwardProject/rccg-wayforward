@@ -24,4 +24,17 @@ export const pageRoutes = [
       },
     ],
   },
+  {
+    name: "Events",
+    children: [
+      {
+        path: "events",
+        name: "Events",
+      },
+      {
+        path: "testimonies",
+        name: "Testimonies",
+      },
+    ],
+  },
 ];
