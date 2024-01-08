@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 
 import Carousel from "../Carousel";
 import MusicCard from "./MusicCard";
@@ -11,6 +12,12 @@ import { musics } from "@/utils/constants";
 import styles from "./songs.module.scss";
 
 const Songs: React.FC = () => {
+  const { push } = useRouter();
+
+  const handleRouteToMusicPage = () => {
+    push("/musics");
+  };
+
   const [responsive] = useState({
     0: { items: 2 },
     1400: { items: 4 },
@@ -51,6 +58,7 @@ const Songs: React.FC = () => {
           type="button"
           variant="primary"
           size="small"
+          handleClick={handleRouteToMusicPage}
         />
       </div>
     </section>

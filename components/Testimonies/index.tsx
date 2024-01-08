@@ -1,14 +1,22 @@
+"use client";
 import React from "react";
 
 import Button from "../Button";
 import TestimoniesCarousel from "./TestimoniesCarousel";
 
 import styles from "./testimonies.module.scss";
+import { useRouter } from "next/navigation";
 
 interface TestimoniesProps {
   style?: React.CSSProperties;
 }
 const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
+  const { push } = useRouter();
+
+  const handleRouteToTestimoniesPage = () => {
+    push("/testimonies");
+  };
+
   return (
     <div className={styles["testimonies"]} style={style}>
       <div className={styles["testimonies__heading-container"]}>
@@ -37,7 +45,9 @@ const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
         </div>
       </div>
       <div className={styles["testimonies__carousel-wrapper"]}>
-        <TestimoniesCarousel />
+        <TestimoniesCarousel
+          handleGoToTestimoniesPage={handleRouteToTestimoniesPage}
+        />
       </div>
     </div>
   );

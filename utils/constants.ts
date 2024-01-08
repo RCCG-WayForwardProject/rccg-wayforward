@@ -232,7 +232,7 @@ export const footerLink = [
   },
   {
     icon: "youtube",
-    link: "",
+    link: "https://youtube.com/@boseadamsonmusic8208?si=Bz_D9XW_Hz6of8H2",
   },
   {
     icon: "twitter",

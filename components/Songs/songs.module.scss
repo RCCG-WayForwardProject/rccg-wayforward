@@ -69,6 +69,7 @@
   &__wave-icon {
     position: absolute;
     width: 82vw;
+    z-index: -1;
     & span {
       & svg {
         width: 100%;
