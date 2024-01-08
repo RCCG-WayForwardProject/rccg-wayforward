@@ -1,16 +1,50 @@
-import React from "react";
+"use client";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
+import emailjs from "emailjs-com";
 
 import Button from "../Button";
 
 import styles from "./contact.module.scss";
 
 const Contact: React.FC = () => {
+  const [loading, setLoading] = useState<boolean>(false);
+  const form = useRef<HTMLFormElement>(null);
+
+  const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_PRAYER_TEMPLATE_ID;
+    const USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
+    try {
+      setLoading(true);
+      await emailjs
+        .sendForm(SERVICE_ID!, TEMPLATE_ID!, form.current!, USER_ID)
+        .then(
+          (result) => {
+            console.info(result.text);
+          },
+          (error) => {
+            console.error(error.text);
+          }
+        );
+    } catch (error: any) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className={styles["contact"]}>
       <h1 className={styles["contact__heading"]}>Contact Us</h1>
       <div className={styles["contact__form-wrapper"]}>
-        <div className={styles["contact__form"]}>
+        <form
+          className={styles["contact__form"]}
+          ref={form}
+          onSubmit={handleFormSubmit}
+        >
           <div className={styles["contact__form-info-wrapper"]}>
             <p className={styles["contact__form-info-heading"]}>Name</p>
             <input
@@ -40,9 +74,10 @@ const Contact: React.FC = () => {
               label="Send"
               variant="primary"
               size="medium"
+              loading={loading}
             />
           </div>
-        </div>
+        </form>
         <div className={styles["contact__form-image"]}>
           <Image
             src={"/images/contact_image.svg"}

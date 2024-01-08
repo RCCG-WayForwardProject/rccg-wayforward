@@ -14,7 +14,7 @@ import styles from "./prayer.module.scss";
 const Prayer: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [activeScreen, setActiveScreen] =
-    useState<PrayerRequestFormScreen>("requestSent");
+    useState<PrayerRequestFormScreen>("prayerRequestForm");
   const form = useRef<HTMLFormElement>(null);
 
   const handleSetScreen = (screen: PrayerRequestFormScreen) => {

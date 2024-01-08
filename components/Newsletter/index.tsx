@@ -12,7 +12,7 @@ import styles from "./newsletter.module.scss";
 const Newsletter: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [activeScreen, setActiveScreen] =
-    useState<NewsLetterFormScreen>("signUpSuccess");
+    useState<NewsLetterFormScreen>("signUpForm");
 
   const form = useRef<HTMLFormElement>(null);
 
