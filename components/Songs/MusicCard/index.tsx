@@ -69,6 +69,7 @@ const MusicCard: React.FC<MusicCardProps> = ({
             <button
               onClick={togglePlay}
               className={styles["music-card__player-button"]}
+              type="button"
             >
               {isPlaying ? <Icon icon="pause" /> : <Icon icon="play" />}
             </button>

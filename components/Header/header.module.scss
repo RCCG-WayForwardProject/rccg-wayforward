@@ -111,6 +111,8 @@
       display: none;
       @include respond(mobile-screen) {
         display: flex;
+        position: absolute;
+        right: 10px;
       }
     }
   }

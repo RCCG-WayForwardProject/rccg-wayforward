@@ -39,9 +39,10 @@ const VideoPlayer: React.FC = () => {
           </h1>
           <button
             className={styles["video__overlay-play-button"]}
+            type="button"
             onClick={togglePlay}
           >
-            <Icon icon="play" />
+            <Icon icon={isPlaying ? "pause" : "play"} />
           </button>
         </div>
       </div>

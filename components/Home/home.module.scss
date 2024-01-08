@@ -11,6 +11,7 @@
   @include respond(mobile-screen) {
     overflow-x: hidden;
     background-position: 50%;
+    padding-top: 85px;
   }
   &__content {
     &-wrapper {
