@@ -58,6 +58,7 @@ const Newsletter: React.FC = () => {
             type="email"
             name="user_email"
             className={styles["newsletter__form-input"]}
+            required
           />
         </div>
         <div className={styles["newsletter__form-button"]}>

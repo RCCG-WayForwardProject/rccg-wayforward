@@ -51,6 +51,7 @@ const Contact: React.FC = () => {
               type="text"
               className={styles["contact__form-info-input"]}
               placeholder="Enter your name"
+              required
             />
           </div>
           <div className={styles["contact__form-info-wrapper"]}>
@@ -59,6 +60,7 @@ const Contact: React.FC = () => {
               type="email"
               className={styles["contact__form-info-input"]}
               placeholder="Enter your email address"
+              required
             />
           </div>
           <div className={styles["contact__form-info-wrapper"]}>
@@ -66,6 +68,7 @@ const Contact: React.FC = () => {
             <textarea
               className={styles["contact__form-info-textarea"]}
               placeholder="Enter message"
+              required
             />
           </div>
           <div className={styles["contact__form-button"]}>
