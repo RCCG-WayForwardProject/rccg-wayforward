@@ -21,7 +21,7 @@ const Prayer: React.FC = () => {
     setActiveScreen(screen);
   };
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
@@ -40,7 +40,7 @@ const Prayer: React.FC = () => {
           }
         );
     } catch (error: any) {
-      console.error(error.text);
+      console.error(error);
     } finally {
       setLoading(false);
     }
@@ -91,7 +91,7 @@ const Prayer: React.FC = () => {
       <form
         className={styles["prayer__form-wrapper"]}
         ref={form}
-        onSubmit={handleSubmit}
+        onSubmit={handleFormSubmit}
       >
         <h1 className={styles["prayer__form-heading"]}>Prayer</h1>
         <div className={styles["prayer__form"]}>
