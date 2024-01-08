@@ -65,6 +65,14 @@
         }
       }
     }
+    &-loader-wrapper {
+      display: flex;
+      gap: 20px;
+      overflow: hidden;
+      @include respond(mobile-screen) {
+        width: 100%;
+      }
+    }
   }
   &__wave-icon {
     position: absolute;

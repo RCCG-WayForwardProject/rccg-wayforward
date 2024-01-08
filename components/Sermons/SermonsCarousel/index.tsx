@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
+import LoadingCard from "@/components/LoadingCard";
 import { SermonCard } from "../SermonCard";
 import Carousel from "@/components/Carousel";
 
@@ -11,20 +12,6 @@ interface SermonCarouselProps {
   handleSermonDownload?: () => void;
 }
 
-const SermonLoadingCard: React.FC = () => {
-  return (
-    <div className={styles["sermon__loading-card"]}>
-      <div className={styles["sermon__loading-image"]}></div>
-      <div className={styles["sermon__loading-name"]}>
-        <div className={styles["sermon__loading-pulse"]}></div>
-      </div>
-      <div className={styles["sermon__loading-button"]}>
-        <div className={styles["sermon__loading-pulse"]}></div>
-      </div>
-    </div>
-  );
-};
-
 const SermonCarousel: React.FC<SermonCarouselProps> = ({ sermonsList }) => {
   const [loading, setLoading] = useState<boolean>(true);
   const [responsive] = useState({
@@ -34,7 +21,9 @@ const SermonCarousel: React.FC<SermonCarouselProps> = ({ sermonsList }) => {
   });
 
   useEffect(() => {
-    const delay = setTimeout(() => setLoading(false), 1500);
+    const delay = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
     return () => clearTimeout(delay);
   }, []);
 
@@ -67,7 +56,7 @@ const LoadingSermons = () => {
       {Array.from({ length: 5 })
         .map((_, i) => i + 1)
         .map((_, index) => {
-          return <SermonLoadingCard key={index + 1} />;
+          return <LoadingCard key={index + 1} />;
         })}
     </>
   );

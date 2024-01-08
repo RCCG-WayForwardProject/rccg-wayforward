@@ -10,6 +10,7 @@ import { testimonies } from "@/utils/constants";
 
 import "react-alice-carousel/lib/alice-carousel.css";
 import styles from "./carousel.module.scss";
+import dynamic from "next/dynamic";
 
 interface TestimoniesCarouselProps {
   handleGoToTestimoniesPage?: () => void;
@@ -83,4 +84,7 @@ const TestimoniesCarousel: React.FC<TestimoniesCarouselProps> = ({
   );
 };
 
-export default TestimoniesCarousel;
+// export default TestimoniesCarousel;
+export default dynamic(() => Promise.resolve(TestimoniesCarousel), {
+  ssr: false,
+});

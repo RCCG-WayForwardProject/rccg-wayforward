@@ -13,35 +13,4 @@
       gap: 25px;
     }
   }
-  &__loading {
-    &-card {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    &-image {
-      width: 180px;
-      height: 193px;
-      background-color: lightgrey;
-      @include border-radius(13px);
-    }
-    &-pulse {
-      width: 100%;
-      height: 100%;
-      @include skeleton-loader;
-      border-radius: inherit;
-    }
-    &-name {
-      background-color: lightgray;
-      height: 16px;
-      width: 80%;
-      @include border-radius(5px);
-    }
-    &-button {
-      background-color: lightgray;
-      height: 16px;
-      width: 50%;
-      @include border-radius(5px);
-    }
-  }
 }

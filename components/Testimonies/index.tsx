@@ -1,21 +1,31 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 import Button from "../Button";
+import LoadingCard from "../LoadingCard";
 import TestimoniesCarousel from "./TestimoniesCarousel";
 
 import styles from "./testimonies.module.scss";
-import { useRouter } from "next/navigation";
 
 interface TestimoniesProps {
   style?: React.CSSProperties;
 }
 const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
+  const [loading, setLoading] = useState<boolean>(true);
   const { push } = useRouter();
 
   const handleRouteToTestimoniesPage = () => {
     push("/testimonies");
   };
+
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(delay);
+  }, []);
 
   return (
     <div className={styles["testimonies"]} style={style}>
@@ -45,12 +55,30 @@ const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
         </div>
       </div>
       <div className={styles["testimonies__carousel-wrapper"]}>
-        <TestimoniesCarousel
-          handleGoToTestimoniesPage={handleRouteToTestimoniesPage}
-        />
+        {loading ? (
+          <div className={styles["testimonies__carousel-loader-wrapper"]}>
+            <LoadingItems />
+          </div>
+        ) : (
+          <TestimoniesCarousel
+            handleGoToTestimoniesPage={handleRouteToTestimoniesPage}
+          />
+        )}
       </div>
     </div>
   );
 };
 
 export default Testimonies;
+
+const LoadingItems = () => {
+  return (
+    <>
+      {Array.from({ length: 7 })
+        .map((_, i) => i + 1)
+        .map((_, index) => {
+          return <LoadingCard key={index + 1} />;
+        })}
+    </>
+  );
+};
