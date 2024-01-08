@@ -11,7 +11,8 @@
   padding: 0px 95px;
   @include respond(mobile-screen) {
     @include heading-mobile;
-    padding: 45px 6%;
+    padding: 0px 6% 30px 6%;
+    gap: 20px;
     height: initial;
   }
   &__heading {
@@ -59,7 +60,7 @@
       @include respond(mobile-screen) {
         background-color: initial;
         flex-direction: column;
-        gap: 44px;
+        gap: 20px;
       }
     }
     &-heading {
@@ -85,7 +86,17 @@
         font-size: toRem(13px);
         font-weight: 400;
         @include respond(mobile-screen) {
-          height: 50px;
+          height: 20px;
+        }
+        & span {
+          color: $col-red-1;
+        }
+      }
+      &-wrapper {
+        @include respond(mobile-screen) {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
         }
       }
     }

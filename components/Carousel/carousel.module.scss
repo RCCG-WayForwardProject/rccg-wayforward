@@ -12,6 +12,9 @@
     & ul {
       display: flex;
       gap: 25px;
+      @include respond(mobile-screen) {
+        gap: 14px;
+      }
     }
   }
   &__buttons {

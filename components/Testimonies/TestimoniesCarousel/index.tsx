@@ -20,7 +20,7 @@ const TestimoniesCarousel: React.FC<TestimoniesCarouselProps> = ({
   handleGoToTestimoniesPage,
 }) => {
   const [responsive] = useState({
-    0: { items: 1 },
+    0: { items: 1.1 },
     500: { items: 2 },
     1000: { items: 3.5 },
   });

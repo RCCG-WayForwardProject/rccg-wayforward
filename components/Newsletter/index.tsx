@@ -53,10 +53,16 @@ const Newsletter: React.FC = () => {
           Sign Up For Our Newsletter
         </h3>
         <div className={styles["newsletter__form-input-wrapper"]}>
-          <p className={styles["newsletter__form-input-label"]}>Email</p>
+          <label
+            htmlFor="user_email"
+            className={styles["newsletter__form-input-label"]}
+          >
+            Email <span>*</span>
+          </label>
           <input
             type="email"
             name="user_email"
+            id="user_email"
             className={styles["newsletter__form-input"]}
             required
           />

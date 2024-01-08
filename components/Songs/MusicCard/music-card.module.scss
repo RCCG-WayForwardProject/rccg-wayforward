@@ -19,6 +19,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     @include border-radius(13px);
+    @include respond(mobile-screen) {
+      width: 100%;
+    }
   }
 
   &__content {

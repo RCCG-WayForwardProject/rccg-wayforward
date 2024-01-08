@@ -46,27 +46,48 @@ const Contact: React.FC = () => {
           onSubmit={handleFormSubmit}
         >
           <div className={styles["contact__form-info-wrapper"]}>
-            <p className={styles["contact__form-info-heading"]}>Name</p>
+            <label
+              htmlFor="name"
+              className={styles["contact__form-info-heading"]}
+            >
+              Name <span>*</span>
+            </label>
             <input
               type="text"
               className={styles["contact__form-info-input"]}
               placeholder="Enter your name"
+              name="name"
+              id="name"
               required
             />
           </div>
           <div className={styles["contact__form-info-wrapper"]}>
-            <p className={styles["contact__form-info-heading"]}>Email</p>
+            <label
+              htmlFor="user_email"
+              className={styles["contact__form-info-heading"]}
+            >
+              Email <span>*</span>
+            </label>
             <input
               type="email"
+              name="user_email"
+              id="user_email"
               className={styles["contact__form-info-input"]}
               placeholder="Enter your email address"
               required
             />
           </div>
           <div className={styles["contact__form-info-wrapper"]}>
-            <p className={styles["contact__form-info-heading"]}>Message</p>
+            <label
+              htmlFor="message"
+              className={styles["contact__form-info-heading"]}
+            >
+              Message <span>*</span>
+            </label>
             <textarea
               className={styles["contact__form-info-textarea"]}
+              id="message"
+              name="message"
               placeholder="Enter message"
               required
             />
