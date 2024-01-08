@@ -35,7 +35,7 @@
         font-size: toRem(13px);
         font-weight: 400;
         & span {
-          color: #ff0033;
+          color: $col-red-1;
         }
       }
       &-input {

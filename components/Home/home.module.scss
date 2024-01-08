@@ -1,5 +1,7 @@
 @import "../../styles/variables";
 @import "../../styles/base/mixins";
+@import "../../styles/functions";
+@import "../../styles/typography";
 
 .home {
   background-image: url("/images/worshipImage_2.jpg");
@@ -11,6 +13,7 @@
   @include respond(mobile-screen) {
     overflow-x: hidden;
     background-position: 50%;
+    padding-top: 85px;
   }
   &__content {
     &-wrapper {
@@ -32,12 +35,14 @@
         position: absolute;
         z-index: 0;
         left: -25%;
+        top: 20%;
       }
     }
     &-container {
       width: 670px;
       @include respond(mobile-screen) {
-        width: 85%;
+        padding: 0px 6%;
+        width: 100%;
         z-index: 1;
         padding-left: calc(6%);
       }
@@ -59,7 +64,7 @@
       line-height: 64px;
       letter-spacing: -1px;
       @include respond(mobile-screen) {
-        font-size: 32px;
+        font-size: toRem(30px);
         line-height: 44px;
       }
     }

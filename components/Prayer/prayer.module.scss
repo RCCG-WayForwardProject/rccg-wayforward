@@ -101,7 +101,7 @@
         @include h3;
         font-weight: 500;
         @include respond(mobile-screen) {
-          font-size: toRem(20px);
+          font-size: toRem(18px);
         }
       }
       &-icon {

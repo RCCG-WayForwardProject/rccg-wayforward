@@ -11,7 +11,7 @@
   padding: 0px 95px;
   @include respond(mobile-screen) {
     height: fit-content;
-    padding: 0px 27px 60px 27px;
+    padding: 0px 6% 60px 6%;
     display: flex;
     flex-direction: column;
     gap: 12px;

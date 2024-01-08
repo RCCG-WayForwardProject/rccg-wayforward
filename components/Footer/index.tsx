@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         {footerInfo?.map((element, index) => {
           return (
             <div className={styles["footer__info-container"]} key={index + 1}>
-              <button className={styles["footer__info-button"]}>
+              <button className={styles["footer__info-button"]} type="button">
                 <Icon icon={element?.icon as IconNames} />
               </button>
               <div className={styles["footer__info"]}>
@@ -30,7 +30,11 @@ const Footer: React.FC = () => {
       <div className={styles["footer__link-container"]}>
         {footerLink?.map((element, index) => {
           return (
-            <button className={styles["footer__link-button"]} key={index + 1}>
+            <button
+              className={styles["footer__link-button"]}
+              type="button"
+              key={index + 1}
+            >
               <a
                 href={element?.link}
                 target="_blank"

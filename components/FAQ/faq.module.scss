@@ -16,6 +16,9 @@
 
   &__heading {
     @include heading;
+    @include respond(mobile-screen) {
+      @include heading-mobile;
+    }
   }
   &__image {
     width: 50%;

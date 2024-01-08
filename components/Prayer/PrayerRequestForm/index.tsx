@@ -18,9 +18,12 @@ const PrayerRequestForm: React.FC<PrayerRequestFormProps> = ({
       <div className={styles["prayer-request__form-info-wrapper"]}>
         <div className={styles["prayer-request__form-info-name-column"]}>
           <div className={styles["prayer-request__form-info-container"]}>
-            <p className={styles["prayer-request__form-info-heading"]}>
+            <label
+              htmlFor="name"
+              className={styles["prayer-request__form-info-heading"]}
+            >
               Full Name <span>*</span>
-            </p>
+            </label>
             <input
               className={styles["prayer-request__form-info-input"]}
               type="text"
@@ -30,9 +33,12 @@ const PrayerRequestForm: React.FC<PrayerRequestFormProps> = ({
             />
           </div>
           <div className={styles["prayer-request__form-info-container"]}>
-            <p className={styles["prayer-request__form-info-heading"]}>
+            <label
+              htmlFor="user_email"
+              className={styles["prayer-request__form-info-heading"]}
+            >
               Email <span>*</span>
-            </p>
+            </label>
             <input
               className={styles["prayer-request__form-info-input"]}
               type="email"
@@ -43,9 +49,12 @@ const PrayerRequestForm: React.FC<PrayerRequestFormProps> = ({
           </div>
         </div>
         <div className={styles["prayer-request__form-info-container"]}>
-          <p className={styles["prayer-request__form-info-heading"]}>
+          <label
+            htmlFor="message"
+            className={styles["prayer-request__form-info-heading"]}
+          >
             Prayer Request <span>*</span>
-          </p>
+          </label>
           <textarea
             className={styles["prayer-request__form-info-textarea"]}
             name="message"
