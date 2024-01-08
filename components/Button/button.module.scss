@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5px;
   height: 38px;
   flex-shrink: 0;
   text-align: center;
@@ -16,6 +17,11 @@
   width: fit-content;
   transition: all 0.3s;
   @include border-radius(8px);
+  &:disabled {
+    opacity: 0.75;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
   &[data-size="mini"] {
     height: 40px;
     font-size: 14px;

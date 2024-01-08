@@ -1,48 +1,70 @@
 "use client";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import emailjs from "emailjs-com";
 
+import { PrayerRequestFormScreen } from "@/utils/types";
+
+import Icon from "../Icon";
 import Button from "../Button";
+import PrayerRequestForm from "./PrayerRequestForm";
 
 import styles from "./prayer.module.scss";
 
 const Prayer: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
+  const [activeScreen, setActiveScreen] =
+    useState<PrayerRequestFormScreen>("requestSent");
   const form = useRef<HTMLFormElement>(null);
-  const inputRef = useRef<HTMLInputElement>();
 
-  useEffect(() => {
-    emailjs.init(process.env.REACT_APP_EMAIL_USER_ID!);
-  }, []);
+  const handleSetScreen = (screen: PrayerRequestFormScreen) => {
+    setActiveScreen(screen);
+  };
 
-  const handleSubmit = async (event: any) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const SERVICE_ID = process.env.REACT_APP_EMAIL_SERVICE_ID;
-    const TEMPLATE_ID = process.env.REACT_APP_EMAIL_TEMPLATE_ID;
-    const USER_ID = process.env.REACT_APP_EMAIL_USER_ID;
+
+    const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_PRAYER_TEMPLATE_ID;
+    const USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
     try {
       setLoading(true);
-
       await emailjs
-        .sendForm(
-          SERVICE_ID!,
-          TEMPLATE_ID!,
-          form.current!,
-          "wesaPLVNt5XwovR_7O7vi"
-        )
+        .sendForm(SERVICE_ID!, TEMPLATE_ID!, form.current!, USER_ID)
         .then(
           (result) => {
-            console.log(result.text);
+            handleSetScreen("requestSent");
           },
           (error) => {
-            console.log(error.text);
+            console.error(error.text);
           }
         );
-      alert("email successfully sent check inbox");
-    } catch (error) {
-      console.error(error);
+    } catch (error: any) {
+      console.error(error.text);
+    } finally {
+      setLoading(false);
     }
+  };
+
+  const prayerRequestFormScreen: Record<string, JSX.Element> = {
+    prayerRequestForm: <PrayerRequestForm loading={loading} />,
+    requestSent: (
+      <div className={styles["prayer__form-success"]}>
+        <p className={styles["prayer__form-success-heading"]}>
+          Prayer Request Sent Successfully
+        </p>
+        <div className={styles["prayer__form-success-icon"]}>
+          <Icon icon="checkmark" />
+        </div>
+        <Button
+          type="button"
+          variant="primary"
+          label="Done"
+          size="medium"
+          handleClick={() => handleSetScreen("prayerRequestForm")}
+        />
+      </div>
+    ),
   };
 
   return (
@@ -81,52 +103,8 @@ const Prayer: React.FC = () => {
               alt="A praying woman"
             />
           </div>
-          <div className={styles["prayer__form-container"]}>
-            <div className={styles["prayer__form-info-wrapper"]}>
-              <div className={styles["prayer__form-info-name-column"]}>
-                <div className={styles["prayer__form-info-container"]}>
-                  <p className={styles["prayer__form-info-heading"]}>
-                    Full Name
-                  </p>
-                  <input
-                    className={styles["prayer__form-info-input"]}
-                    type="text"
-                    name="user_name"
-                    id="user_name"
-                    required
-                  />
-                </div>
-                <div className={styles["prayer__form-info-container"]}>
-                  <p className={styles["prayer__form-info-heading"]}>Email</p>
-                  <input
-                    className={styles["prayer__form-info-input"]}
-                    type="email"
-                    name="user_email"
-                    id="user_email"
-                    required
-                  />
-                </div>
-              </div>
-              <div className={styles["prayer__form-info-container"]}>
-                <p className={styles["prayer__form-info-heading"]}>
-                  Prayer Request
-                </p>
-                <textarea
-                  className={styles["prayer__form-info-textarea"]}
-                  name="message"
-                  id="message"
-                  required
-                />
-              </div>
-            </div>
-            <div className={styles["prayer__form-button"]}>
-              <Button
-                type="submit"
-                label="Submit Prayer Request"
-                variant="primary"
-                size="mini"
-              />
-            </div>
+          <div className={styles["prayer__form-content-wrapper"]}>
+            {prayerRequestFormScreen[activeScreen]}
           </div>
         </div>
       </form>
