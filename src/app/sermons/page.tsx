@@ -1,7 +1,7 @@
 import React from "react";
 
 import Button from "@/components/Button";
-import { SermonCard } from "@/components/Sermons/SermonsCarousel";
+import { SermonCard } from "@/components/Sermons/SermonCard";
 
 import { sermonsList } from "@/utils/constants";
 

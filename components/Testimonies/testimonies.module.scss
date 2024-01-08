@@ -62,4 +62,11 @@
       }
     }
   }
+  &__carousel-loader {
+    &-wrapper {
+      display: flex;
+      gap: 20px;
+      overflow: hidden;
+    }
+  }
 }

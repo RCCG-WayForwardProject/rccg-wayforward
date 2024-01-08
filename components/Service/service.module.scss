@@ -70,4 +70,8 @@
       justify-content: center;
     }
   }
+  &__loading-card-wrapper {
+    display: flex;
+    gap: 18px;
+  }
 }

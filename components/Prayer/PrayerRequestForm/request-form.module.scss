@@ -1,0 +1,75 @@
+@import "../../../styles/functions";
+@import "../../../styles/variables";
+@import "../../../styles/typography";
+@import "../../../styles/base/mixins";
+
+.prayer-request {
+  &__form {
+    &-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+      @include respond(mobile-screen) {
+        width: 100%;
+      }
+    }
+    &-info {
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+      }
+      &-name-column {
+        display: flex;
+        gap: 13px;
+        @include respond(mobile-screen) {
+          flex-direction: column;
+        }
+      }
+      &-container {
+        width: 100%;
+      }
+      &-heading {
+        color: #4f4f4f;
+        font-size: toRem(13px);
+        font-weight: 400;
+        & span {
+          color: #ff0033;
+        }
+      }
+      &-input {
+        width: 100%;
+        display: flex;
+        padding: 7px 14px;
+        align-items: center;
+        gap: 12px;
+        flex: 1 0 0;
+        font-size: 14px;
+        background-color: initial;
+        border: 1px solid #dbdade;
+        @include border-radius(6px);
+      }
+      &-textarea {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 0 0;
+        height: 121px;
+        padding: 7px 14px;
+        font-size: 14px;
+        background-color: initial;
+        border: 1px solid #dbdade;
+        @include border-radius(6px);
+      }
+    }
+    &-button {
+      width: fit-content;
+      align-self: center;
+      & button {
+        font-weight: 600;
+      }
+    }
+  }
+}

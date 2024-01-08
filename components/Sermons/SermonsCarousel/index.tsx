@@ -1,61 +1,63 @@
 "use client";
-import React, { useState, Suspense } from "react";
-import Image from "next/image";
-import dynamic from "next/dynamic";
+import React, { useState, useEffect } from "react";
 
-import Button from "@/components/Button";
+import LoadingCard from "@/components/LoadingCard";
+import { SermonCard } from "../SermonCard";
 import Carousel from "@/components/Carousel";
 
 import styles from "./sermons-carousel.module.scss";
 
-interface SermonCardProps {
-  img: string;
-  name: string;
-}
 interface SermonCarouselProps {
   sermonsList: Array<{ img: string; name: string }>;
   handleSermonDownload?: () => void;
 }
 
-export const SermonCard: React.FC<SermonCardProps> = ({ name, img }) => {
-  return (
-    <div className={styles["sermon"]}>
-      <div className={styles["sermon__image"]}>
-        <Image src={`/images/${img}`} fill loading="lazy" alt="Sermon Image" />
-      </div>
-      <p className={styles["sermon__name"]}>{name}</p>
-      <Button
-        type="button"
-        label="Download"
-        variant="secondary"
-        size="medium"
-      />
-    </div>
-  );
-};
 const SermonCarousel: React.FC<SermonCarouselProps> = ({ sermonsList }) => {
+  const [loading, setLoading] = useState<boolean>(true);
   const [responsive] = useState({
     0: { items: 1 },
     500: { items: 2 },
     1000: { items: 3 },
   });
 
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+    return () => clearTimeout(delay);
+  }, []);
+
   return (
     <div className={styles["sermon__wrapper"]}>
-      <Carousel responsive={responsive}>
-        {sermonsList?.map((sermon, index) => {
-          return (
-            <SermonCard
-              img={sermon?.img!}
-              name={sermon?.name!}
-              key={index + 1}
-            />
-          );
-        })}
-      </Carousel>
+      {loading ? (
+        <LoadingSermons />
+      ) : (
+        <Carousel responsive={responsive}>
+          {sermonsList?.map((sermon, index) => {
+            return (
+              <SermonCard
+                img={sermon?.img!}
+                name={sermon?.name!}
+                key={index + 1}
+              />
+            );
+          })}
+        </Carousel>
+      )}
     </div>
   );
 };
 
 export default SermonCarousel;
-// export default dynamic(() => Promise.resolve(SermonCarousel), { ssr: false });
+
+const LoadingSermons = () => {
+  return (
+    <>
+      {Array.from({ length: 5 })
+        .map((_, i) => i + 1)
+        .map((_, index) => {
+          return <LoadingCard key={index + 1} />;
+        })}
+    </>
+  );
+};

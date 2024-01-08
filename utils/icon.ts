@@ -20,4 +20,6 @@ export type IconNames =
   | "facebook"
   | "instagram"
   | "youtube"
-  | "twitter";
+  | "twitter"
+  | "checkmark"
+  | "loading";

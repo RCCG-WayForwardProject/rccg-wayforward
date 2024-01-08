@@ -1,12 +1,23 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Button from "../Button";
+import LoadingCard from "../LoadingCard";
 import ServicesCarousel from "./ServiceCarousel";
 
 import styles from "./service.module.scss";
 
 const Services: React.FC = () => {
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(delay);
+  }, []);
+
   return (
     <div className={styles["services"]}>
       <h1 className={styles["services__heading"]}>Services</h1>
@@ -21,7 +32,13 @@ const Services: React.FC = () => {
             transcends the ordinary. Our Bible studies and worship ...
           </p>
         </div>
-        <ServicesCarousel />
+        {loading ? (
+          <div className={styles["services__loading-card-wrapper"]}>
+            <LoadingItems />
+          </div>
+        ) : (
+          <ServicesCarousel />
+        )}
         <div className={styles["services__view-button"]}>
           <Button
             label="View More"
@@ -36,3 +53,15 @@ const Services: React.FC = () => {
 };
 
 export default Services;
+
+const LoadingItems = () => {
+  return (
+    <>
+      {Array.from({ length: 5 })
+        .map((_, i) => i + 1)
+        .map((_, index) => {
+          return <LoadingCard key={index + 1} />;
+        })}
+    </>
+  );
+};
