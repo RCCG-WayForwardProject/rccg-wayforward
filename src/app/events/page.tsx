@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 import Button from "@/components/Button";
 import Icon from "@/components/Icon";
-import { ServiceCard } from "@/components/Service/ServiceCarousel";
+import { ServiceCard } from "@/components/Service/ServiceCard";
 
 import { services, upComingEvents } from "@/utils/constants";
 
