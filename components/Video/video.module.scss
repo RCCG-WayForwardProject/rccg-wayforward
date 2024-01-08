@@ -60,6 +60,10 @@
       border: 1px solid $col-green-1;
       background: rgba(33, 150, 83, 0.25);
       @include border-radius(50%);
+      @include respond(mobile-screen) {
+        width: 70px;
+        height: 70px;
+      }
     }
   }
 }
