@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import AliceCarousel, { Responsive } from "react-alice-carousel";
+import dynamic from "next/dynamic";
 
 import Icon from "@/components/Icon";
 import { IconNames } from "@/utils/icon";
@@ -74,5 +75,5 @@ const Carousel: React.FC<CarouselProps> = ({
   );
 };
 
-export default Carousel;
-// export default dynamic(() => Promise.resolve(Carousel), { ssr: false });
+// export default Carousel;
+export default dynamic(() => Promise.resolve(Carousel), { ssr: false });
