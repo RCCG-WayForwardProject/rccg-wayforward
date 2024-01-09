@@ -7,6 +7,8 @@ import styles from "./home.module.scss";
 const Home: React.FC = () => {
   return (
     <section className={styles["home"]}>
+      <div className={styles["home__background-image"]}></div>
+      <div className={styles["home__background-image"]}></div>
       <div className={styles["home__content-wrapper"]}>
         <div className={styles["home__content-cross-icon"]}>
           <Icon icon="cross" />

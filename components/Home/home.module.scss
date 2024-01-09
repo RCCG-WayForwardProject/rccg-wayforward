@@ -15,6 +15,8 @@
     background-position: 50%;
     padding-top: 85px;
   }
+  @include imageFadeAnimation;
+
   &__content {
     &-wrapper {
       margin-top: calc(16vh);
