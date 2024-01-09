@@ -7,35 +7,68 @@ import NavLink from "@/components/Link";
 import Icon from "@/components/Icon";
 
 import { pageRoutes } from "@/utils/routes";
+import { CounsellingScreenType } from "@/utils/types";
 
 import styles from "./header.module.scss";
 
 interface HeaderProps {}
 
 interface HeaderDropdownProps {
-  dropdownList: Array<{ path: string; name: string }>;
+  dropdownList: Array<{ path?: string; name: string }>;
 }
 
+const counsellingScreen: Record<CounsellingScreenType, JSX.Element> = {
+  "Book counselling session": <p>Counselling</p>,
+  "How it works": <p>Hello World</p>,
+};
+
 const HeaderDropdown: React.FC<HeaderDropdownProps> = ({ dropdownList }) => {
+  const [activeScreen, setActiveScreen] = useState<CounsellingScreenType>(
+    "Book counselling session"
+  );
+
+  const handleActiveScreen = (element: CounsellingScreenType) => {
+    setActiveScreen(element);
+  };
+
   return (
-    <ul className={styles["header__link-dropdown"]}>
-      {dropdownList?.map((dropdownListItem, index) => {
-        return (
-          <li className={styles["header__link-dropdown-list"]} key={index + 1}>
-            {/* <Link
+    <div className={styles["header__link-dropdown-wrapper"]}>
+      <ul className={styles["header__link-dropdown"]}>
+        {dropdownList?.map((dropdownListItem, index) => {
+          return (
+            <li
+              className={styles["header__link-dropdown-list"]}
+              key={index + 1}
+            >
+              {/* <Link
               href={`/${dropdownListItem.path}`}
               className={styles["header__link-dropdown-list-item"]}
             >
               {dropdownListItem.name}
             </Link> */}
-            <NavLink
-              path={dropdownListItem?.path!}
-              text={dropdownListItem?.name}
-            />
-          </li>
-        );
-      })}
-    </ul>
+              {dropdownListItem?.path ? (
+                <NavLink
+                  path={dropdownListItem?.path!}
+                  text={dropdownListItem?.name}
+                />
+              ) : (
+                <button
+                  className={styles["header__link-dropdown-list-name"]}
+                  onClick={() =>
+                    handleActiveScreen(
+                      dropdownListItem?.name as CounsellingScreenType
+                    )
+                  }
+                >
+                  {dropdownListItem?.name}
+                </button>
+              )}
+            </li>
+          );
+        })}
+      </ul>
+      <div>{counsellingScreen[activeScreen]}</div>
+    </div>
   );
 };
 

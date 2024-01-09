@@ -75,6 +75,14 @@
           font-size: 13px;
           font-weight: 400;
         }
+        &-name {
+          color: $col-dark-1;
+          font-size: 13px;
+          font-weight: 400;
+        }
+      }
+      &-list {
+        white-space: nowrap;
       }
       &-wrapper {
         display: flex;

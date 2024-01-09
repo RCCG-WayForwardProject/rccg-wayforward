@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 import Button from "@/components/Button";
 import { SermonCard } from "@/components/Sermons/SermonCard";
@@ -8,6 +9,16 @@ import { sermonsList } from "@/utils/constants";
 import styles from "./sermons.module.scss";
 
 const SermonsPage: React.FC = () => {
+  const [query, setQuery] = useState<string>("");
+
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setQuery(event.target.value);
+  };
+
+  const filteredSermons = sermonsList.filter((sermon) =>
+    sermon.name.toLowerCase().includes(query.toLowerCase())
+  );
+
   return (
     <div className={styles["sermons"]}>
       <div className={styles["sermons__heading-wrapper"]}>
@@ -21,15 +32,15 @@ const SermonsPage: React.FC = () => {
           type="search"
           className={styles["sermons__input"]}
           placeholder="Search sermon"
+          value={query}
+          onChange={handleSearchChange}
         />
         <Button type="submit" label="Search" variant="primary" size="mini" />
       </div>
       <div className={styles["sermons__sermon-wrapper"]}>
-        {sermonsList?.map((sermon, index) => {
-          return (
-            <SermonCard name={sermon?.name} img={sermon?.img} key={index + 1} />
-          );
-        })}
+        {filteredSermons.map((sermon, index) => (
+          <SermonCard name={sermon.name} img={sermon.img} key={index + 1} />
+        ))}
       </div>
     </div>
   );

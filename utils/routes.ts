@@ -37,4 +37,15 @@ export const pageRoutes = [
       },
     ],
   },
+  {
+    name: "Counselling",
+    children: [
+      {
+        name: "Book counselling session",
+      },
+      {
+        name: "How it works",
+      },
+    ],
+  },
 ];
