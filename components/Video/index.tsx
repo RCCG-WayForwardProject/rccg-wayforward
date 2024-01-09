@@ -25,10 +25,8 @@ const VideoPlayer: React.FC = () => {
         className={styles["video"]}
         poster={"/images/video-poster.jpg"}
       >
-        <source
-          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-          type="video/mp4"
-        />
+        {/* src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" */}
+        <source type="video/mp4" src="" />
         Your browser does not support the video tag.
       </video>
       <div className={styles["video__overlay"]}>
