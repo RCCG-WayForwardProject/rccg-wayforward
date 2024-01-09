@@ -4,7 +4,7 @@
 @import "../../styles/typography";
 
 .home {
-  background-image: url("/images/worshipImage_2.jpg");
+  background-image: url("/images/background_image-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -32,7 +32,26 @@
         align-items: flex-start;
       }
     }
+    // &-background {
+    //   opacity: 0.58;
+    //   background: linear-gradient(
+    //     180deg,
+    //     #000 0.06%,
+    //     rgba(0, 0, 0, 0.69) 57.1%,
+    //     rgba(0, 0, 0, 0) 99.94%
+    //   );
+    //   // background-color: rgba(255, 255, 255, 0.11);
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    // }
     &-cross-icon {
+      opacity: 0.25;
+      & span {
+        & svg {
+          fill: rgba(255, 255, 255, 0.11);
+        }
+      }
       @include respond(mobile-screen) {
         position: absolute;
         z-index: 0;

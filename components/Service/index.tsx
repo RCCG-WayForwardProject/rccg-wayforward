@@ -10,6 +10,19 @@ import styles from "./service.module.scss";
 const Services: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
 
+  const handleOpenCalendar = () => {
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+
+    const formattedDate = `${year}${month.toString().padStart(2, "0")}${day
+      .toString()
+      .padStart(2, "0")}`;
+
+    window.open(`https://calendar.google.com/calendar/r/day/${formattedDate}`);
+  };
+
   useEffect(() => {
     const delay = setTimeout(() => {
       setLoading(false);
@@ -37,7 +50,7 @@ const Services: React.FC = () => {
             <LoadingItems />
           </div>
         ) : (
-          <ServicesCarousel />
+          <ServicesCarousel handleReminderButton={handleOpenCalendar} />
         )}
         <div className={styles["services__view-button"]}>
           <Button

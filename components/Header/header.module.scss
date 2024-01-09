@@ -17,6 +17,20 @@
     right: 0px;
     @include z-index(overlay);
   }
+  &[data-sticky="true"] {
+    transition: all 0.4s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $col-white;
+    & p {
+      color: inherit;
+    }
+    & a {
+      color: inherit;
+    }
+  }
   @include respond(mobile-screen) {
     padding: 0px 31px;
   }
@@ -107,9 +121,9 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        color: $col-white;
-        &[data-page="default"] {
-          color: #4a4a4a;
+        color: #4a4a4a;
+        &[data-page="home"] {
+          color: $col-white;
         }
       }
     }
