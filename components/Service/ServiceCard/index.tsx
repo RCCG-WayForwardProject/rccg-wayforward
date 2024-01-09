@@ -11,6 +11,7 @@ interface ServiceCardProps {
   name: string;
   day: string;
   location: string;
+  handleReminderButton?: () => void;
 }
 
 export const ServiceCard: React.FC<ServiceCardProps> = ({
@@ -18,6 +19,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
   name,
   day,
   location,
+  handleReminderButton,
 }) => {
   return (
     <div className={styles["services__service"]}>
@@ -45,6 +47,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
           label="Set Reminder"
           variant="primary"
           size="small"
+          handleClick={handleReminderButton}
         />
       </div>
     </div>

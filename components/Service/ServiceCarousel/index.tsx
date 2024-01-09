@@ -11,9 +11,13 @@ import { services } from "@/utils/constants";
 import "react-alice-carousel/lib/alice-carousel.css";
 import styles from "./carousel.module.scss";
 
-interface ServicesCarouselProps {}
+interface ServicesCarouselProps {
+  handleReminderButton?: () => void;
+}
 
-const ServicesCarousel: React.FC<ServicesCarouselProps> = ({}) => {
+const ServicesCarousel: React.FC<ServicesCarouselProps> = ({
+  handleReminderButton,
+}) => {
   const [responsive] = useState({
     0: { items: 1.2 },
     800: { items: 2 },
@@ -50,6 +54,7 @@ const ServicesCarousel: React.FC<ServicesCarouselProps> = ({}) => {
               img={service?.img}
               location={service?.location}
               day={service?.day}
+              handleReminderButton={handleReminderButton}
             />
           );
         })}
