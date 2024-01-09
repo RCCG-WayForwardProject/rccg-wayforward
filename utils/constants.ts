@@ -208,16 +208,33 @@ export const footerInfo = [
     icon: "phone",
     title: "Phone Number",
     description: "(704) 493-5062",
+    onClick: () => {
+      const phoneNumber = "+1 704 493 5064";
+      window.location.href = `tel:${phoneNumber}`;
+    },
   },
   {
     icon: "location",
     title: "Address",
     description: "7156 Weddington Rd, Suite 170, Concord,North Carolina, 28027",
+    onClick: () => {
+      const address =
+        "7156 Weddington Rd, Suite 170, Concord,North Carolina, 28027";
+      const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+        address
+      )}`;
+      window.open(mapsUrl);
+    },
   },
   {
     icon: "email",
     title: "Email",
-    description: "ddd.enterprise@yahoo.com",
+    description: "wayforwardcathedral@gmail.com",
+    onClick: () => {
+      const recipientEmail = "wayforwardcathedral@gmail.com";
+      const mailtoUrl = `mailto:${recipientEmail}`;
+      window.location.href = mailtoUrl;
+    },
   },
 ];
 
