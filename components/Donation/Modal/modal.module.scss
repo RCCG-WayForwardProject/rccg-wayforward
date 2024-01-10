@@ -16,7 +16,7 @@
   @include respond(mobile-screen) {
     width: 95%;
     padding: 30px;
-    height: 50%;
+    height: 53%;
   }
 
   &__header {
@@ -31,6 +31,7 @@
       font-size: toRem(13px);
       font-weight: 500;
       padding: 10px 20px;
+      white-space: nowrap;
       @include border-radius(6px);
       &[data-active="true"] {
         background-color: $col-green-1;

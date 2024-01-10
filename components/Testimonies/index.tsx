@@ -20,9 +20,10 @@ const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
   const [testimonyName, setTestimonyName] = useState<string>("");
   const [testimony, setTestimony] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(true);
-  const { push } = useRouter();
   const [openModal, setOpenModal] = useState<boolean>(false);
   const modalRef = useRef<HTMLDivElement>(null);
+
+  const { push } = useRouter();
 
   const handleRouteToTestimoniesPage = () => {
     push("/testimonies");

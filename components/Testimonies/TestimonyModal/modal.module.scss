@@ -24,6 +24,9 @@
     text-align: justify;
     font-size: toRem(14px);
     font-weight: 700;
+    @include respond(mobile-screen) {
+      font-size: toRem(16px);
+    }
   }
 
   &__description {
