@@ -34,8 +34,9 @@ const Donation: React.FC = () => {
             If the Lord has touched your heart to donate to our cause, feel free
             to do so. Your financial support enables the church to keep running
             and also help people who are in need. Remember Luke 6:38 (NIV):
-            "Give, and it will be given to you. A good measure, pressed down,
-            shaken together, and running over, will be poured into your lap…"
+            &quot;Give, and it will be given to you. A good measure, pressed
+            down, shaken together, and running over, will be poured into your
+            lap…&quot;
           </p>
           <div className={styles["donation__content-button"]}>
             <Button
