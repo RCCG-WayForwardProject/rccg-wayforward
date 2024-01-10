@@ -24,6 +24,7 @@
     left: 0;
     right: 0;
     background-color: $col-white;
+    z-index: 20;
     & p {
       color: inherit;
     }
@@ -60,6 +61,9 @@
     &[data-page="default"] {
       & a {
         color: #4a4a4a;
+        @include respond(mobile-screen) {
+          color: $col-white;
+        }
       }
     }
     &-wrapper {
@@ -129,12 +133,71 @@
     }
   }
   &__mobile-link {
-    &-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    flex-shrink: 0;
+    &:hover {
+      background: rgba(243, 243, 243, 0.08);
+    }
+    & a {
+      color: $col-white;
+      & p {
+        font-size: 16px;
+      }
+      & div {
+        display: none;
+      }
+    }
+    &-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &-button {
       display: none;
       @include respond(mobile-screen) {
         display: flex;
         position: absolute;
         right: 10px;
+      }
+      &[data-page="default"],
+      &[data-sticky="true"] {
+        & span {
+          & svg {
+            & path {
+              stroke: rgba(0, 0, 0, 0.8);
+            }
+          }
+        }
+      }
+    }
+    &-overlay {
+      &-wrapper {
+        display: none;
+        @include respond(mobile-screen) {
+          position: fixed;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          background: rgba(58, 58, 58, 0.77);
+          backdrop-filter: blur(7.5px);
+          z-index: 200;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 24px;
+          padding-top: 33px;
+        }
+      }
+      &-cancel-button {
+        margin-bottom: 15px;
       }
     }
   }

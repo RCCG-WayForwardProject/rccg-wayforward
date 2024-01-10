@@ -49,3 +49,34 @@ export const pageRoutes = [
     ],
   },
 ];
+
+export const mobilePageRoutes = [
+  {
+    path: "/",
+    name: "Home",
+  },
+  {
+    path: "about-us",
+    name: "About",
+  },
+  {
+    path: "sermons",
+    name: "Sermons",
+  },
+  {
+    path: "musics",
+    name: "Musics",
+  },
+  {
+    path: "books",
+    name: "Books",
+  },
+  {
+    path: "events",
+    name: "Events",
+  },
+  {
+    path: "testimonies",
+    name: "Testimonies",
+  },
+];

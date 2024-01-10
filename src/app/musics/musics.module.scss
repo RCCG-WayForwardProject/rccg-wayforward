@@ -16,6 +16,7 @@
     @include heading;
     @include respond(mobile-screen) {
       @include heading-mobile;
+      font-size: toRem(40px);
     }
     &-wrapper {
       display: flex;
@@ -33,7 +34,7 @@
       font-style: normal;
       font-weight: 500;
       @include respond(mobile-screen) {
-        font-size: toRem(18px);
+        font-size: toRem(16px);
       }
       & span {
         color: $col-green-1;

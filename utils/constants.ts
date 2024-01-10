@@ -149,57 +149,58 @@ export const musics = [
 
 export const testimonies = [
   {
-    name: "John Doe Taiwo",
+    name: "Olivia Maxwell",
     testimony:
-      "Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor.",
+      "Since I became a part of the Wayforward Cathedral family, my life has turned around for the better. I feel loved, cherished, and truly blessed. God bless Pastor Adamson for his counsel and support and for welcoming me into the fold.",
   },
   {
-    name: "John Taiwo",
+    name: "Caleb Donovan",
     testimony:
-      "Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor. Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor.",
+      "I remember being at my lowest at one point, having lost my job and falling into an old addiction. The Wayforward family found out about my situation and visited me constantly, supporting me throughout my time of need and even referring me to my new employer. ",
   },
   {
-    name: "John Doe Taiwo",
+    name: "Isabella Harper",
     testimony:
-      "Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor.",
+      "Praise the Lord! I had been battling health issues for the better part of three years until one day, when I got invited to the church to connect to the annual convention. I remember deeply connecting during a healing prayer session and instantly being relieved. Children of God, I got tested a few days later, and the results showed I was free of my ailment.",
   },
   {
-    name: "John Doe Taiwo",
+    name: "Ethan Johnson",
     testimony:
-      "Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor.",
+      "In my darkest hours, Wayforward Church became my beacon of hope. The caring community rallied behind me when I faced financial hardships, providing assistance and genuine friendship. Through their kindness, I found a renewed sense of purpose. I'll forever cherish the love and support I received during my toughest times.",
   },
   {
-    name: "John Doe Taiwo",
+    name: "Sophia Amara",
     testimony:
-      "Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor.",
+      "Since joining Wayforward Church, my life has been transformed. The supportive community helped me overcome personal struggles, and Pastor Adamson's sermons provided guidance and inspiration. The warmth and love here are unparalleled. I'm grateful to be part of this spiritual family that feels more like home with each passing day.",
   },
 ];
 
 export const faq = [
   {
-    title: "Lorem ipsum dolor",
+    title: "What time are your services?",
     content:
-      "Lorem ipsum dolor sit amet consectetur. Nullam sit dignissim felis et neque est. Odio sit placerat quisque mi tempor diam morbi nibh volutpat. Sed elit sit eget et lorem risus tincidunt sed. Et iaculis ullamcorper fringilla ultricies. Turpis sit congue nunc purus ante.",
+      "Our Sunday worship services are held every Sunday at 8 am. We gather for Bible Study and Prayer meetings on Wednesdays and Fridays at 5:30 pm. We also have Holy Ghost sessions to tap into the spirit and deliverance services for the afflicted.",
   },
   {
-    title: "Lorem ipsum dolor",
+    title: "Is the church always open?",
     content:
-      "Lorem ipsum dolor sit amet consectetur. Nullam sit dignissim felis et neque est. Odio sit placerat quisque mi tempor diam morbi nibh volutpat. Sed elit sit eget et lorem risus tincidunt sed. Et iaculis ullamcorper fringilla ultricies. Turpis sit congue nunc purus ante.",
+      "While everyone is welcome to worship with us, the church is open only at select times. These include our worship services, Bible studies, and prayer meetings. The Cathedral is also open when there are special programs and events.",
   },
   {
-    title: "Lorem ipsum dolor sit amet",
+    title: "Is there a children’s or youth program available?",
     content:
-      "Lorem ipsum dolor sit amet consectetur. Nullam sit dignissim felis et neque est. Odio sit placerat quisque mi tempor diam morbi nibh volutpat. Sed elit sit eget et lorem risus tincidunt sed. Et iaculis ullamcorper fringilla ultricies. Turpis sit congue nunc purus ante.",
+      "Yes, there are special programs for children and youth. Aside from the Sunday School, the youth and children ministries also have special programs that occur more than twice every quarter.",
   },
   {
-    title: "Lorem ipsum dolor",
+    title: "How can I contact the church staff or pastor for pastoral care?",
     content:
-      "Lorem ipsum dolor sit amet consectetur. Nullam sit dignissim felis et neque est. Odio sit placerat quisque mi tempor diam morbi nibh volutpat. Sed elit sit eget et lorem risus tincidunt sed. Et iaculis ullamcorper fringilla ultricies. Turpis sit congue nunc purus ante.",
+      "You can reach us at (704) 493-5062, email us at wayforwardcathedral@gmail.com, or stay behind after services to speak with the church staff or pastor. You can also book a counseling session with us on the Counselling section of this website.",
   },
   {
-    title: "Lorem ipsum dolor",
+    title:
+      "Do you offer online services or livestreams for those unable to attend in person?",
     content:
-      "Lorem ipsum dolor sit amet consectetur. Nullam sit dignissim felis et neque est. Odio sit placerat quisque mi tempor diam morbi nibh volutpat. Sed elit sit eget et lorem risus tincidunt sed. Et iaculis ullamcorper fringilla ultricies. Turpis sit congue nunc purus ante.",
+      "Yes, we do, although it’s primarily through our YouTube channel, RCCG WayForward Cathedral. We’re working on providing livestreams through Mixlr.",
   },
 ];
 
@@ -272,28 +273,30 @@ export const vision = [
     content: `We have passion for them; we will rehabilitate them; we will introduce someone to them, Jesus Christ; we will make sure that they learn handwork; or if they still want to go to school, we will make the provision; and we will also make sure that there is no room for discrimination.`,
   },
   {
-    title: "The Outcast",
-    content: `We have passion for them; we will rehabilitate them; we will introduce someone to them, Jesus Christ; we will make sure that they learn handwork; or if they still want to go to school, we will make the provision; and we will also make sure that there is no room for discrimination.`,
+    title: "The Forgotten",
+    content: `We commit to restoring the forgotten by providing an environment where everyone is recognized not only by the Lord but also by our loving members. Through community engagement and personalized care, we aim to reintegrate them into a network where their stories are heard and valued.
+    `,
   },
   {
-    title: "The Outcast",
-    content: `We have passion for them; we will rehabilitate them; we will introduce someone to them, Jesus Christ; we will make sure that they learn handwork; or if they still want to go to school, we will make the provision; and we will also make sure that there is no room for discrimination.`,
+    title: "The Ex-Convicts",
+    content: `We believe the word of God can change even the hardest of sinners (Matt. 9:12-13). Our mission is to provide spiritual healing and rehabilitation for ex-convicts. By sharing the transformative power of Jesus Christ, offering counseling, and supporting their reintegration, we aim to break the chains of the past, fostering redemption and a new beginning.`,
   },
   {
-    title: "The Outcast",
-    content: `We have passion for them; we will rehabilitate them; we will introduce someone to them, Jesus Christ; we will make sure that they learn handwork; or if they still want to go to school, we will make the provision; and we will also make sure that there is no room for discrimination.`,
+    title: "The Orphans",
+    content: `We embrace orphans with open hearts, creating a church family that becomes their home. Through mentorship, educational assistance, and a nurturing environment, we aim to provide them with the love and guidance they need to flourish in the love of Christ.
+    `,
   },
   {
-    title: "The Outcast",
-    content: `We have passion for them; we will rehabilitate them; we will introduce someone to them, Jesus Christ; we will make sure that they learn handwork; or if they still want to go to school, we will make the provision; and we will also make sure that there is no room for discrimination.`,
+    title: "The Motherless",
+    content: `Our commitment to the motherless is to offer a supportive community that acts as an extended family. Through Christ-centered love, we aim to fill the void left by maternal absence, ensuring they find comfort and care in our church community.`,
   },
   {
-    title: "The Outcast",
-    content: `We have passion for them; we will rehabilitate them; we will introduce someone to them, Jesus Christ; we will make sure that they learn handwork; or if they still want to go to school, we will make the provision; and we will also make sure that there is no room for discrimination.`,
+    title: "The Less Privileged",
+    content: `Our mission is to uplift the less privileged by extending Christ's love through practical assistance, educational opportunities, and spiritual guidance. We aim to break the cycle of poverty, empowering individuals and families to overcome challenges and find hope in God's grace.`,
   },
   {
-    title: "The Outcast",
-    content: `We have passion for them; we will rehabilitate them; we will introduce someone to them, Jesus Christ; we will make sure that they learn handwork; or if they still want to go to school, we will make the provision; and we will also make sure that there is no room for discrimination.`,
+    title: "Senior Citizens",
+    content: `For our senior citizens, we aspire to create a church environment where they feel honored, valued, and included. We aim to enrich their spiritual journey through tailored programs, fellowship, and pastoral care and ensure they continue to play meaningful roles in our church community.`,
   },
   {
     title: "The Outcast",

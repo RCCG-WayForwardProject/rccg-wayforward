@@ -1,24 +1,25 @@
 import React from "react";
 
 import styles from "./testimony-card.module.scss";
+import test from "node:test";
 
 interface TestimonyCardProps {
   name: string;
   testimony: string;
-  handleClick?: () => void;
+  handleViewMore?: () => void;
 }
 
 const TestimonyCard: React.FC<TestimonyCardProps> = ({
   name,
   testimony,
-  handleClick,
+  handleViewMore,
 }) => {
   return (
     <div className={styles["testimony-card"]}>
       <p className={styles["testimony-card__name"]}>{name} </p>
       <p className={styles["testimony-card__content"]}>{testimony}</p>
       <button
-        onClick={handleClick}
+        onClick={handleViewMore}
         className={styles["testimony-card__button"]}
       >
         View All

@@ -1,0 +1,37 @@
+@import "../../../styles/variables";
+@import "../../../styles/functions.scss";
+@import "../../../styles/base/mixins";
+@import "../../../styles/typography";
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  width: 522px;
+  height: fit-content;
+  padding: 60px;
+  background-color: $col-white;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
+  @include border-radius(20px);
+  @include respond(mobile-screen) {
+    width: 95%;
+    padding: 30px 30px 50px 30px;
+  }
+
+  &__heading {
+    color: #575555;
+    text-align: justify;
+    font-size: toRem(14px);
+    font-weight: 700;
+    @include respond(mobile-screen) {
+      font-size: toRem(16px);
+    }
+  }
+
+  &__description {
+    color: #404040;
+    text-align: justify;
+    font-size: toRem(14px);
+    font-weight: 400;
+  }
+}

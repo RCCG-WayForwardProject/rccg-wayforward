@@ -1,10 +1,15 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
+
+import { useClickOutside } from "@/utils/useClickOutside";
+import { testimonies } from "@/utils/constants";
 
 import Button from "../Button";
 import LoadingCard from "../LoadingCard";
 import TestimoniesCarousel from "./TestimoniesCarousel";
+import TestimonyModal from "./TestimonyModal";
+import TestimonyCard from "./TestimoniesCarousel/TestimonyCard";
 
 import styles from "./testimonies.module.scss";
 
@@ -12,12 +17,25 @@ interface TestimoniesProps {
   style?: React.CSSProperties;
 }
 const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
+  const [testimonyName, setTestimonyName] = useState<string>("");
+  const [testimony, setTestimony] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(true);
+  const [openModal, setOpenModal] = useState<boolean>(false);
+  const modalRef = useRef<HTMLDivElement>(null);
+
   const { push } = useRouter();
 
   const handleRouteToTestimoniesPage = () => {
     push("/testimonies");
   };
+
+  const handleViewMore = (name: string, testimony: string) => {
+    setTestimonyName(name);
+    setTestimony(testimony);
+    setOpenModal(!openModal);
+  };
+
+  useClickOutside(modalRef, setOpenModal, false);
 
   useEffect(() => {
     const delay = setTimeout(() => {
@@ -37,13 +55,10 @@ const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
       </div>
       <div className={styles["testimonies__description-container"]}>
         <p className={styles["testimonies__description"]}>
-          Lorem ipsum dolor sit amet consectetur. Duis vulputate libero turpis
-          gravida. Sit blandit bibendum molestie mattis risus velit eu. Morbi
-          consectetur ut nisi massa quam purus. Morbi mauris elementum in enim
-          quis semper nisl. Cursus semper cras sit elementum turpis congue
-          risus. Sed ut imperdiet vitae augue iaculis duis. Nisl sit rutrum sed
-          turpis dui pretium. Fermentum lectus eu turpis mi mauris aliquam et
-          facilisis. Risus at phasellus sem cum elementum molestie. Eget sit.
+          Read inspiring testimonies from some of our brethren whose lives have
+          been changed by the Lord since becoming part of our church. Their
+          stories remind us of the wonders possible when we truly connect to the
+          incredible power of God, which is abundant in Wayforward Cathedral.
         </p>
         <div className={styles["testimonies__description-button"]}>
           <Button
@@ -62,9 +77,27 @@ const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
         ) : (
           <TestimoniesCarousel
             handleGoToTestimoniesPage={handleRouteToTestimoniesPage}
-          />
+          >
+            {testimonies?.map((testimony, index) => {
+              return (
+                <TestimonyCard
+                  key={index + 1}
+                  name={testimony?.name}
+                  testimony={testimony?.testimony}
+                  handleViewMore={() =>
+                    handleViewMore(testimony?.name, testimony?.testimony)
+                  }
+                />
+              );
+            })}
+          </TestimoniesCarousel>
         )}
       </div>
+      {openModal && (
+        <div className={styles["testimonies__modal-wrapper"]} ref={modalRef}>
+          <TestimonyModal name={testimonyName} content={testimony} />
+        </div>
+      )}
     </div>
   );
 };

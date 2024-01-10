@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 
 import Button from "@/components/Button";
 
@@ -8,6 +8,16 @@ import { musics } from "@/utils/constants";
 import MusicCard from "@/components/Songs/MusicCard";
 
 const SongsPage: React.FC = () => {
+  const [query, setQuery] = useState<string>("");
+
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setQuery(event.target.value);
+  };
+
+  const filteredMusics = musics.filter((music) =>
+    music.name.toLowerCase().includes(query.toLowerCase())
+  );
+
   return (
     <div className={styles["musics"]}>
       <div className={styles["musics__heading-wrapper"]}>
@@ -21,11 +31,13 @@ const SongsPage: React.FC = () => {
           type="search"
           className={styles["musics__input"]}
           placeholder="Search music"
+          value={query}
+          onChange={handleSearchChange}
         />
         <Button type="submit" label="Search" variant="primary" size="mini" />
       </div>
       <div className={styles["musics__music-wrapper"]}>
-        {musics?.map((music, index) => {
+        {filteredMusics?.map((music, index) => {
           return (
             <div className={styles["musics__music-card"]} key={index + 1}>
               <MusicCard

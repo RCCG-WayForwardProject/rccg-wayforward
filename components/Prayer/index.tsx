@@ -81,11 +81,13 @@ const Prayer: React.FC = () => {
           />
         </div>
         <p className={styles["prayer__heading-description"]}>
-          Welcome to The Redeemed Christian Church of God WayForward in Concord,
-          where our worship is truly exceptional, and the pure Word of God is a
-          guiding light in impacting lives. We take pride in the unique and
-          profound way we worship, creating an atmosphere that transcends the
-          ordinary. Our Bible studies and worship ...
+          Would you like us to join you in prayer for any special demand? Please
+          provide your details here, and we’ll not only table your requests
+          before the Throne of Grace (Heb. 4:16) but also reach out to you for
+          support and guidance.
+          <br />
+          Rest assured that your requests and details are confidential and will
+          not be shared with anyone other than the Lord.
         </p>
       </div>
       <form

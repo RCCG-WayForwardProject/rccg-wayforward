@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import NavLink from "@/components/Link";
 import Icon from "@/components/Icon";
 
-import { pageRoutes } from "@/utils/routes";
+import { mobilePageRoutes, pageRoutes } from "@/utils/routes";
 import { CounsellingScreenType } from "@/utils/types";
 
 import styles from "./header.module.scss";
@@ -60,7 +60,7 @@ const HeaderDropdown: React.FC<HeaderDropdownProps> = ({ dropdownList }) => {
                     )
                   }
                 >
-                  {dropdownListItem?.name}
+                  {/* {dropdownListItem?.name} */}
                 </button>
               )}
             </li>
@@ -75,6 +75,7 @@ const HeaderDropdown: React.FC<HeaderDropdownProps> = ({ dropdownList }) => {
 const Header: React.FC<HeaderProps> = ({}) => {
   const [dropdownIndex, setDropdownIndex] = useState<number | null>(null);
   const [headerSticky, setHeaderSticky] = useState<boolean>(false);
+  const [openNav, setOpenNav] = useState<boolean>(false);
 
   const pathname = usePathname();
   const homePage = pathname === "/";
@@ -84,6 +85,10 @@ const Header: React.FC<HeaderProps> = ({}) => {
     setDropdownIndex((prev) => {
       return prev === index ? null : index;
     });
+  };
+
+  const handleToggleMobileNav = () => {
+    setOpenNav(!openNav);
   };
 
   useEffect(() => {
@@ -143,16 +148,40 @@ const Header: React.FC<HeaderProps> = ({}) => {
         })}
       </ul>
 
-      <ul className={styles["header__mobile-link-wrapper"]}>
-        <li>
+      <button
+        className={styles["header__mobile-link-button"]}
+        type="button"
+        data-sticky={headerSticky}
+        data-page={headerPage}
+        onClick={handleToggleMobileNav}
+      >
+        <Icon icon="navToggleIcon" />
+      </button>
+      {openNav ? (
+        <div className={styles["header__mobile-link-overlay-wrapper"]}>
           <button
-            className={styles["header__mobile-link-button"]}
-            type="button"
+            className={styles["header__mobile-link-overlay-cancel-button"]}
+            onClick={handleToggleMobileNav}
           >
-            <Icon icon="navToggleIcon" />
+            <Icon icon="cancel" />
           </button>
-        </li>
-      </ul>
+          <div className={styles["header__logo-wrapper"]}>
+            <Icon icon="appLogo" />
+            <Icon icon={"appName"} />
+          </div>
+          <ul className={styles["header__mobile-link-container"]}>
+            {mobilePageRoutes?.map((element, index) => {
+              return (
+                <li className={styles["header__mobile-link"]} key={index + 1}>
+                  <button onClick={handleToggleMobileNav}>
+                    <NavLink path={element.path!} text={element?.name} />
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      ) : null}
     </header>
   );
 };

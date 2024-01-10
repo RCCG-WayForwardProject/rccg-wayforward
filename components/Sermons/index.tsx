@@ -38,10 +38,9 @@ const Sermons: React.FC<SermonsProps> = ({}) => {
             Recent Sermons
           </p>
           <p className={styles["sermons__sermons-description"]}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus
-            accumsan hac purus volutpat ultrices. Vitae, sem dignissim vitae
-            nunc aliquet integer ac suspendisse aliquet. Vulputate dictum
-            egestas potenti mi amet. Aenean convallis ut vel in viverra.
+            Enjoy our library of sermons, each specially inspired by the Holy
+            Spirit for your edification and benefit. Have a drink from the well
+            of living water that is God’s Word and be truly refreshed.
           </p>
         </div>
         <div className={styles["sermons__sermons-carousel-wrapper"]}>
