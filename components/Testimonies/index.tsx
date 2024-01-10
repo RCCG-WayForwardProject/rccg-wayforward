@@ -1,10 +1,15 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
+
+import { useClickOutside } from "@/utils/useClickOutside";
+import { testimonies } from "@/utils/constants";
 
 import Button from "../Button";
 import LoadingCard from "../LoadingCard";
 import TestimoniesCarousel from "./TestimoniesCarousel";
+import TestimonyModal from "./TestimonyModal";
+import TestimonyCard from "./TestimoniesCarousel/TestimonyCard";
 
 import styles from "./testimonies.module.scss";
 
@@ -12,12 +17,24 @@ interface TestimoniesProps {
   style?: React.CSSProperties;
 }
 const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
+  const [testimonyName, setTestimonyName] = useState<string>("");
+  const [testimony, setTestimony] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(true);
   const { push } = useRouter();
+  const [openModal, setOpenModal] = useState<boolean>(false);
+  const modalRef = useRef<HTMLDivElement>(null);
 
   const handleRouteToTestimoniesPage = () => {
     push("/testimonies");
   };
+
+  const handleViewMore = (name: string, testimony: string) => {
+    setTestimonyName(name);
+    setTestimony(testimony);
+    setOpenModal(!openModal);
+  };
+
+  useClickOutside(modalRef, setOpenModal, false);
 
   useEffect(() => {
     const delay = setTimeout(() => {
@@ -59,9 +76,27 @@ const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
         ) : (
           <TestimoniesCarousel
             handleGoToTestimoniesPage={handleRouteToTestimoniesPage}
-          />
+          >
+            {testimonies?.map((testimony, index) => {
+              return (
+                <TestimonyCard
+                  key={index + 1}
+                  name={testimony?.name}
+                  testimony={testimony?.testimony}
+                  handleViewMore={() =>
+                    handleViewMore(testimony?.name, testimony?.testimony)
+                  }
+                />
+              );
+            })}
+          </TestimoniesCarousel>
         )}
       </div>
+      {openModal && (
+        <div className={styles["testimonies__modal-wrapper"]} ref={modalRef}>
+          <TestimonyModal name={testimonyName} content={testimony} />
+        </div>
+      )}
     </div>
   );
 };

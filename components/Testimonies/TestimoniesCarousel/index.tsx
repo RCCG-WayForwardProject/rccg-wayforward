@@ -6,18 +6,18 @@ import Button from "@/components/Button";
 import { CarouselButton } from "@/components/Carousel";
 import TestimonyCard from "./TestimonyCard";
 
-import { testimonies } from "@/utils/constants";
-
 import "react-alice-carousel/lib/alice-carousel.css";
 import styles from "./carousel.module.scss";
 import dynamic from "next/dynamic";
 
 interface TestimoniesCarouselProps {
   handleGoToTestimoniesPage?: () => void;
+  children: React.ReactNode;
 }
 
 const TestimoniesCarousel: React.FC<TestimoniesCarouselProps> = ({
   handleGoToTestimoniesPage,
+  children,
 }) => {
   const [responsive] = useState({
     0: { items: 1.1 },
@@ -48,16 +48,7 @@ const TestimoniesCarousel: React.FC<TestimoniesCarouselProps> = ({
         disableButtonsControls
         ref={carouselRef}
       >
-        {testimonies?.map((testimony, index) => {
-          return (
-            <TestimonyCard
-              key={index + 1}
-              name={testimony?.name}
-              testimony={testimony?.testimony}
-              handleClick={handleGoToTestimoniesPage}
-            />
-          );
-        })}
+        {children}
       </AliceCarousel>
       <div className={styles["testimony__button-wrapper"]}>
         <div className={styles["testimony__button"]}>

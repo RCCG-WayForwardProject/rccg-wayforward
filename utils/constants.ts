@@ -149,29 +149,29 @@ export const musics = [
 
 export const testimonies = [
   {
-    name: "John Doe Taiwo",
+    name: "Olivia Maxwell",
     testimony:
-      "Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor.",
+      "Since I became a part of the Wayforward Cathedral family, my life has turned around for the better. I feel loved, cherished, and truly blessed. God bless Pastor Adamson for his counsel and support and for welcoming me into the fold.",
   },
   {
-    name: "John Taiwo",
+    name: "Caleb Donovan",
     testimony:
-      "Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor. Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor.",
+      "I remember being at my lowest at one point, having lost my job and falling into an old addiction. The Wayforward family found out about my situation and visited me constantly, supporting me throughout my time of need and even referring me to my new employer. ",
   },
   {
-    name: "John Doe Taiwo",
+    name: "Isabella Harper",
     testimony:
-      "Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor.",
+      "Praise the Lord! I had been battling health issues for the better part of three years until one day, when I got invited to the church to connect to the annual convention. I remember deeply connecting during a healing prayer session and instantly being relieved. Children of God, I got tested a few days later, and the results showed I was free of my ailment.",
   },
   {
-    name: "John Doe Taiwo",
+    name: "Ethan Johnson",
     testimony:
-      "Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor.",
+      "In my darkest hours, Wayforward Church became my beacon of hope. The caring community rallied behind me when I faced financial hardships, providing assistance and genuine friendship. Through their kindness, I found a renewed sense of purpose. I'll forever cherish the love and support I received during my toughest times.",
   },
   {
-    name: "John Doe Taiwo",
+    name: "Sophia Amara",
     testimony:
-      "Lorem ipsum dolor sit amet consectetur. Nibh et quam mauris egestas diam nibh. Adipiscing volutpat lobortis tellus et morbi. Nibh tortor.",
+      "Since joining Wayforward Church, my life has been transformed. The supportive community helped me overcome personal struggles, and Pastor Adamson's sermons provided guidance and inspiration. The warmth and love here are unparalleled. I'm grateful to be part of this spiritual family that feels more like home with each passing day.",
   },
 ];
 
