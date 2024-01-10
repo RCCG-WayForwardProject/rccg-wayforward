@@ -1,107 +1,68 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import emailjs from "emailjs-com";
 
 import Button from "../Button";
+import Icon from "../Icon";
+import ContactForm from "./ContactForm";
 
 import styles from "./contact.module.scss";
 
+type ContactType = "contactForm" | "contactSuccess" | "contactError";
+
 const Contact: React.FC = () => {
-  const [loading, setLoading] = useState<boolean>(false);
-  const form = useRef<HTMLFormElement>(null);
+  const [activeScreen, setActiveScreen] = useState<ContactType>("contactForm");
 
-  const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+  const handleSetScreen = (screen: ContactType) => {
+    setActiveScreen(screen);
+  };
 
-    const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-    const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_PRAYER_TEMPLATE_ID;
-    const USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
-    try {
-      setLoading(true);
-      await emailjs
-        .sendForm(SERVICE_ID!, TEMPLATE_ID!, form.current!, USER_ID)
-        .then(
-          (result) => {
-            console.info(result.text);
-          },
-          (error) => {
-            console.error(error.text);
-          }
-        );
-    } catch (error: any) {
-      console.error(error);
-    } finally {
-      setLoading(false);
-    }
+  const contactScreen: Record<ContactType, JSX.Element> = {
+    contactForm: (
+      <ContactForm handleSetScreen={() => handleSetScreen("contactSuccess")} />
+    ),
+    contactSuccess: (
+      <div className={styles["contact__form--success"]}>
+        <div className={styles["contact__form-icon--checkmark"]}>
+          <Icon icon="checkmark" />
+        </div>
+        <h3 className={styles["contact__form--success-heading"]}>
+          Message Sent Successfully
+        </h3>
+        <Button
+          type="button"
+          variant="primary"
+          label="Done"
+          size="medium"
+          handleClick={() => handleSetScreen("contactForm")}
+        />
+      </div>
+    ),
+    contactError: (
+      <div className={styles["contact__form--success"]}>
+        <div className={styles["contact__form-icon--checkmark"]}>
+          <Icon icon="error" />
+        </div>
+        <h3 className={styles["contact__form--success-heading"]}>
+          Oops, something went wrong
+        </h3>
+        <Button
+          type="button"
+          variant="primary"
+          label="Try again"
+          size="medium"
+          buttonStyle={{ backgroundColor: "#FF7171" }}
+          handleClick={() => handleSetScreen("contactForm")}
+        />
+      </div>
+    ),
   };
 
   return (
     <div className={styles["contact"]}>
       <h1 className={styles["contact__heading"]}>Contact Us</h1>
       <div className={styles["contact__form-wrapper"]}>
-        <form
-          className={styles["contact__form"]}
-          ref={form}
-          onSubmit={handleFormSubmit}
-        >
-          <div className={styles["contact__form-info-wrapper"]}>
-            <label
-              htmlFor="name"
-              className={styles["contact__form-info-heading"]}
-            >
-              Name <span>*</span>
-            </label>
-            <input
-              type="text"
-              className={styles["contact__form-info-input"]}
-              placeholder="Enter your name"
-              name="name"
-              id="name"
-              required
-            />
-          </div>
-          <div className={styles["contact__form-info-wrapper"]}>
-            <label
-              htmlFor="user_email"
-              className={styles["contact__form-info-heading"]}
-            >
-              Email <span>*</span>
-            </label>
-            <input
-              type="email"
-              name="user_email"
-              id="user_email"
-              className={styles["contact__form-info-input"]}
-              placeholder="Enter your email address"
-              required
-            />
-          </div>
-          <div className={styles["contact__form-info-wrapper"]}>
-            <label
-              htmlFor="message"
-              className={styles["contact__form-info-heading"]}
-            >
-              Message <span>*</span>
-            </label>
-            <textarea
-              className={styles["contact__form-info-textarea"]}
-              id="message"
-              name="message"
-              placeholder="Enter message"
-              required
-            />
-          </div>
-          <div className={styles["contact__form-button"]}>
-            <Button
-              type="submit"
-              label="Send"
-              variant="primary"
-              size="medium"
-              loading={loading}
-            />
-          </div>
-        </form>
+        {contactScreen[activeScreen]}
         <div className={styles["contact__form-image"]}>
           <Image
             src={"/images/contact_image.svg"}

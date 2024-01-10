@@ -395,4 +395,7 @@ export const icons: Record<IconNames, string> = {
 <path d="M21.76 12.24L12.24 21.76" stroke="#DE8080" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M12.24 12.24L21.76 21.76" stroke="#DE8080" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>`,
+  error: `<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+<path d="M48 0.5C21.78 0.5 0.5 21.78 0.5 48C0.5 74.22 21.78 95.5 48 95.5C74.22 95.5 95.5 74.22 95.5 48C95.5 21.78 74.22 0.5 48 0.5ZM52.75 71.75H43.25V62.25H52.75V71.75ZM52.75 52.75H43.25V24.25H52.75V52.75Z" fill="#FF7171"/>
+</svg>`,
 };
