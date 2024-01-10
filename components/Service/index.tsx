@@ -38,11 +38,11 @@ const Services: React.FC = () => {
         <div className={styles["services__content-heading-wrapper"]}>
           <p className={styles["services__content-heading"]}>Our Services</p>
           <p className={styles["services__content-description"]}>
-            Welcome to The Redeemed Christian Church of God WayForward in
-            Concord, where our worship is truly exceptional, and the pure Word
-            of God is a guiding light in impacting lives. We take pride in the
-            unique and profound way we worship, creating an atmosphere that
-            transcends the ordinary. Our Bible studies and worship ...
+            The church runs weekly, and every one of our services is meant to
+            enrich you in its special way. While our Sunday Service is very
+            comprehensive, our Wednesday and Friday services each meet a
+            distinct spiritual need, allowing not only for fellowship but also
+            engaging Bible study and scripture-based prayer.
           </p>
         </div>
         {loading ? (

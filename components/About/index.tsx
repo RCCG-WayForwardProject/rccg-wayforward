@@ -44,20 +44,35 @@ const AboutUs: React.FC<AboutUsProps> = ({ showViewButton, showFullText }) => {
       <div className={styles["about-us__description-wrapper"]}>
         <h1 className={styles["about-us__description-heading"]}>About Us</h1>
         <p className={styles["about-us__description"]}>
-          Welcome to The Redeemed Christian Church of God WayForward in Concord,
-          where our worship is truly exceptional, and the pure Word of God is a
-          guiding light in impacting lives. We take pride in the unique and
-          profound way we worship, creating an atmosphere that transcends the
-          ordinary. <br /> Our Bible studies and worship ...
+          Welcome to WayForward Cathedral, a parish of the Redeemed Christian
+          Church of God in Concord. Here, we believe in worshipping God in
+          spirit and truth with the pure Word of God as our guiding light
+          towards impacting lives. We take pride in the unique and profound way
+          we worship, bringing down God’s presence to create an atmosphere that
+          transcends the ordinary. <br />
+          {!showFullText && <span>Our Worship, Bible study and...</span>}
         </p>
         {showFullText ? (
-          <p className={styles["about-us__description"]}>
-            Welcome to The Redeemed Christian Church of God WayForward in
-            Concord, where our worship is truly exceptional, and the pure Word
-            of God is a guiding light in impacting lives. We take pride in the
-            unique and profound way we worship, creating an atmosphere that
-            transcends the ordinary. <br /> Our Bible studies and worship ...
-          </p>
+          <>
+            <p className={styles["about-us__description"]}>
+              Our worship, Bible study, and prayer sessions embody the core of
+              true Christian fellowship: To be thoroughly replenished by the
+              gathering of the saints (Heb. 10:25). We believe in creating an
+              enabling environment where Christians from around the world can
+              worship without limitations and experience authentic fellowship.
+              <br />
+            </p>
+
+            <p className={styles["about-us__description"]}>
+              Furthermore, we’re not limited to only believers. Anyone looking
+              to enjoy the deliverance and saving grace of our Lord Jesus Christ
+              is welcome. <br /> “Come unto me, all ye that labor and are
+              heavily laden, and I will give you rest. Take my yoke upon you,
+              and learn of me; for I am meek and lowly in heart: and ye shall
+              find rest unto your souls. For my yoke is easy, and my burden is
+              light” — Matthew 11:28-30.
+            </p>
+          </>
         ) : null}
         {showViewButton ? (
           <Button

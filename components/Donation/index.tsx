@@ -31,14 +31,11 @@ const Donation: React.FC = () => {
         <div className={styles["donation__content-container"]}>
           <h1 className={styles["donation__content-heading"]}>Online Giving</h1>
           <p className={styles["donation__content-description"]}>
-            Lorem ipsum dolor sit amet consectetur. Duis vulputate libero turpis
-            gravida. Sit blandit bibendum molestie mattis risus velit eu. Morbi
-            consectetur ut nisi massa quam purus. Morbi mauris elementum in enim
-            quis semper nisl. Cursus semper cras sit elementum turpis congue
-            risus. Sed ut imperdiet vitae augue iaculis duis. Nisl sit rutrum
-            sed turpis dui pretium. Fermentum lectus eu turpis mi mauris aliquam
-            et facilisis. Risus at phasellus sem cum elementum molestie. Eget
-            sit.
+            If the Lord has touched your heart to donate to our cause, feel free
+            to do so. Your financial support enables the church to keep running
+            and also help people who are in need. Remember Luke 6:38 (NIV):
+            "Give, and it will be given to you. A good measure, pressed down,
+            shaken together, and running over, will be poured into your lap…"
           </p>
           <div className={styles["donation__content-button"]}>
             <Button

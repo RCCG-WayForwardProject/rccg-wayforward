@@ -37,13 +37,10 @@ const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
       </div>
       <div className={styles["testimonies__description-container"]}>
         <p className={styles["testimonies__description"]}>
-          Lorem ipsum dolor sit amet consectetur. Duis vulputate libero turpis
-          gravida. Sit blandit bibendum molestie mattis risus velit eu. Morbi
-          consectetur ut nisi massa quam purus. Morbi mauris elementum in enim
-          quis semper nisl. Cursus semper cras sit elementum turpis congue
-          risus. Sed ut imperdiet vitae augue iaculis duis. Nisl sit rutrum sed
-          turpis dui pretium. Fermentum lectus eu turpis mi mauris aliquam et
-          facilisis. Risus at phasellus sem cum elementum molestie. Eget sit.
+          Read inspiring testimonies from some of our brethren whose lives have
+          been changed by the Lord since becoming part of our church. Their
+          stories remind us of the wonders possible when we truly connect to the
+          incredible power of God, which is abundant in Wayforward Cathedral.
         </p>
         <div className={styles["testimonies__description-button"]}>
           <Button
