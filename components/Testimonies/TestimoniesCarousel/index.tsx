@@ -4,7 +4,6 @@ import AliceCarousel from "react-alice-carousel";
 
 import Button from "@/components/Button";
 import { CarouselButton } from "@/components/Carousel";
-import TestimonyCard from "./TestimonyCard";
 
 import "react-alice-carousel/lib/alice-carousel.css";
 import styles from "./carousel.module.scss";

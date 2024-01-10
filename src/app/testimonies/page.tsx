@@ -1,12 +1,29 @@
-import React from "react";
+"use client";
+import React, { useState, useRef } from "react";
 
 import Button from "@/components/Button";
+import TestimonyCard from "@/components/Testimonies/TestimoniesCarousel/TestimonyCard";
+import TestimonyModal from "@/components/Testimonies/TestimonyModal";
+
+import { testimonies } from "@/utils/constants";
+import { useClickOutside } from "@/utils/useClickOutside";
 
 import styles from "./testimonies.module.scss";
-import { testimonies } from "@/utils/constants";
-import TestimonyCard from "@/components/Testimonies/TestimoniesCarousel/TestimonyCard";
 
 const TestimoniesPage: React.FC = () => {
+  const [testimonyName, setTestimonyName] = useState<string>("");
+  const [testimony, setTestimony] = useState<string>("");
+  const [openModal, setOpenModal] = useState<boolean>(false);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  const handleViewMore = (name: string, testimony: string) => {
+    setTestimonyName(name);
+    setTestimony(testimony);
+    setOpenModal(!openModal);
+  };
+
+  useClickOutside(modalRef, setOpenModal, false);
+
   return (
     <div className={styles["testimonies"]}>
       <div className={styles["testimonies__heading-container"]}>
@@ -41,10 +58,19 @@ const TestimoniesPage: React.FC = () => {
               key={index + 1}
               name={testimony?.name}
               testimony={testimony?.testimony}
+              handleViewMore={() =>
+                handleViewMore(testimony?.name, testimony?.testimony)
+              }
             />
           );
         })}
       </div>
+
+      {openModal && (
+        <div className={styles["testimonies__modal-wrapper"]} ref={modalRef}>
+          <TestimonyModal name={testimonyName} content={testimony} />
+        </div>
+      )}
     </div>
   );
 };

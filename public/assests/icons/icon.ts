@@ -390,4 +390,9 @@ export const icons: Record<IconNames, string> = {
 </defs>
 </svg>
 `,
+  cancel: `<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+<circle cx="17" cy="17" r="17" fill="#F5EDED"/>
+<path d="M21.76 12.24L12.24 21.76" stroke="#DE8080" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.24 12.24L21.76 21.76" stroke="#DE8080" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`,
 };
