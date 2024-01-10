@@ -23,4 +23,5 @@ export type IconNames =
   | "youtube"
   | "twitter"
   | "checkmark"
-  | "loading";
+  | "loading"
+  | "comingSoon";
