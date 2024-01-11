@@ -40,12 +40,6 @@ const HeaderDropdown: React.FC<HeaderDropdownProps> = ({ dropdownList }) => {
               className={styles["header__link-dropdown-list"]}
               key={index + 1}
             >
-              {/* <Link
-              href={`/${dropdownListItem.path}`}
-              className={styles["header__link-dropdown-list-item"]}
-            >
-              {dropdownListItem.name}
-            </Link> */}
               {dropdownListItem?.path ? (
                 <NavLink
                   path={dropdownListItem?.path!}
@@ -59,6 +53,8 @@ const HeaderDropdown: React.FC<HeaderDropdownProps> = ({ dropdownList }) => {
                       dropdownListItem?.name as CounsellingScreenType
                     )
                   }
+                  type="button"
+                  aria-label="Counselling button link"
                 >
                   {/* {dropdownListItem?.name} */}
                 </button>
@@ -151,6 +147,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
       <button
         className={styles["header__mobile-link-button"]}
         type="button"
+        aria-label="Mobile button link"
         data-sticky={headerSticky}
         data-page={headerPage}
         onClick={handleToggleMobileNav}
@@ -162,6 +159,8 @@ const Header: React.FC<HeaderProps> = ({}) => {
           <button
             className={styles["header__mobile-link-overlay-cancel-button"]}
             onClick={handleToggleMobileNav}
+            type="button"
+            aria-label="Cancel Button"
           >
             <Icon icon="cancel" />
           </button>
@@ -173,7 +172,11 @@ const Header: React.FC<HeaderProps> = ({}) => {
             {mobilePageRoutes?.map((element, index) => {
               return (
                 <li className={styles["header__mobile-link"]} key={index + 1}>
-                  <button onClick={handleToggleMobileNav}>
+                  <button
+                    onClick={handleToggleMobileNav}
+                    type="button"
+                    aria-label="Link button"
+                  >
                     <NavLink path={element.path!} text={element?.name} />
                   </button>
                 </li>
