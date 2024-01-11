@@ -301,3 +301,9 @@ export const booksList = [
     link: "https://amzn.to/3DmKmHn",
   },
 ];
+
+export const homeBgImages = [
+  "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/background_image.jpg",
+  "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/prayer-service.jpg",
+  "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/home-baptism-image.jpg",
+];

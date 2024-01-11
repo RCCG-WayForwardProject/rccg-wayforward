@@ -57,7 +57,7 @@ const MusicCard: React.FC<MusicCardProps> = ({
       }}
     >
       <div className={styles["music-card"]} data-page={homePage}>
-        <audio ref={audioRef}>
+        <audio ref={audioRef} onEnded={() => setIsPlaying(false)}>
           <source src={src} type="audio/mp3" />
           Your browser does not support the audio tag.
         </audio>

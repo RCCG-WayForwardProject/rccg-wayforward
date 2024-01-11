@@ -156,21 +156,3 @@ $z-index: (
     }
   }
 }
-
-@mixin imageFadeAnimation {
-  animation: imageAmimation 2s infinite;
-  @keyframes imageAnimation {
-    0%,
-    20% {
-      background-image: url("/public/images/worshipImage.png");
-    }
-    25%,
-    50% {
-      background-image: url("/public/images/worshipImage_2.jpg");
-    }
-    50%,
-    80% {
-      background-image: url("/public/images/worshipImage_3.jpg");
-    }
-  }
-}

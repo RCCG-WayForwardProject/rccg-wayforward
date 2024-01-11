@@ -1,14 +1,35 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 
 import Icon from "../Icon";
+import { homeBgImages } from "@/utils/constants";
 
 import styles from "./home.module.scss";
 
 const Home: React.FC = () => {
+  let [activeImage, setActiveImage] = useState<number>(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (activeImage < 0) {
+        return setActiveImage(homeBgImages.length - 1);
+      }
+      if (activeImage >= homeBgImages.length) {
+        return setActiveImage(0);
+      }
+      return setActiveImage(activeImage++);
+    }, 2000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [activeImage, setActiveImage]);
+
   return (
-    <section className={styles["home"]}>
-      <div className={styles["home__background-image"]}></div>
-      <div className={styles["home__background-image"]}></div>
+    <section
+      className={styles["home"]}
+      style={{ backgroundImage: `url(${homeBgImages[activeImage]})` }}
+    >
       <div className={styles["home__content-background"]}>
         <div className={styles["home__content-wrapper"]}>
           <div className={styles["home__content-cross-icon"]}>
