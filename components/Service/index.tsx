@@ -26,7 +26,7 @@ const Services: React.FC = () => {
   useEffect(() => {
     const delay = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 1300);
 
     return () => clearTimeout(delay);
   }, []);
