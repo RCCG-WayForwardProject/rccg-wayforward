@@ -74,7 +74,9 @@ const Prayer: React.FC = () => {
         <h1 className={styles["prayer__heading"]}>Prayer Request</h1>
         <div className={styles["prayer__form-image-mobile"]}>
           <Image
-            src={"/images/prayer.png"}
+            src={
+              "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/prayer-img.png"
+            }
             fill
             loading="lazy"
             alt="A praying woman"
@@ -99,7 +101,9 @@ const Prayer: React.FC = () => {
         <div className={styles["prayer__form"]}>
           <div className={styles["prayer__form-image"]}>
             <Image
-              src={"/images/prayer.png"}
+              src={
+                "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/prayer-img.png"
+              }
               fill
               loading="lazy"
               alt="A praying woman"

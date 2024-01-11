@@ -67,7 +67,7 @@ const HeaderDropdown: React.FC<HeaderDropdownProps> = ({ dropdownList }) => {
           );
         })}
       </ul>
-      <div>{counsellingScreen[activeScreen]}</div>
+      {/* <div>{counsellingScreen[activeScreen]}</div> */}
     </div>
   );
 };

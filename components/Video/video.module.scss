@@ -65,5 +65,9 @@
         height: 70px;
       }
     }
+    &-loading {
+      font-size: toRem(24px);
+      color: $col-white;
+    }
   }
 }

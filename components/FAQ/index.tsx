@@ -16,7 +16,9 @@ const FAQ: React.FC = () => {
       <div className={styles["faq__content-wrapper"]}>
         <div className={styles["faq__image"]}>
           <Image
-            src={"/images/faq.png"}
+            src={
+              "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/faq-img.png"
+            }
             alt="Person thinking"
             width={474}
             height={434}

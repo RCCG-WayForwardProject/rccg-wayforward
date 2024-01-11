@@ -37,7 +37,7 @@ const MusicCard: React.FC<MusicCardProps> = ({
     <div
       className={styles["music-card__wrapper"]}
       style={{
-        backgroundImage: `url(/images/${img})`,
+        backgroundImage: `url(${img})`,
       }}
     >
       <div className={styles["music-card"]}>
