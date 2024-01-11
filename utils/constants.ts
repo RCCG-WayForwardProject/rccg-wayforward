@@ -46,8 +46,8 @@ export const services = [
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/prayer-service.jpg",
-    name: "Prayer Service by 5:00pm",
-    day: "Every Thursday",
+    name: "Prayer Service",
+    day: "Every Thursday by 5:00pm",
     location: "Gotham Fan 221b , New York",
   },
   {
@@ -87,39 +87,39 @@ export const upComingEvents = [
 
 export const musics = [
   {
-    name: "Glory to your name",
+    name: "You are God",
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-1.jpg",
     authorName: "Bose Adamson",
-    musicLength: "11:15",
-    src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
+    musicLength: "02:29",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/You+are+God+-+Bose+Adamson.mp3",
   },
   {
-    name: "Not to be moved",
+    name: "Thank you Jesus",
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-2.jpg",
     authorName: "Bose Adamson",
-    musicLength: "11:15",
-    src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
+    musicLength: "01:57",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/Thank+you+Jesus+for+the+blood+-+Bose+Adamson.mp3",
   },
   {
-    name: "Not to be moved",
+    name: "Be lifted high ",
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-3.jpg",
     authorName: "Bose Adamson",
-    musicLength: "11:15",
-    src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
+    musicLength: "00:58",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/Be+lifted+high+by+Bose+Adamson+%23shorts.mp3",
   },
   {
-    name: "Not to be moved",
+    name: "When you serve",
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-4.jpg",
     authorName: "Bose Adamson",
     musicLength: "11:15",
-    src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/Bose+Adamson+-+When+you+serve.mp3",
   },
   {
-    name: "Not to be moved",
+    name: "Jireh cover",
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-5.jpg",
     authorName: "Bose Adamson",
     musicLength: "11:15",
-    src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/Jireh+cover+by+Bose+Adamson+(Elevation+worship).mp3",
   },
   {
     name: "Not to be moved",
