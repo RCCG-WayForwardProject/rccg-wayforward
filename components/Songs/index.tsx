@@ -38,9 +38,9 @@ const Songs: React.FC = () => {
       <div className={styles["songs__heading-wrapper"]}>
         <h1 className={styles["songs__heading"]}>Gospel Songs</h1>
         <h1 className={styles["songs__heading-mobile"]}> Songs</h1>
-        <h3 className={styles["songs__subheading"]}>
+        <h2 className={styles["songs__subheading"]}>
           Songs to strengthen <span>God&apos;s Presence</span>
-        </h3>
+        </h2>
       </div>
       <div className={styles["songs__content-wrapper"]}>
         {loading ? (

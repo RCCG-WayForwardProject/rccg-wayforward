@@ -49,9 +49,9 @@ const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
     <div className={styles["testimonies"]} style={style}>
       <div className={styles["testimonies__heading-container"]}>
         <h1 className={styles["testimonies__heading"]}>Testimonies</h1>
-        <h3 className={styles["testimonies__subheading"]}>
+        <h2 className={styles["testimonies__subheading"]}>
           <span>Inspiring testimonies</span> you shouldn&apos;t miss
-        </h3>
+        </h2>
       </div>
       <div className={styles["testimonies__description-container"]}>
         <p className={styles["testimonies__description"]}>

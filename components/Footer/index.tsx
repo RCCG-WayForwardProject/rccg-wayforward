@@ -17,7 +17,11 @@ const Footer: React.FC = () => {
               key={index + 1}
               onClick={element?.onClick}
             >
-              <button className={styles["footer__info-button"]}>
+              <button
+                className={styles["footer__info-button"]}
+                type="button"
+                aria-label="footer-button"
+              >
                 <Icon icon={element?.icon as IconNames} />
               </button>
               <div className={styles["footer__info"]}>
@@ -40,6 +44,7 @@ const Footer: React.FC = () => {
                 href={element?.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="footer-link"
                 className={styles["footer__link"]}
               >
                 <Icon icon={element?.icon as IconNames} />

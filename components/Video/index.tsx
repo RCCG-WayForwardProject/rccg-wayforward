@@ -49,6 +49,12 @@ const VideoPlayer: React.FC = () => {
           type="video/mp4"
           src="https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Videos/Bose+Adamson+-+I+will+not+be+moved.mp4"
         />
+        <track
+          src="captions_en.vtt"
+          kind="captions"
+          srcLang="en"
+          label="english_captions"
+        />
         Your browser does not support the video tag.
       </video>
       {(isHovered || !isPlaying) && (
@@ -62,6 +68,7 @@ const VideoPlayer: React.FC = () => {
               className={styles["video__overlay-play-button"]}
               type="button"
               onClick={togglePlay}
+              aria-label="Video button"
             >
               <Icon icon={isPlaying ? "pause" : "play"} />
             </button>
