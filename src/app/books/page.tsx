@@ -36,7 +36,8 @@ const BooksPage: React.FC = () => {
             >
               <div className={styles["books__book-image"]}>
                 <Image
-                  src={`/images/${book?.img}`}
+                  // src={`/images/${book?.img}`}
+                  src={book?.img}
                   fill
                   loading="lazy"
                   alt="Book Image"

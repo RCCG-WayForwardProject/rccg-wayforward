@@ -30,6 +30,9 @@
     }
     & a {
       color: inherit;
+      @include respond(mobile-screen) {
+        color: $col-white;
+      }
     }
   }
   @include respond(mobile-screen) {

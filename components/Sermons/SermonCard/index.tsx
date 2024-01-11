@@ -14,7 +14,7 @@ export const SermonCard: React.FC<SermonCardProps> = ({ name, img }) => {
   return (
     <div className={styles["sermon"]}>
       <div className={styles["sermon__image"]}>
-        <Image src={`/images/${img}`} fill loading="lazy" alt="Sermon Image" />
+        <Image src={img} fill loading="lazy" alt="Sermon Image" />
       </div>
       <p className={styles["sermon__name"]}>{name}</p>
       <Button

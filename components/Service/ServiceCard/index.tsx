@@ -25,7 +25,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
     <div className={styles["services__service"]}>
       <div className={styles["services__service-image"]}>
         <Image
-          src={`/images/${img}`}
+          src={img}
           fill
           alt="Service image"
           loading="lazy"

@@ -25,4 +25,5 @@ export type IconNames =
   | "checkmark"
   | "loading"
   | "comingSoon"
-  | "cancel";
+  | "cancel"
+  | "error";

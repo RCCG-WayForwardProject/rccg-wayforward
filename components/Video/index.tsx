@@ -1,12 +1,11 @@
 "use client";
-import React, { useRef, useState } from "react";
-
+import React, { useRef, useState, useEffect } from "react";
 import Icon from "../Icon";
-
 import styles from "./video.module.scss";
 
 const VideoPlayer: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [isHovered, setIsHovered] = useState<boolean>(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const togglePlay = () => {
@@ -18,32 +17,57 @@ const VideoPlayer: React.FC = () => {
     setIsPlaying(!isPlaying);
   };
 
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const handleVideoEnded = () => {
+    setIsPlaying(false);
+  };
+
   return (
-    <div className={styles["video__container"]}>
+    <div
+      className={styles["video__container"]}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <video
         ref={videoRef}
         className={styles["video"]}
-        poster={"/images/video-poster.jpg"}
+        poster={
+          "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/video-poster-img.jpg"
+        }
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
+        onEnded={handleVideoEnded}
       >
-        {/* src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" */}
-        <source type="video/mp4" src="" />
+        <source
+          type="video/mp4"
+          src="https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Videos/Bose+Adamson+-+I+will+not+be+moved.mp4"
+        />
         Your browser does not support the video tag.
       </video>
-      <div className={styles["video__overlay"]}>
-        <div className={styles["video__overlay-content-container"]}>
-          <h1 className={styles["video__overlay-content-heading"]}>
-            <span> Experience Exceptional Worship</span> and Life-Impacting Word
-            at Our Church in Concord
-          </h1>
-          <button
-            className={styles["video__overlay-play-button"]}
-            type="button"
-            onClick={togglePlay}
-          >
-            <Icon icon={isPlaying ? "pause" : "play"} />
-          </button>
+      {(isHovered || !isPlaying) && (
+        <div className={styles["video__overlay"]}>
+          <div className={styles["video__overlay-content-container"]}>
+            <h1 className={styles["video__overlay-content-heading"]}>
+              <span> Experience Exceptional Worship</span> and Life-Impacting
+              Word at Our Church in Concord
+            </h1>
+            <button
+              className={styles["video__overlay-play-button"]}
+              type="button"
+              onClick={togglePlay}
+            >
+              <Icon icon={isPlaying ? "pause" : "play"} />
+            </button>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

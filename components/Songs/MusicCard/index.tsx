@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 import styles from "./music-card.module.scss";
 import Image from "next/image";
 import Icon from "@/components/Icon";
+import { usePathname } from "next/navigation";
 
 interface MusicCardProps {
   src?: string;
@@ -24,52 +25,95 @@ const MusicCard: React.FC<MusicCardProps> = ({
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  const togglePlay = () => {
-    if (isPlaying) {
-      audioRef.current!.play();
-    } else {
-      audioRef.current!.pause();
+  const pathname = usePathname();
+  const home = pathname === "/";
+  const homePage = home ? "home" : "otherPages";
+
+  const togglePlay = async () => {
+    const audioElement = audioRef.current;
+
+    if (!audioElement) {
+      return;
     }
-    setIsPlaying(!isPlaying);
+
+    try {
+      if (isPlaying) {
+        await audioElement.pause();
+      } else {
+        await audioElement.play();
+      }
+      setIsPlaying(!isPlaying);
+    } catch (error) {
+      console.error("Error toggling play:", error);
+    }
   };
 
   return (
     <div
       className={styles["music-card__wrapper"]}
+      data-page={homePage}
       style={{
-        backgroundImage: `url(/images/${img})`,
+        backgroundImage: `url(${img})`,
       }}
     >
-      <div className={styles["music-card"]}>
+      <div className={styles["music-card"]} data-page={homePage}>
         <audio ref={audioRef}>
-          <source src={""} type="audio/mp3" />
+          <source src={src} type="audio/mp3" />
           Your browser does not support the audio tag.
         </audio>
         <div className={styles["music-card__content-wrapper"]}>
-          <p className={styles["music-card__name"]}>{name} </p>
-          <div className={styles["music-card__author-wrapper"]}>
-            <div>
-              <Image
-                src={authorImage ? authorImage : "/images/pastor_image.svg"}
-                width={16}
-                height={16}
-                alt="author image"
-                style={{ borderRadius: "50%" }}
-              />
+          <div className={styles["music-card__image-mobile-column-wrapper"]}>
+            <div
+              className={styles["music-card__image-mobile"]}
+              style={{
+                backgroundImage: `url(${img})`,
+              }}
+              data-page={homePage}
+            ></div>
+            <div className={styles["music-card__name-column-wrapper"]}>
+              <p className={styles["music-card__name"]} data-page={homePage}>
+                {name}{" "}
+              </p>
+              <div className={styles["music-card__author-wrapper"]}>
+                <div>
+                  <Image
+                    src={authorImage ? authorImage : "/images/pastor_image.svg"}
+                    width={16}
+                    height={16}
+                    alt="author image"
+                    style={{ borderRadius: "50%" }}
+                  />
+                </div>
+                <p
+                  className={styles["music-card__author-name"]}
+                  data-page={homePage}
+                >
+                  {authorName ?? "N/A"}
+                </p>
+              </div>
             </div>
-            <p className={styles["music-card__author-name"]}>
-              {authorName ?? "N/A"}
-            </p>
           </div>
-          <div className={styles["music-card__player-wrapper"]}>
-            <div className={styles["music-card__player-icon"]}>
+          <div
+            className={styles["music-card__player-wrapper"]}
+            data-page={homePage}
+          >
+            <div
+              className={styles["music-card__player-icon"]}
+              data-page={homePage}
+            >
               <Icon icon="audioWave" />
             </div>
-            <p className={styles["music-card__player-duration"]}>{duration} </p>
+            <p
+              className={styles["music-card__player-duration"]}
+              data-page={homePage}
+            >
+              {duration}{" "}
+            </p>
             <button
               onClick={togglePlay}
               className={styles["music-card__player-button"]}
               type="button"
+              data-page={homePage}
             >
               {isPlaying ? <Icon icon="pause" /> : <Icon icon="play" />}
             </button>

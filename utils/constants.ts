@@ -12,58 +12,48 @@ export const slidesContent: Array<{ img: string }> = [
 
 export const sermonsList = [
   {
-    img: "worshipImage_2.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-1.jpg",
     name: "Marriage Unknown",
   },
   {
-    img: "worshipImage.png",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-2.jpg",
     name: "Forgiveness",
   },
   {
-    img: "worshipImage_3.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-3.jpg",
     name: "Divine Wisdom",
   },
   {
-    img: "worshipImage_2.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-4.jpg",
     name: "The Holy Spirit Pt 1",
   },
   {
-    img: "worshipImage_3.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-5.jpg",
     name: "The Holy Spirit Pt 2",
   },
   {
-    img: "worshipImage.png",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-6.jpg",
     name: "Forgiveness",
-  },
-  {
-    img: "worshipImage_3.jpg",
-    name: "Divine Wisdom",
   },
 ];
 
 export const services = [
   {
-    img: "worshipImage_3.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/bible-service.jpg",
     name: "Bible Study",
-    day: "Every Wednesday",
+    day: "Every Wednesday by 5:00pm",
     location: "Gotham Fan 221b , New York",
   },
   {
-    img: "worshipImage_2.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/prayer-service.jpg",
     name: "Prayer Service",
-    day: "Every Thursday",
+    day: "Every Thursday by 5:00pm",
     location: "Gotham Fan 221b , New York",
   },
   {
-    img: "worshipImage_3.jpg",
-    name: "Bible Study",
-    day: "Every Wednesday",
-    location: "Gotham Fan 221b , New York",
-  },
-  {
-    img: "worshipImage_2.jpg",
-    name: "Prayer Service",
-    day: "Every Thursday",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sunday-service.jpg",
+    name: "Sunday Service",
+    day: "Every Sunday by 10:00am",
     location: "Gotham Fan 221b , New York",
   },
 ];
@@ -97,50 +87,50 @@ export const upComingEvents = [
 
 export const musics = [
   {
-    name: "Glory to your name",
-    img: "image-23.jpg",
+    name: "You are God",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-1.jpg",
+    authorName: "Bose Adamson",
+    musicLength: "02:29",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/You+are+God+-+Bose+Adamson.mp3",
+  },
+  {
+    name: "Thank you Jesus",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-2.jpg",
+    authorName: "Bose Adamson",
+    musicLength: "01:57",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/Thank+you+Jesus+for+the+blood+-+Bose+Adamson.mp3",
+  },
+  {
+    name: "Be lifted high ",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-3.jpg",
+    authorName: "Bose Adamson",
+    musicLength: "00:58",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/Be+lifted+high+by+Bose+Adamson+%23shorts.mp3",
+  },
+  {
+    name: "When you serve",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-4.jpg",
+    authorName: "Bose Adamson",
+    musicLength: "11:15",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/Bose+Adamson+-+When+you+serve.mp3",
+  },
+  {
+    name: "Jireh cover",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-5.jpg",
+    authorName: "Bose Adamson",
+    musicLength: "11:15",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/Jireh+cover+by+Bose+Adamson+(Elevation+worship).mp3",
+  },
+  {
+    name: "Not to be moved",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-6.jpg",
     authorName: "Bose Adamson",
     musicLength: "11:15",
     src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
   },
   {
     name: "Not to be moved",
-    img: "image-24.jpg",
-    authorName: "Bose Adamson",
-    musicLength: "11:15",
-    src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
-  },
-  {
-    name: "Not to be moved",
-    img: "image-25.jpg",
-    authorName: "Bose Adamson",
-    musicLength: "11:15",
-    src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
-  },
-  {
-    name: "Not to be moved",
-    img: "image-23.jpg",
-    authorName: "Bose Adamson",
-    musicLength: "11:15",
-    src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
-  },
-  {
-    name: "Not to be moved",
-    img: "image-24.jpg",
-    authorName: "Bose Adamson",
-    musicLength: "11:15",
-    src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
-  },
-  {
-    name: "Not to be moved",
-    img: "image-25.jpg",
-    authorName: "Bose Adamson",
-    musicLength: "11:15",
-    src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
-  },
-  {
-    name: "Not to be moved",
-    img: "image-23.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-7.jpg",
     authorName: "Bose Adamson",
     musicLength: "11:15",
     src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
@@ -307,7 +297,7 @@ export const vision = [
 export const booksList = [
   {
     name: "Commander In Chief",
-    img: "commander_in_chief.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/commander_in_chief.jpg",
     link: "https://amzn.to/3DmKmHn",
   },
 ];
