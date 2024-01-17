@@ -18,7 +18,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/png" href="/logo.svg"></link>
         <meta name="theme-color" content="#F2F5F8" />
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
       </head>
       <body suppressHydrationWarning>
         {typeof window === undefined ? null : (

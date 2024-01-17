@@ -1,9 +1,10 @@
 import React, { useState, useRef } from "react";
+import { usePathname } from "next/navigation";
+import Image from "next/image";
+
+import Icon from "@/components/Icon";
 
 import styles from "./music-card.module.scss";
-import Image from "next/image";
-import Icon from "@/components/Icon";
-import { usePathname } from "next/navigation";
 
 interface MusicCardProps {
   src?: string;

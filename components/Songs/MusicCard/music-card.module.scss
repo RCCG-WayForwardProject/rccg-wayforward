@@ -140,6 +140,7 @@
       align-items: center;
       justify-content: center;
       background-color: $col-green-1;
+      margin-left: 2px;
       @include border-radius(50%);
       & span {
         & svg {
