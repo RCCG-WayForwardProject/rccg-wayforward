@@ -5,7 +5,7 @@
   line-height: 72px;
   letter-spacing: 0.5px;
   opacity: 0.52;
-  color: #e2e2e2;
+  color: $col-grey-6;
 }
 
 @mixin heading-vertical {
@@ -15,7 +15,7 @@
 }
 
 @mixin heading-mobile {
-  color: $col-grey-2;
+  color: $col-grey-6;
   font-size: toRem(53px);
   font-style: normal;
   font-weight: 900;
