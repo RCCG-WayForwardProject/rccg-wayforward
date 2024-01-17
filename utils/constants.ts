@@ -303,7 +303,7 @@ export const booksList = [
 ];
 
 export const homeBgImages = [
-  "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/background_image.jpg",
-  "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/prayer-service.jpg",
-  "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/home-baptism-image.jpg",
+  "background_image.jpg",
+  "prayer-service.jpg",
+  "home-baptism-image.jpg",
 ];
