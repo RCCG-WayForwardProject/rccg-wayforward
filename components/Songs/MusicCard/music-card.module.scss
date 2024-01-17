@@ -4,6 +4,7 @@
 @import "../../../styles/typography";
 
 .music-card {
+  position: relative;
   height: 100%;
   width: 100%;
   display: flex;
@@ -53,6 +54,17 @@
       }
     }
   }
+  &__download-icon {
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    & img {
+      filter: grayscale(1) invert(1);
+      width: 40px;
+      height: 40px;
+    }
+  }
+
   &__image-mobile {
     display: none;
     &[data-page="otherPages"] {

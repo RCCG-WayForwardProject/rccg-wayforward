@@ -6,12 +6,14 @@ import Icon from "@/components/Icon";
 
 import styles from "./music-card.module.scss";
 
+type AudioDownloadType = null | "loading" | "success" | "error";
 interface MusicCardProps {
   src?: string;
   name: string;
   authorName?: string;
   authorImage?: string;
   duration?: string;
+  downloadable?: boolean;
   img: string;
 }
 
@@ -21,9 +23,12 @@ const MusicCard: React.FC<MusicCardProps> = ({
   duration,
   authorImage,
   authorName,
+  downloadable,
   img,
 }) => {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [audioDownloading, setAudioDownloading] =
+    useState<AudioDownloadType>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const pathname = usePathname();
@@ -49,6 +54,27 @@ const MusicCard: React.FC<MusicCardProps> = ({
     }
   };
 
+  const handleDownloadAudio = async () => {
+    const audioUrl = src;
+    setAudioDownloading("loading");
+    try {
+      const response = await fetch(audioUrl!);
+      const blob = await response.blob();
+
+      const element = document.createElement("a");
+      element.href = URL.createObjectURL(blob);
+      element.download = `${name}.mp3`;
+      element.click();
+      setAudioDownloading("success");
+    } catch (error) {
+      console.log(error);
+      setAudioDownloading("error");
+    }
+  };
+
+  const isLoading = Boolean(audioDownloading === "loading");
+  const error = Boolean(audioDownloading === "error");
+
   return (
     <div
       className={styles["music-card__wrapper"]}
@@ -62,6 +88,22 @@ const MusicCard: React.FC<MusicCardProps> = ({
           <source src={src} type="audio/mp3" />
           Your browser does not support the audio tag.
         </audio>
+
+        {downloadable && (
+          <button
+            className={styles["music-card__download-icon"]}
+            type="button"
+            aria-label="download-button"
+            onClick={handleDownloadAudio}
+          >
+            {isLoading ? (
+              <img src={"/images/downloading.gif"} />
+            ) : (
+              <Icon icon="download" />
+            )}
+          </button>
+        )}
+
         <div className={styles["music-card__content-wrapper"]}>
           <div className={styles["music-card__image-mobile-column-wrapper"]}>
             <div
