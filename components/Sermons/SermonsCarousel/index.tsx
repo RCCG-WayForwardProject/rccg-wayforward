@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 
 import LoadingCard from "@/components/LoadingCard";
 import { SermonCard } from "../SermonCard";
+import MusicCard from "@/components/Songs/MusicCard";
 import Carousel from "@/components/Carousel";
 
 import styles from "./sermons-carousel.module.scss";
@@ -35,7 +36,7 @@ const SermonCarousel: React.FC<SermonCarouselProps> = ({ sermonsList }) => {
         <Carousel responsive={responsive}>
           {sermonsList?.map((sermon, index) => {
             return (
-              <SermonCard
+              <MusicCard
                 img={sermon?.img!}
                 name={sermon?.name!}
                 key={index + 1}
@@ -61,3 +62,11 @@ const LoadingSermons = () => {
     </>
   );
 };
+
+{
+  /* <SermonCard
+                img={sermon?.img!}
+                name={sermon?.name!}
+                key={index + 1}
+              /> */
+}

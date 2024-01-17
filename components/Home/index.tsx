@@ -28,7 +28,7 @@ const Home: React.FC = () => {
   return (
     <section
       className={styles["home"]}
-      style={{ backgroundImage: `url(${homeBgImages[activeImage]})` }}
+      style={{ backgroundImage: `url(/images/${homeBgImages[activeImage]})` }}
     >
       <div className={styles["home__content-background"]}>
         <div className={styles["home__content-wrapper"]}>

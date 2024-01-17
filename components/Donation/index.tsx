@@ -1,11 +1,12 @@
 "use client";
 import React, { useRef, useState } from "react";
-
-import styles from "./donation.module.scss";
 import Image from "next/image";
+
 import Button from "../Button";
 import Modal from "./Modal";
 import { useClickOutside } from "@/utils/useClickOutside";
+
+import styles from "./donation.module.scss";
 
 const Donation: React.FC = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
@@ -22,10 +23,12 @@ const Donation: React.FC = () => {
       <div className={styles["donation__content-wrapper"]}>
         <div className={styles["donation__content-icon"]}>
           <Image
-            src={"/images/donation.png"}
+            src={
+              "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/donation.png"
+            }
             fill
             alt="Giving icon"
-            loading="eager"
+            loading="lazy"
           />
         </div>
         <div className={styles["donation__content-container"]}>

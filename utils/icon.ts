@@ -26,4 +26,5 @@ export type IconNames =
   | "loading"
   | "comingSoon"
   | "cancel"
-  | "error";
+  | "error"
+  | "download";
