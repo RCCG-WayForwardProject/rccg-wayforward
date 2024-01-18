@@ -10,18 +10,18 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import styles from "./carousel.module.scss";
 
 interface TestimoniesCarouselProps {
-  handleGoToTestimoniesPage?: () => void;
+  handleGoToBlogsPage?: () => void;
   children: React.ReactNode;
 }
 
 const TestimoniesCarousel: React.FC<TestimoniesCarouselProps> = ({
-  handleGoToTestimoniesPage,
+  handleGoToBlogsPage,
   children,
 }) => {
   const [responsive] = useState({
     0: { items: 1.1 },
     500: { items: 2 },
-    1000: { items: 3.5 },
+    1000: { items: 3 },
   });
 
   const carouselRef = useRef<AliceCarousel>(null);
@@ -39,7 +39,7 @@ const TestimoniesCarousel: React.FC<TestimoniesCarouselProps> = ({
   };
 
   return (
-    <div className={styles["testimony__carousel"]}>
+    <div className={styles["blog__carousel"]}>
       <AliceCarousel
         disableDotsControls
         keyboardNavigation
@@ -49,17 +49,17 @@ const TestimoniesCarousel: React.FC<TestimoniesCarouselProps> = ({
       >
         {children}
       </AliceCarousel>
-      <div className={styles["testimony__button-wrapper"]}>
-        <div className={styles["testimony__button"]}>
+      <div className={styles["blog__button-wrapper"]}>
+        <div className={styles["blog__button"]}>
           <Button
-            label="View All Testimony"
+            label="View All"
             type="button"
             variant="primary"
             size="mini"
-            handleClick={handleGoToTestimoniesPage}
+            handleClick={handleGoToBlogsPage}
           />
         </div>
-        <div className={styles["testimony__carousel-buttons-wrapper"]}>
+        <div className={styles["blog__carousel-buttons-wrapper"]}>
           <CarouselButton
             icon="arrowLeftCircle"
             onClick={handlePrevButtonClick}

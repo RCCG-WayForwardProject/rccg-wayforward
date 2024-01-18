@@ -307,3 +307,41 @@ export const homeBgImages = [
   "prayer-service.jpg",
   "home-baptism-image.jpg",
 ];
+
+export const blogs = [
+  {
+    image: "background_image.jpg",
+    title: "Divine Wisdom",
+    description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
+    dateCreated: "14 Feb",
+    creator: "Peter Adamson",
+  },
+  {
+    image: "prayer-service.jpg",
+    title: "Divine Wisdom",
+    description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
+    dateCreated: "14 Feb",
+    creator: "Peter Adamson",
+  },
+  {
+    image: "home-baptism-image.jpg",
+    title: "Divine Wisdom",
+    description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
+    dateCreated: "14 Feb",
+    creator: "Peter Adamson",
+  },
+  {
+    image: "prayer-service.jpg",
+    title: "Divine Wisdom",
+    description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
+    dateCreated: "14 Feb",
+    creator: "Peter Adamson",
+  },
+  {
+    image: "home-baptism-image.jpg",
+    title: "Divine Wisdom",
+    description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
+    dateCreated: "14 Feb",
+    creator: "Peter Adamson",
+  },
+];
