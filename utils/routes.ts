@@ -83,4 +83,8 @@ export const mobilePageRoutes = [
     path: "testimonies",
     name: "Testimonies",
   },
+  {
+    path: "blogs",
+    name: "Blogs",
+  },
 ];
