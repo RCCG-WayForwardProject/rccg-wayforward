@@ -22,6 +22,10 @@ export const pageRoutes = [
         path: "books",
         name: "Books",
       },
+      {
+        path: "blogs",
+        name: "Blogs",
+      },
     ],
   },
   {

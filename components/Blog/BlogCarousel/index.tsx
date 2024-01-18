@@ -19,8 +19,7 @@ const TestimoniesCarousel: React.FC<TestimoniesCarouselProps> = ({
   children,
 }) => {
   const [responsive] = useState({
-    0: { items: 1.1 },
-    500: { items: 2 },
+    0: { items: 1 },
     1000: { items: 3 },
   });
 

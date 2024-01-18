@@ -21,12 +21,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
   return (
     <div className={styles["blog-card"]}>
       <div className={styles["blog-card__image"]}>
-        <Image
-          src={`/images/${image}`}
-          fill
-          style={{ borderRadius: "45px" }}
-          alt={"blog-post-image"}
-        />
+        <Image src={`/images/${image}`} fill alt={"blog-post-image"} />
       </div>
       <h1 className={styles["blog-card__title"]}>{title}</h1>
       <p className={styles["blog-card__date-created"]}>
