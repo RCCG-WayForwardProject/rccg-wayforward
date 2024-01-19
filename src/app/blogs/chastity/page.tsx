@@ -269,7 +269,8 @@ const BlogPost: React.FC = () => {
             prompting us to seek God's strength and grace in this sacred
             endeavor. Let us strive for purity in thought, word, and deed,
             knowing that in our pursuit of holiness, we draw closer to the One
-            who is pure and holy, our Lord and Savior, Jesus Christ. Amen.
+            who is pure and holy, our Lord and Savior, Jesus Christ.
+            <br /> Amen.
           </p>
         </div>
       </div>

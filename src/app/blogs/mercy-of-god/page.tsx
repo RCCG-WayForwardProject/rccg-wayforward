@@ -260,7 +260,8 @@ const BlogPost: React.FC = () => {
           the Holy Spirit, we find ourselves equipped for victorious Christian
           living, radiating the love and light of Christ in a world in need. May
           the Holy Spirit continue to empower and guide us on our remarkable
-          journey of faith. Amen.
+          journey of faith.
+          <br /> Amen.
         </p>
       </div>
     </div>

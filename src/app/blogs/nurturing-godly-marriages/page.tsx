@@ -271,7 +271,8 @@ const BlogPost: React.FC = () => {
           <br />
           As we embrace God's design for marriage, may our unions become beacons
           of hope and examples of the profound beauty found in the sacred
-          covenant established by our Heavenly Father. Amen.
+          covenant established by our Heavenly Father.
+          <br /> Amen.
         </p>
       </div>
     </div>

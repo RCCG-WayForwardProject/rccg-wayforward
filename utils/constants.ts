@@ -344,7 +344,7 @@ export const blogs = [
   {
     slug: "divine-wisdom",
     image: "home-baptism-image.jpg",
-    title: "Divine Wisdom",
+    title: "The Timelessness of Divine Wisdom",
     description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
     dateCreated: "14 Feb",
     creator: "Peter Adamson",

@@ -1,0 +1,89 @@
+@import "../../../../styles/functions";
+@import "../../../../styles/typography";
+@import "../../../../styles/variables";
+@import "../../../../styles/base/mixins";
+
+.blog-post {
+  padding: 26px 97px 90px 97px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @include respond(mobile-screen) {
+    padding: 26px 6%;
+  }
+  &__button {
+    width: fit-content;
+  }
+  &__image {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    @include border-radius(4px);
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #11142d;
+    text-align: center;
+    @include respond(mobile-screen) {
+      font-size: 18px;
+    }
+  }
+  &__content {
+    // color: #92929d;
+    color: #0d0d0d;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    @include respond(mobile-screen) {
+      font-size: 14px;
+    }
+    &-bold {
+      font-weight: 700;
+      color: #11142d;
+    }
+    &-italic {
+      font-style: italic;
+    }
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    &-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  &__list {
+    list-style: disc;
+    color: #0d0d0d;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.08px;
+    @include respond(mobile-screen) {
+      font-size: 14px;
+    }
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 20px;
+    }
+    &-number {
+      list-style: decimal;
+      color: #0d0d0d;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0.08px;
+      @include respond(mobile-screen) {
+        font-size: 14px;
+      }
+    }
+  }
+}
