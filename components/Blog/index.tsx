@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 import BlogCarousel from "./BlogCarousel";
 import BlogCard from "./BlogCard";
@@ -16,7 +17,7 @@ const Blogs: React.FC = () => {
   const { push } = useRouter();
 
   const handleRouteToBlogsPage = () => {
-    push("/testimonies");
+    push("/blogs");
   };
 
   useEffect(() => {
@@ -35,17 +36,21 @@ const Blogs: React.FC = () => {
           <LoadingItems />
         </div>
       ) : (
-        <BlogCarousel>
+        <BlogCarousel handleGoToBlogsPage={handleRouteToBlogsPage}>
           {blogs?.map((blog, index) => {
             return (
-              <BlogCard
+              <Link
+                href={`/blogs/${encodeURIComponent(blog.slug)}`}
                 key={index + 1}
-                image={blog?.image}
-                title={blog?.title}
-                description={blog?.description}
-                dateCreated={blog?.dateCreated}
-                creator={blog?.creator}
-              />
+              >
+                <BlogCard
+                  image={blog?.image}
+                  title={blog?.title}
+                  description={blog?.description}
+                  dateCreated={blog?.dateCreated}
+                  creator={blog?.creator}
+                />
+              </Link>
             );
           })}
         </BlogCarousel>
