@@ -7,6 +7,7 @@ import BlogCard from "@/components/Blog/BlogCard";
 import { blogs } from "@/utils/constants";
 
 import styles from "./blogs.module.scss";
+import Link from "next/link";
 
 const BlogsPage: React.FC = () => {
   const [query, setQuery] = useState<string>("");
@@ -40,14 +41,19 @@ const BlogsPage: React.FC = () => {
       <div className={styles["blogs__blog-wrapper"]}>
         {filteredBlogs?.map((blog, index) => {
           return (
-            <BlogCard
+            <Link
+              href={`/blogs/${encodeURIComponent(blog.slug)}`}
               key={index + 1}
-              title={blog?.title}
-              description={blog?.description}
-              image={blog?.image}
-              creator={blog?.creator}
-              dateCreated={blog?.dateCreated}
-            />
+            >
+              <BlogCard
+                key={index + 1}
+                title={blog?.title}
+                description={blog?.description}
+                image={blog?.image}
+                creator={blog?.creator}
+                dateCreated={blog?.dateCreated}
+              />
+            </Link>
           );
         })}
       </div>

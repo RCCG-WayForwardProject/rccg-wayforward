@@ -310,6 +310,7 @@ export const homeBgImages = [
 
 export const blogs = [
   {
+    slug: "divine-wisdom",
     image: "background_image.jpg",
     title: "Divine Wisdom",
     description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
@@ -317,13 +318,15 @@ export const blogs = [
     creator: "Peter Adamson",
   },
   {
+    slug: "divine-wisdom",
     image: "prayer-service.jpg",
-    title: "Divine Wisdom",
+    title: "Divine Salvation",
     description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
     dateCreated: "14 Feb",
     creator: "Peter Adamson",
   },
   {
+    slug: "divine-wisdom",
     image: "home-baptism-image.jpg",
     title: "Divine Wisdom",
     description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
@@ -331,6 +334,7 @@ export const blogs = [
     creator: "Peter Adamson",
   },
   {
+    slug: "divine-wisdom",
     image: "prayer-service.jpg",
     title: "Divine Wisdom",
     description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
@@ -338,6 +342,7 @@ export const blogs = [
     creator: "Peter Adamson",
   },
   {
+    slug: "divine-wisdom",
     image: "home-baptism-image.jpg",
     title: "Divine Wisdom",
     description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
