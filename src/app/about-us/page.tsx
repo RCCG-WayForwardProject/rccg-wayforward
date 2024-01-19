@@ -9,6 +9,7 @@ import Testimonies from "@/components/Testimonies";
 import Donation from "@/components/Donation";
 import Prayer from "@/components/Prayer";
 import FAQ from "@/components/FAQ";
+import Contact from "@/components/Contact";
 
 import styles from "./about-us.module.scss";
 
@@ -24,6 +25,7 @@ const AboutPage: React.FC = () => {
       <Donation />
       <Prayer />
       <FAQ />
+      <Contact />
     </div>
   );
 };

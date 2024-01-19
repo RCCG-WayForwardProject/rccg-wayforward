@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "../../styles/style.scss";
-import Contact from "@/components/Contact";
 
 export const metadata = {
   title: "The Redeemed Christian Church Of God | Concord Church",
@@ -25,7 +24,6 @@ export default function RootLayout({
           <>
             <Header />
             {children}
-            <Contact />
             <Footer />
           </>
         )}

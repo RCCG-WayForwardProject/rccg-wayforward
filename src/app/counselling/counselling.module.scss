@@ -1,0 +1,28 @@
+@import "../../../styles/functions";
+@import "../../../styles/typography";
+@import "../../../styles/variables";
+@import "../../../styles/base/mixins";
+
+.counselling {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 95px 65px 95px;
+  @include respond(mobile-screen) {
+    height: fit-content;
+    padding: 10px 6% 45px 6%;
+  }
+  &__heading {
+    font-size: toRem(24px);
+    color: #444444;
+    font-weight: 600;
+    @include respond(mobile-screen) {
+      font-size: 18px;
+    }
+  }
+  &__description {
+    color: #444444;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}

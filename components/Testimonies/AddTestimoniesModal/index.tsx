@@ -78,7 +78,7 @@ const AddTestimoniesModal: React.FC = () => {
           <textarea
             className={styles["modal__form-info-textarea"]}
             id="testimony"
-            name="testimony"
+            name="message"
             placeholder="Enter testimony"
             required
           />
