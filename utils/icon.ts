@@ -5,6 +5,7 @@ export type IconNames =
   | "mouseDown"
   | "cross"
   | "worshipWordIcon"
+  | "worshipWordIcon2"
   | "calendar"
   | "location"
   | "arrowLeftCircle"

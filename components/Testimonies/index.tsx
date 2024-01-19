@@ -12,6 +12,7 @@ import TestimonyModal from "./TestimonyModal";
 import TestimonyCard from "./TestimoniesCarousel/TestimonyCard";
 
 import styles from "./testimonies.module.scss";
+import AddTestimoniesModal from "./AddTestimoniesModal";
 
 interface TestimoniesProps {
   style?: React.CSSProperties;
@@ -21,6 +22,8 @@ const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
   const [testimony, setTestimony] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(true);
   const [openModal, setOpenModal] = useState<boolean>(false);
+  const [openAddTestimonyModal, setOpenAddTestimonyModal] =
+    useState<boolean>(false);
   const modalRef = useRef<HTMLDivElement>(null);
 
   const { push } = useRouter();
@@ -35,7 +38,12 @@ const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
     setOpenModal(!openModal);
   };
 
+  const handleAddTestimony = () => {
+    setOpenAddTestimonyModal(!openAddTestimonyModal);
+  };
+
   useClickOutside(modalRef, setOpenModal, false);
+  useClickOutside(modalRef, setOpenAddTestimonyModal, false);
 
   useEffect(() => {
     const delay = setTimeout(() => {
@@ -66,6 +74,7 @@ const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
             type="button"
             variant="primary"
             size="mini"
+            handleClick={handleAddTestimony}
           />
         </div>
       </div>
@@ -96,6 +105,11 @@ const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
       {openModal && (
         <div className={styles["testimonies__modal-wrapper"]} ref={modalRef}>
           <TestimonyModal name={testimonyName} content={testimony} />
+        </div>
+      )}
+      {openAddTestimonyModal && (
+        <div className={styles["testimonies__modal-wrapper"]} ref={modalRef}>
+          <AddTestimoniesModal />
         </div>
       )}
     </div>
