@@ -36,10 +36,11 @@ const BlogPost: React.FC = () => {
             under which chastity, unity, godliness, peace, and love are upheld.
             <br />
             The society today is plagued with alarming divorce rates which is a
-            true reflection of humanity's detour from the plan of God for us.
+            true reflection of humanity&apos;s detour from the plan of God for
+            us.
             <br />
-            Let us properly explore God's plan for us, and what a true Christian
-            marriage should look like.
+            Let us properly explore God&apos;s plan for us, and what a true
+            Christian marriage should look like.
           </p>
         </div>
 
@@ -51,23 +52,23 @@ const BlogPost: React.FC = () => {
           <ul className={styles["blog-post__list-wrapper"]}>
             <li className={styles["blog-post__list-number"]}>
               <span className={styles["blog-post__content-bold"]}>
-                God's Design for Companionship:
+                God&apos;s Design for Companionship:
               </span>
               <br />
-              The very origins of marriage are rooted in God's desire for
+              The very origins of marriage are rooted in God&apos;s desire for
               companionship. In{" "}
               <span className={styles["blog-post__content-bold"]}>
                 Genesis 2:18,
               </span>{" "}
               we witness the divine recognition that
               <span className={styles["blog-post__content-italic"]}>
-                "it is not good for the man to be alone. I will make a helper
-                suitable for him."
+                &quot;it is not good for the man to be alone. I will make a
+                helper suitable for him.&quot;
               </span>
               <br />
               This foundational principle reveals marriage as a divine remedy
-              for loneliness, reflecting God's intention for a companionship
-              that complements and fulfills.
+              for loneliness, reflecting God&apos;s intention for a
+              companionship that complements and fulfills.
             </li>
 
             <li className={styles["blog-post__list-number"]}>
@@ -81,8 +82,8 @@ const BlogPost: React.FC = () => {
               </span>{" "}
               as a profound mystery: {""}
               <span className={styles["blog-post__content-italic"]}>
-                "That is why a man leaves his father and mother and is united to
-                his wife, and they become one flesh."
+                &quot;That is why a man leaves his father and mother and is
+                united to his wife, and they become one flesh.&quot;
               </span>
               <br />
               This oneness goes beyond physical intimacy; it encompasses a deep
@@ -95,15 +96,15 @@ const BlogPost: React.FC = () => {
                 Marriage as an Active Union:
               </span>
               <br />
-              Love Modeled after Christ's Love for the Church:
+              Love Modeled after Christ&apos;s Love for the Church:
               <span className={styles["blog-post__content-bold"]}>
                 {""} Ephesians 5:25-28
               </span>{" "}
               provides a blueprint for marital love:{""}
               <span className={styles["blog-post__content-italic"]}>
-                "Husbands, love your wives, just as Christ loved the church and
-                gave himself up for her... In this same way, husbands ought to
-                love their wives as their own bodies." {""}
+                &quot;Husbands, love your wives, just as Christ loved the church
+                and gave himself up for her... In this same way, husbands ought
+                to love their wives as their own bodies.&quot; {""}
               </span>
               This sacrificial love reflects the selflessness and devotion
               Christ demonstrated for His Church, setting the standard for
@@ -121,7 +122,7 @@ const BlogPost: React.FC = () => {
               </span>{" "}
               encourages wives to submit to their husbands, but in the context
               of mutual respect and love. This submission reflects a beautiful
-              dance where both partners prioritize and honor one another's
+              dance where both partners prioritize and honor one another&apos;s
               roles, creating a harmonious partnership.
             </li>
           </ul>
@@ -151,7 +152,7 @@ const BlogPost: React.FC = () => {
               </span>{" "}
               wisely states,
               <span className={styles["blog-post__content-italic"]}>
-                "The tongue has the power of life and death."
+                &quot;The tongue has the power of life and death.&quot;
               </span>
               <br />
               Words spoken in love and wisdom build bridges, fostering
@@ -169,26 +170,27 @@ const BlogPost: React.FC = () => {
               emphasizes the importance of forgiveness within the marital
               relationship:{""}
               <span className={styles["blog-post__content-italic"]}>
-                "Bear with each other and forgive one another if any of you has
-                a grievance against someone. Forgive as the Lord forgave you."
+                &quot;Bear with each other and forgive one another if any of you
+                has a grievance against someone. Forgive as the Lord forgave
+                you.&quot;
               </span>
               <br />
-              As recipients of God's grace, spouses are called to extend that
-              grace to one another, cultivating an environment of healing and
-              restoration.
+              As recipients of God&apos;s grace, spouses are called to extend
+              that grace to one another, cultivating an environment of healing
+              and restoration.
             </li>
           </ul>
         </div>
 
         <div className={styles["blog-post__content-container"]}>
           <p className={styles["blog-post__title"]}>
-            God's Purpose for Marriage
+            God&apos;s Purpose for Marriage
           </p>
           <p className={styles["blog-post__content"]}>
             Marriage was instituted by the Almighty to give us an avenue in
             which to explore romantic and emotional relationships whole
             upholding Christian values and virtues. As such, we should all
-            strive to align with God's plan and purpose for marriage.
+            strive to align with God&apos;s plan and purpose for marriage.
           </p>
           <ul className={styles["blog-post__list-wrapper"]}>
             <li className={styles["blog-post__list-number"]}>
@@ -202,12 +204,12 @@ const BlogPost: React.FC = () => {
               </span>{" "}
               instructs,
               <span className={styles["blog-post__content-italic"]}>
-                "Start children off on the way they should go, and even when
-                they are old they will not turn from it."
+                &quot;Start children off on the way they should go, and even
+                when they are old they will not turn from it.&quot;
               </span>
               <br />
-              God's design for marriage includes the responsibility of nurturing
-              and guiding the next generation in His ways.
+              God&apos;s design for marriage includes the responsibility of
+              nurturing and guiding the next generation in His ways.
             </li>
 
             <li className={styles["blog-post__list-number"]}>
@@ -216,9 +218,9 @@ const BlogPost: React.FC = () => {
               </span>
               <br />
               The marital union is intended to mirror the profound relationship
-              between Christ and His Church. As spouses reflect Christ's love,
-              commitment, and sacrificial nature, they embody a living testimony
-              of God's redemptive love for us.
+              between Christ and His Church. As spouses reflect Christ&apos;s
+              love, commitment, and sacrificial nature, they embody a living
+              testimony of God&apos;s redemptive love for us.
             </li>
           </ul>
         </div>
@@ -238,8 +240,8 @@ const BlogPost: React.FC = () => {
               </span>{" "}
               beautifully captures the blessings of a God-fearing marriage: {""}
               <span className={styles["blog-post__content-italic"]}>
-                "Your wife will be like a fruitful vine within your house; your
-                children will be like olive shoots around your table."
+                &quot;Your wife will be like a fruitful vine within your house;
+                your children will be like olive shoots around your table.&quot;
               </span>
               <br />
               The imagery speaks of abundance, joy, and fulfillment within the
@@ -256,11 +258,11 @@ const BlogPost: React.FC = () => {
               </span>{" "}
               outlines the strength found in marital unity: {""}
               <span className={styles["blog-post__content-italic"]}>
-                "Two are better than one because they have a good return for
-                their labor."
+                &quot;Two are better than one because they have a good return
+                for their labor.&quot;
               </span>
               A united front in marriage not only multiplies effectiveness but
-              provides mutual support in facing life's challenges.
+              provides mutual support in facing life&apos;s challenges.
             </li>
           </ul>
         </div>
@@ -269,9 +271,9 @@ const BlogPost: React.FC = () => {
           As believers, God commands us to honor and cherish the divine gift of
           marriage.
           <br />
-          As we embrace God's design for marriage, may our unions become beacons
-          of hope and examples of the profound beauty found in the sacred
-          covenant established by our Heavenly Father.
+          As we embrace God&apos;s design for marriage, may our unions become
+          beacons of hope and examples of the profound beauty found in the
+          sacred covenant established by our Heavenly Father.
           <br /> Amen.
         </p>
       </div>

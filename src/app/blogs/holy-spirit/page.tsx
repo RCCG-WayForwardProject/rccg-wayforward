@@ -34,14 +34,16 @@ const BlogPost: React.FC = () => {
             Beloved in Christ, let us dwell today on the concept of the
             boundless mercy of God—a divine attribute that extends a merciful
             hand of forgiveness to all who seek it. It is an inexhaustible
-            divine resource, and God's mercy stands as a beacon of hope,
+            divine resource, and God&apos;s mercy stands as a beacon of hope,
             inviting us into a transformative experience of His unconditional
             love and forgiveness.
           </p>
         </div>
 
         <div className={styles["blog-post__content-container"]}>
-          <p className={styles["blog-post__title"]}>God's Merciful Nature</p>
+          <p className={styles["blog-post__title"]}>
+            God&apos;s Merciful Nature
+          </p>
           <p className={styles["blog-post__content"]}>
             The sacred Scriptures vividly paint the character of our
             compassionate and gracious Lord.{" "}
@@ -51,8 +53,8 @@ const BlogPost: React.FC = () => {
             beautifully captures this essence, proclaiming,
             <span className={styles["blog-post__content-italic"]}>
               {" "}
-              "The Lord is compassionate and gracious, slow to anger, abounding
-              in love." {""}
+              &quot;The Lord is compassionate and gracious, slow to anger,
+              abounding in love.&quot; {""}
             </span>
             This encapsulates the heart of God—a compassionate, loving, and
             forgiving nature.
@@ -70,23 +72,25 @@ const BlogPost: React.FC = () => {
         <div className={styles["blog-post__content-container"]}>
           <p className={styles["blog-post__title"]}>Divine Mercy in Action</p>
           <p className={styles["blog-post__content"]}>
-            God's mercy is not merely a theological concept but a dynamic force
-            at work in our lives. Jesus, through the parable of the prodigal son{" "}
+            God&apos;s mercy is not merely a theological concept but a dynamic
+            force at work in our lives. Jesus, through the parable of the
+            prodigal son{" "}
             <span className={styles["blog-post__content-bold"]}>
               (Luke 15:11-32), {""}
             </span>
-            beautifully illustrates the Father's unwavering mercy, eagerly
+            beautifully illustrates the Father&apos;s unwavering mercy, eagerly
             welcoming back the wayward son with open arms.
-            <br /> This parable paints a vivid picture of God's willingness to
-            forgive and restore. Beyond that, we see God's mercy in the ultimate
-            sacrifice of Christ's crucifixion for our sins. <br /> <br />
+            <br /> This parable paints a vivid picture of God&apos;s willingness
+            to forgive and restore. Beyond that, we see God&apos;s mercy in the
+            ultimate sacrifice of Christ&apos;s crucifixion for our sins. <br />{" "}
+            <br />
             Nothing else can possibly dissuade us from the truth that God is on
             a mission to call His people to Himself.
             <span className={styles["blog-post__content-bold"]}>
               {""} Ephesians 2:4-5
             </span>{" "}
-            emphasizes God's great love and richness in mercy, making us alive
-            with Christ even when we were dead in transgressions.
+            emphasizes God&apos;s great love and richness in mercy, making us
+            alive with Christ even when we were dead in transgressions.
           </p>
         </div>
 
@@ -95,17 +99,17 @@ const BlogPost: React.FC = () => {
             Mercy as a Transformative Force
           </p>
           <p className={styles["blog-post__content"]}>
-            Beyond mere pardon, God's mercy is a transformative force that
+            Beyond mere pardon, God&apos;s mercy is a transformative force that
             renews and restores us.{" "}
             <span className={styles["blog-post__content-bold"]}>
               Romans 12:2
             </span>{" "}
             urges believers to
             <span className={styles["blog-post__content-italic"]}>
-              "be transformed by the renewing of the mind."
+              &quot;be transformed by the renewing of the mind.&quot;
             </span>
-            God's mercy plays a pivotal role in this renewal, leading us to a
-            life shaped by His grace.
+            God&apos;s mercy plays a pivotal role in this renewal, leading us to
+            a life shaped by His grace.
             <br /> <br />
             In{" "}
             <span className={styles["blog-post__content-bold"]}>
@@ -113,8 +117,9 @@ const BlogPost: React.FC = () => {
             </span>{" "}
             the holy bible affirms that
             <span className={styles["blog-post__content-italic"]}>
-              {""} "He saved us not by our works but because of His mercy,
-              through the washing of rebirth and renewal by the Holy Spirit."
+              {""} &quot;He saved us not by our works but because of His mercy,
+              through the washing of rebirth and renewal by the Holy
+              Spirit.&quot;
             </span>
           </p>
         </div>
@@ -132,7 +137,8 @@ const BlogPost: React.FC = () => {
                 Repentance and Divine Mercy:
               </span>
               <br />
-              The journey to experiencing God's mercy begins with repentance.
+              The journey to experiencing God&apos;s mercy begins with
+              repentance.
               <span className={styles["blog-post__content-bold"]}>
                 {""} Acts 3:19
               </span>{" "}
@@ -144,7 +150,7 @@ const BlogPost: React.FC = () => {
                 Confession and Receiving Mercy:
               </span>
               <br />
-              Confession serves as a powerful key to unlocking God's mercy.
+              Confession serves as a powerful key to unlocking God&apos;s mercy.
               <span className={styles["blog-post__content-bold"]}>
                 {""} 1 John 1:9
               </span>{" "}
@@ -156,9 +162,9 @@ const BlogPost: React.FC = () => {
                 Extending Mercy to Others:
               </span>
               <br />
-              Perhaps, the most interesting evidence of God's mercy in action is
-              the reciprocity of it. As recipients of God's boundless mercy, we
-              are called to extend the same grace to others.
+              Perhaps, the most interesting evidence of God&apos;s mercy in
+              action is the reciprocity of it. As recipients of God&apos;s
+              boundless mercy, we are called to extend the same grace to others.
               <span className={styles["blog-post__content-bold"]}>
                 {""} Matthew 18:21-22
               </span>{" "}
@@ -179,7 +185,7 @@ const BlogPost: React.FC = () => {
 
         <div className={styles["blog-post__content-container"]}>
           <p className={styles["blog-post__title"]}>
-            The Graces that God's Mercy extends to us
+            The Graces that God&apos;s Mercy extends to us
           </p>
           <ul className={styles["blog-post__list-wrapper"]}>
             <li className={styles["blog-post__list-number"]}>
@@ -187,7 +193,7 @@ const BlogPost: React.FC = () => {
                 Freedom from Guilt and Shame:
               </span>
               <br />
-              God's mercy liberates us from the burden of guilt and shame.{" "}
+              God&apos;s mercy liberates us from the burden of guilt and shame.{" "}
               <span className={styles["blog-post__content-bold"]}>
                 Psalm 32:1-2
               </span>{" "}
@@ -201,7 +207,7 @@ const BlogPost: React.FC = () => {
                 Restoration of Joy and Peace:
               </span>
               <br />
-              Embracing God's mercy restores joy and peace to our hearts.{" "}
+              Embracing God&apos;s mercy restores joy and peace to our hearts.{" "}
               <span className={styles["blog-post__content-bold"]}>
                 Isaiah 57:18
               </span>{" "}
@@ -218,8 +224,8 @@ const BlogPost: React.FC = () => {
                 Transformed Relationships:
               </span>
               <br />
-              God's mercy not only transforms our relationship with Him but also
-              impacts our interactions with others.{" "}
+              God&apos;s mercy not only transforms our relationship with Him but
+              also impacts our interactions with others.{" "}
               <span className={styles["blog-post__content-bold"]}>
                 Ephesians 4:32
               </span>{" "}

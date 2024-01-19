@@ -36,11 +36,11 @@ const BlogPost: React.FC = () => {
             blessed with the presence and guidance of the Holy Spirit, a divine
             companion and source of power that empowers us to live victoriously
             as followers of Jesus Christ. The Holy Spirit was promised to the
-            apostles as Christ's journey here on earth drew to a close. Christ
-            promised to send The Paraclete, The Comforter, who would come down
-            to help the early Christians navigate their spiritual journey. It is
-            therefore integral to the Christian journey to understand the Holy
-            Spirit.
+            apostles as Christ&apos;s journey here on earth drew to a close.
+            Christ promised to send The Paraclete, The Comforter, who would come
+            down to help the early Christians navigate their spiritual journey.
+            It is therefore integral to the Christian journey to understand the
+            Holy Spirit.
           </p>
         </div>
 
@@ -58,8 +58,9 @@ const BlogPost: React.FC = () => {
             Jesus introduces the Holy Spirit to His disciples, saying,
             <span className={styles["blog-post__content-italic"]}>
               {" "}
-              "And I will ask the Father, and he will give you another advocate
-              to help you and be with you forever—the Spirit of truth." {""}
+              &quot;And I will ask the Father, and he will give you another
+              advocate to help you and be with you forever—the Spirit of
+              truth.&quot; {""}
             </span>
             <br /> <br />
             On the day of Pentecost, when the apostles were huddled up in the
@@ -83,9 +84,9 @@ const BlogPost: React.FC = () => {
               John 15:26, {""}
             </span>
             <span className={styles["blog-post__content-italic"]}>
-              "When the Advocate comes, whom I will send to you from the
+              &quot;When the Advocate comes, whom I will send to you from the
               Father—the Spirit of truth who goes out from the Father—he will
-              testify about me."
+              testify about me.&quot;
             </span>{" "}
             <br />
             As an advocate, the Holy Spirit speaks and intercedes for us where
@@ -98,14 +99,14 @@ const BlogPost: React.FC = () => {
             Empowerment for Christian Living
           </p>
           <p className={styles["blog-post__content"]}>
-            The Holy Spirit empowers believers to live a life aligned with God's
-            will. In{" "}
+            The Holy Spirit empowers believers to live a life aligned with
+            God&apos;s will. In{" "}
             <span className={styles["blog-post__content-bold"]}>Acts 1:8,</span>{" "}
             Jesus promises power through the Holy Spirit, saying,
             <span className={styles["blog-post__content-italic"]}>
-              "But you will receive power when the Holy Spirit comes on you, and
-              you will be my witnesses in Jerusalem, and in all Judea and
-              Samaria, and to the ends of the earth."
+              &quot;But you will receive power when the Holy Spirit comes on
+              you, and you will be my witnesses in Jerusalem, and in all Judea
+              and Samaria, and to the ends of the earth.&quot;
             </span>
             The Holy Spirit also gives us characteristics which we are to embody
             to live the true Christian life.
@@ -117,9 +118,9 @@ const BlogPost: React.FC = () => {
             the scripture tells us,
             <span className={styles["blog-post__content-italic"]}>
               {" "}
-              "But the fruit of the Spirit is love, joy, peace, forbearance,
-              kindness, goodness, faithfulness, gentleness, and self-control.
-              Against such things, there is no law."{" "}
+              &quot;But the fruit of the Spirit is love, joy, peace,
+              forbearance, kindness, goodness, faithfulness, gentleness, and
+              self-control. Against such things, there is no law.&quot;{" "}
             </span>
             This simply implies that with the Holy Spirit, living a Christian
             life is infinitely easier. We need the Spirit of God in us to become
@@ -133,14 +134,15 @@ const BlogPost: React.FC = () => {
           </p>
           <p className={styles["blog-post__content"]}>
             The Holy Spirit serves as our spiritual guide, illuminating the
-            Scriptures and helping us discern God's purpose for our lives. In{" "}
+            Scriptures and helping us discern God&apos;s purpose for our lives.
+            In{" "}
             <span className={styles["blog-post__content-bold"]}>
               John 16:13,
             </span>{" "}
-            Jesus assures us,,
+            Jesus assures us,
             <span className={styles["blog-post__content-italic"]}>
-              "But when he, the Spirit of truth, comes, he will guide you into
-              all the truth."
+              &quot;But when he, the Spirit of truth, comes, he will guide you
+              into all the truth.&quot;
             </span>
             <br /> <br />
             In{" "}
@@ -150,9 +152,10 @@ const BlogPost: React.FC = () => {
             says,
             <span className={styles["blog-post__content-italic"]}>
               {" "}
-              "The Spirit searches all things, even the deep things of God... We
-              have not received the spirit of the world but the Spirit who is
-              from God, that we may understand what God has freely given us."{" "}
+              &quot;The Spirit searches all things, even the deep things of
+              God... We have not received the spirit of the world but the Spirit
+              who is from God, that we may understand what God has freely given
+              us.&quot;{" "}
             </span>
           </p>
         </div>
@@ -165,16 +168,17 @@ const BlogPost: React.FC = () => {
             wisdom, knowledge, faith, healing, discernment, prophecy, and more.{" "}
             <br />
             These gifts help us to be witnesses for Christ, aiding our efforts
-            in Christ's ministry.
+            in Christ&apos;s ministry.
             <span className={styles["blog-post__content-bold"]}>
               {" "}
               1 Corinthians 12:7-11
             </span>{" "}
             tells us,
             <span className={styles["blog-post__content-italic"]}>
-              "Now to each one, the manifestation of the Spirit is given for the
-              common good... All these are the work of one and the same Spirit,
-              and he distributes them to each one, just as he determines."
+              &quot;Now to each one, the manifestation of the Spirit is given
+              for the common good... All these are the work of one and the same
+              Spirit, and he distributes them to each one, just as he
+              determines.&quot;
             </span>
           </p>
         </div>
@@ -203,9 +207,9 @@ const BlogPost: React.FC = () => {
               </span>{" "}
               Paul reminds us,
               <span className={styles["blog-post__content-italic"]}>
-                "In the same way, the Spirit helps us in our weakness. We do not
-                know what we ought to pray for, but the Spirit himself
-                intercedes for us through wordless groans."
+                &quot;In the same way, the Spirit helps us in our weakness. We
+                do not know what we ought to pray for, but the Spirit himself
+                intercedes for us through wordless groans.&quot;
               </span>{" "}
             </li>
             <li className={styles["blog-post__list"]}>
@@ -215,13 +219,13 @@ const BlogPost: React.FC = () => {
               <br />
               Practice listening to the promptings of the Holy Spirit. Be
               attuned to His gentle whispers, leading and guiding you in
-              alignment with God's perfect will. As Jesus said in
+              alignment with God&apos;s perfect will. As Jesus said in
               <span className={styles["blog-post__content-bold"]}>
                 {""} John 16:13,
               </span>{" "}
               <span className={styles["blog-post__content-italic"]}>
-                "He will not speak on his own; he will speak only what he hears,
-                and he will tell you what is yet to come."
+                &quot;He will not speak on his own; he will speak only what he
+                hears, and he will tell you what is yet to come.&quot;
               </span>{" "}
             </li>
             <li className={styles["blog-post__list"]}>
@@ -235,9 +239,9 @@ const BlogPost: React.FC = () => {
                 {""} Galatians 5:22-23.
               </span>{" "}
               <span className={styles["blog-post__content-italic"]}>
-                "Let love, joy, peace, patience, kindness, goodness,
+                &quot;Let love, joy, peace, patience, kindness, goodness,
                 faithfulness, gentleness, and self-control characterize your
-                interactions with others".
+                interactions with others&quot;.
               </span>{" "}
             </li>
             <li className={styles["blog-post__list"]}>

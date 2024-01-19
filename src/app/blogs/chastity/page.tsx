@@ -56,17 +56,18 @@ const BlogPost: React.FC = () => {
             the apostle Paul writes,
             <span className={styles["blog-post__content-italic"]}>
               {" "}
-              "It is God’s will that you should be sanctified: that you should
-              avoid sexual immorality; that each of you should learn to control
-              your own body in a way that is holy and honorable, not in
-              passionate lust like the pagans, who do not know God."
+              &quot;It is God’s will that you should be sanctified: that you
+              should avoid sexual immorality; that each of you should learn to
+              control your own body in a way that is holy and honorable, not in
+              passionate lust like the pagans, who do not know God.&quot;
             </span>
             <br /> <br />
             <span className={styles["blog-post__content-bold"]}>
               Hebrews 13:4 -
             </span>
-            "Marriage should be honored by all, and the marriage bed kept pure,
-            for God will judge the adulterer and all the sexually immoral."
+            &quot;Marriage should be honored by all, and the marriage bed kept
+            pure, for God will judge the adulterer and all the sexually
+            immoral.&quot;
           </p>
         </div>
 
@@ -82,8 +83,8 @@ const BlogPost: React.FC = () => {
             </span>
             underscores the importance of purity of heart, when he tells us,{" "}
             <span className={styles["blog-post__content-italic"]}>
-              "But I tell you that anyone who looks at a woman lustfully has
-              already committed adultery with her in his heart."
+              &quot;But I tell you that anyone who looks at a woman lustfully
+              has already committed adultery with her in his heart.&quot;
             </span>
             This outlines the need to guide our thoughts as well as our actions.{" "}
             <br /> <br />
@@ -93,10 +94,10 @@ const BlogPost: React.FC = () => {
             </span>{" "}
             to guide us;{" "}
             <span className={styles["blog-post__content-italic"]}>
-              "Finally, brothers and sisters, whatever is true, whatever is
+              &quot;Finally, brothers and sisters, whatever is true, whatever is
               noble, whatever is right, whatever is pure, whatever is lovely,
               whatever is admirable—if anything is excellent or
-              praiseworthy—think about such things."
+              praiseworthy—think about such things.&quot;
             </span>
           </p>
         </div>
@@ -113,21 +114,21 @@ const BlogPost: React.FC = () => {
             </span>{" "}
             implores believers,
             <span className={styles["blog-post__content-italic"]}>
-              "But among you there must not be even a hint of sexual immorality,
-              or of any kind of impurity, or of greed, because these are
-              improper for God’s holy people."
+              &quot;But among you there must not be even a hint of sexual
+              immorality, or of any kind of impurity, or of greed, because these
+              are improper for God’s holy people.&quot;
             </span>
             <br /> <br />
             In{" "}
             <span className={styles["blog-post__content-bold"]}>
               1 Corinthians 6:18-20,
             </span>{" "}
-            we are admonished to
+            we are admonished to{" "}
             <span className={styles["blog-post__content-italic"]}>
-              "Flee from sexual immorality. All other sins a person commits are
-              outside the body, but whoever sins sexually, sins against their
-              own body... You are not your own; you were bought at a price.
-              Therefore, honor God with your bodies."
+              &quot;Flee from sexual immorality. All other sins a person commits
+              are outside the body, but whoever sins sexually, sins against
+              their own body... You are not your own; you were bought at a
+              price. Therefore, honor God with your bodies.&quot;
             </span>
           </p>
         </div>
@@ -135,9 +136,10 @@ const BlogPost: React.FC = () => {
         <div className={styles["blog-post__content-container"]}>
           <p className={styles["blog-post__title"]}>Chastity in Action</p>
           <p className={styles["blog-post__content"]}>
-            Now that we've laid the scriptural foundation, let's delve into
-            practical ways to embrace chastity in our daily christian lives.{" "}
-            <br /> We can stove towards chastity by practicing the following:
+            Now that we&apos;ve laid the scriptural foundation, let&apos;s delve
+            into practical ways to embrace chastity in our daily christian
+            lives. <br /> We can stove towards chastity by practicing the
+            following:
           </p>
           <ul className={styles["blog-post__list-wrapper"]}>
             <li className={styles["blog-post__list"]}>
@@ -170,7 +172,7 @@ const BlogPost: React.FC = () => {
               <br /> In relationships, establish clear boundaries that honor God
               and promote chastity. Communicate openly with your partner,
               ensuring mutual understanding and commitment to living in
-              accordance with God's design for intimacy.
+              accordance with God&apos;s design for intimacy.
             </li>
           </ul>
         </div>
@@ -198,9 +200,9 @@ const BlogPost: React.FC = () => {
                 Psalm 24:3-4 (NIV) -
               </span>{" "}
               <span className={styles["blog-post__content-italic"]}>
-                "Who may ascend the mountain of the Lord? Who may stand in his
-                holy place? The one who has clean hands and a pure heart, who
-                does not trust in an idol or swear by a false god."
+                &quot;Who may ascend the mountain of the Lord? Who may stand in
+                his holy place? The one who has clean hands and a pure heart,
+                who does not trust in an idol or swear by a false god.&quot;
               </span>
             </li>
 
@@ -217,9 +219,9 @@ const BlogPost: React.FC = () => {
                 1 Corinthians 13:4-7 (NIV) -
               </span>{" "}
               <span className={styles["blog-post__content-italic"]}>
-                "Love is patient, love is kind. It does not envy, it does not
-                boast, it is not proud... It always protects, always trusts,
-                always hopes, always perseveres."
+                &quot;Love is patient, love is kind. It does not envy, it does
+                not boast, it is not proud... It always protects, always trusts,
+                always hopes, always perseveres.&quot;
               </span>
             </li>
 
@@ -237,8 +239,8 @@ const BlogPost: React.FC = () => {
                 Proverbs 4:23 (NIV) -
               </span>{" "}
               <span className={styles["blog-post__content-italic"]}>
-                "Above all else, guard your heart, for everything you do flows
-                from it."
+                &quot;Above all else, guard your heart, for everything you do
+                flows from it.&quot;
               </span>
             </li>
           </ul>
@@ -246,27 +248,27 @@ const BlogPost: React.FC = () => {
 
         <div className={styles["blog-post__content-container"]}>
           <p className={styles["blog-post__title"]}>
-            Honoring God's Design for Intimacy:
+            Honoring God&apos;s Design for Intimacy:
           </p>
           <p className={styles["blog-post__content"]}>
-            Chastity is a testament to honoring God's design for intimacy. It
-            recognizes that the gift of physical and emotional intimacy is
+            Chastity is a testament to honoring God&apos;s design for intimacy.
+            It recognizes that the gift of physical and emotional intimacy is
             sacred and best experienced within the confines of His divine plan.
             <br />
             God in His infinite wisdom therefore created the gift of matrimony;{" "}
             <span className={styles["blog-post__content-italic"]}>
-              "That is why a man leaves his father and mother and is united to
-              his wife, and they become one flesh."
+              &quot;That is why a man leaves his father and mother and is united
+              to his wife, and they become one flesh.&quot;
             </span>
             <br /> <br />
             Brothers and sisters in Christ, the transformative effects of
             chastity are those that lead us closer to the heart of God. Through
-            the guidance of the Holy Spirit and the wisdom found in God's Word,
-            we can navigate the challenges of living in a world that often
+            the guidance of the Holy Spirit and the wisdom found in God&apos;s
+            Word, we can navigate the challenges of living in a world that often
             opposes the principles of purity and holiness.
             <br />
             <br /> May the call to embrace chastity resonate in our hearts,
-            prompting us to seek God's strength and grace in this sacred
+            prompting us to seek God&apos;s strength and grace in this sacred
             endeavor. Let us strive for purity in thought, word, and deed,
             knowing that in our pursuit of holiness, we draw closer to the One
             who is pure and holy, our Lord and Savior, Jesus Christ.

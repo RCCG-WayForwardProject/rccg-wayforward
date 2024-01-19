@@ -55,17 +55,17 @@ const BlogPost: React.FC = () => {
           </span>{" "}
           the Bible says{" "}
           <span className={styles["blog-post__content-italic"]}>
-            "But the wisdom that comes from heaven is first of all pure; then
-            peace-loving, considerate, submissive, full of mercy and good fruit,
-            impartial and sincere."
+            &quot;But the wisdom that comes from heaven is first of all pure;
+            then peace-loving, considerate, submissive, full of mercy and good
+            fruit, impartial and sincere.&quot;
           </span>
         </p>
 
         <p className={styles["blog-post__content"]}>
           The book of Proverbs, often referred to as the treasure trove of
-          wisdom, unfolds its verses like a roadmap to a life well-lived. It's a
-          timeless guide, dispensing nuggets of truth that resonate with the
-          human soul.
+          wisdom, unfolds its verses like a roadmap to a life well-lived.
+          It&apos;s a timeless guide, dispensing nuggets of truth that resonate
+          with the human soul.
         </p>
 
         <p className={styles["blog-post__content"]}>
@@ -93,8 +93,8 @@ const BlogPost: React.FC = () => {
             1 Corinthians 1:25-
           </span>{" "}
           <span className={styles["blog-post__content-italic"]}>
-            "For the foolishness of God is wiser than human wisdom, and the
-            weakness of God is stronger than human strength."
+            &quot;For the foolishness of God is wiser than human wisdom, and the
+            weakness of God is stronger than human strength.&quot;
           </span>
         </p>
 
@@ -117,9 +117,9 @@ const BlogPost: React.FC = () => {
           <span className={styles["blog-post__content-bold"]}>James 1:5</span>{" "}
           which says,{" "}
           <span className={styles["blog-post__content-italic"]}>
-            "If any of you lacks wisdom, you should ask God, who gives
+            &quot;If any of you lacks wisdom, you should ask God, who gives
             generously to all without finding fault, and it will be given to
-            you."
+            you.&quot;
           </span>{" "}
           It is an open invitation to tap into a reservoir of wisdom that flows
           from the divine source.
@@ -131,7 +131,8 @@ const BlogPost: React.FC = () => {
           </span>{" "}
           says{" "}
           <span className={styles["blog-post__content-italic"]}>
-            "Blessed are those who find wisdom, those who gain understanding."
+            &quot;Blessed are those who find wisdom, those who gain
+            understanding.&quot;
           </span>{" "}
           This verse tells us that the pursuit of divine wisdom is not a mere
           intellectual exercise; it is a journey that leads to profound
@@ -140,8 +141,8 @@ const BlogPost: React.FC = () => {
 
         <p className={styles["blog-post__content"]}>
           Proverbs, once again, emphasizes the blessedness of those who find
-          wisdom and gain understanding. It's not about amassing knowledge for
-          knowledge's sake but about unlocking the secrets that bring
+          wisdom and gain understanding. It&apos;s not about amassing knowledge
+          for knowledge&apos;s sake but about unlocking the secrets that bring
           fulfillment and joy.
         </p>
 
@@ -159,8 +160,8 @@ const BlogPost: React.FC = () => {
           </span>{" "}
           tells us,{" "}
           <span className={styles["blog-post__content-italic"]}>
-            "For the Lord gives wisdom; from his mouth come knowledge and
-            understanding."
+            &quot;For the Lord gives wisdom; from his mouth come knowledge and
+            understanding.&quot;
           </span>
         </p>
 
@@ -170,10 +171,11 @@ const BlogPost: React.FC = () => {
           </span>{" "}
           also underscores the importance of divine wisdom;{" "}
           <span className={styles["blog-post__content-italic"]}>
-            "My goal is that they may be encouraged in heart and united in love,
-            so that they may have the full riches of complete understanding, in
-            order that they may know the mystery of God, namely, Christ, in whom
-            are hidden all the treasures of wisdom and knowledge."
+            &quot;My goal is that they may be encouraged in heart and united in
+            love, so that they may have the full riches of complete
+            understanding, in order that they may know the mystery of God,
+            namely, Christ, in whom are hidden all the treasures of wisdom and
+            knowledge.&quot;
           </span>
         </p>
 
@@ -198,7 +200,7 @@ const BlogPost: React.FC = () => {
 
         <p className={styles["blog-post__content"]}>
           May divine wisdom continually guide our decisions and utterances in
-          Jesus's mghty name,
+          Jesus&apos;s mghty name,
           <br /> Amen.
         </p>
       </div>
