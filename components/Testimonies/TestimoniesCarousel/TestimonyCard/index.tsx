@@ -1,7 +1,6 @@
 import React from "react";
 
 import styles from "./testimony-card.module.scss";
-import test from "node:test";
 
 interface TestimonyCardProps {
   name: string;

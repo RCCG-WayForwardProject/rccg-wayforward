@@ -97,7 +97,12 @@ const MusicCard: React.FC<MusicCardProps> = ({
             onClick={handleDownloadAudio}
           >
             {isLoading ? (
-              <img src={"/images/downloading.gif"} />
+              <Image
+                src={"/images/downloading.gif"}
+                alt={"downloading"}
+                height={40}
+                width={40}
+              />
             ) : (
               <Icon icon="download" />
             )}

@@ -22,6 +22,10 @@ export const pageRoutes = [
         path: "books",
         name: "Books",
       },
+      {
+        path: "blogs",
+        name: "Blogs",
+      },
     ],
   },
   {
@@ -78,5 +82,9 @@ export const mobilePageRoutes = [
   {
     path: "testimonies",
     name: "Testimonies",
+  },
+  {
+    path: "blogs",
+    name: "Blogs",
   },
 ];

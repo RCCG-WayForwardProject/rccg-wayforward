@@ -1,0 +1,27 @@
+@import "../../styles/functions";
+@import "../../styles/variables";
+@import "../../styles/base/mixins";
+@import "../../styles/typography";
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 0px 95px 60px 95px;
+  @include respond(mobile-screen) {
+    gap: 20px;
+    height: fit-content;
+    padding: 0px 6% 90px 6%;
+  }
+  &__heading {
+    @include heading;
+    @include respond(mobile-screen) {
+      @include heading-mobile;
+    }
+  }
+  &__carousel-loader-wrapper {
+    display: flex;
+    gap: 30px;
+    overflow: auto;
+  }
+}

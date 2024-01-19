@@ -2,10 +2,11 @@
 import React, { useState } from "react";
 
 import Button from "@/components/Button";
+import MusicCard from "@/components/Songs/MusicCard";
+
+import { musics } from "@/utils/constants";
 
 import styles from "./musics.module.scss";
-import { musics } from "@/utils/constants";
-import MusicCard from "@/components/Songs/MusicCard";
 
 const SongsPage: React.FC = () => {
   const [query, setQuery] = useState<string>("");
