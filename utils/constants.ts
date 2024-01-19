@@ -310,17 +310,17 @@ export const homeBgImages = [
 
 export const blogs = [
   {
-    slug: "divine-wisdom",
+    slug: "chastity",
     image: "background_image.jpg",
-    title: "Divine Wisdom",
+    title: "Chastity",
     description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
     dateCreated: "14 Feb",
     creator: "Peter Adamson",
   },
   {
-    slug: "divine-wisdom",
+    slug: "nurturing-godly-marriages",
     image: "prayer-service.jpg",
-    title: "Divine Salvation",
+    title: "Nurturing Godly Marriages",
     description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
     dateCreated: "14 Feb",
     creator: "Peter Adamson",
