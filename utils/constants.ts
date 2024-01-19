@@ -334,9 +334,9 @@ export const blogs = [
     creator: "Peter Adamson",
   },
   {
-    slug: "divine-wisdom",
+    slug: "holy-spirit",
     image: "prayer-service.jpg",
-    title: "Divine Wisdom",
+    title: "The Holy Spirit",
     description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
     dateCreated: "14 Feb",
     creator: "Peter Adamson",
