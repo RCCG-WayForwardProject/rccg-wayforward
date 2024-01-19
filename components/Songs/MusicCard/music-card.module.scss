@@ -12,7 +12,11 @@
   justify-content: flex-end;
   align-items: center;
   padding-bottom: 17px;
-  background: linear-gradient(0deg, #000 27.12%, rgba(0, 0, 0, 0) 88.44%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 11.56%,
+    rgba(0, 0, 0, 0.5) 72.88%
+  );
   @include border-radius(13px);
   &[data-page="otherPages"] {
     @include respond(mobile-screen) {
