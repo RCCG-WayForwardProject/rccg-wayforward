@@ -1,0 +1,44 @@
+@import "../../styles/functions";
+@import "../../styles/typography";
+@import "../../styles/variables";
+@import "../../styles/base/mixins";
+
+.profile {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 60px;
+    padding: 80px 95px;
+    @include respond(mobile-screen) {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 6% 60px 6%;
+      gap: 40px;
+    }
+  }
+  &__image {
+    position: relative;
+    height: 462px;
+    width: 500px;
+    & img {
+      border-radius: 8px;
+    }
+    @include respond(mobile-screen) {
+      width: 100%;
+      height: 280px;
+    }
+  }
+  &__content {
+    @include description;
+    &-heading {
+      color: $col-dark-3;
+      width: 100%;
+      font-size: toRem(40px);
+      font-weight: 600;
+      @include respond(mobile-screen) {
+        font-size: toRem(22px);
+        width: 90%;
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 
 import AboutUs from "@/components/About";
+import PastorProfile from "@/components/PastorProfile";
 import Mission from "@/components/Mission";
 import Vision from "@/components/Vision";
 import Services from "@/components/Service";
@@ -17,6 +18,7 @@ const AboutPage: React.FC = () => {
   return (
     <div className={styles["about-us"]}>
       <AboutUs showViewButton={false} showFullText />
+      <PastorProfile />
       <Mission />
       <Vision />
       <Services />
