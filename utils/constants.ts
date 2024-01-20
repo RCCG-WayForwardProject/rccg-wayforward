@@ -12,24 +12,29 @@ export const slidesContent: Array<{ img: string }> = [
 
 export const sermonsList = [
   {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-1.jpg",
-    name: "Marriage Unknown",
-  },
-  {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-2.jpg",
-    name: "Forgiveness",
+    img: "/images/divine-wisdom-image.jpg",
+    name: "Divine Wisdom",
+    duration: "5:11",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-3.jpg",
-    name: "Divine Wisdom",
+    name: "Forgiveness",
+    duration: "3:05",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-4.jpg",
+    name: "Marriage- Divine institution",
+    duration: "3:07",
+  },
+  {
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-2.jpg",
     name: "The Holy Spirit Pt 1",
+    duration: "3:00",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-5.jpg",
     name: "The Holy Spirit Pt 2",
+    duration: "3:05",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-6.jpg",
@@ -88,14 +93,14 @@ export const upComingEvents = [
 export const musics = [
   {
     name: "You are God",
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-1.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/you+are+god.jpg",
     authorName: "Bose Adamson",
     musicLength: "02:29",
     src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/You+are+God+-+Bose+Adamson.mp3",
   },
   {
     name: "Thank you Jesus",
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-2.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/Thank+you+Jesus.jpg",
     authorName: "Bose Adamson",
     musicLength: "01:57",
     src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/Thank+you+Jesus+for+the+blood+-+Bose+Adamson.mp3",
@@ -109,21 +114,21 @@ export const musics = [
   },
   {
     name: "When you serve",
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-4.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-2.jpg",
     authorName: "Bose Adamson",
     musicLength: "11:15",
     src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/Bose+Adamson+-+When+you+serve.mp3",
   },
   {
     name: "Jireh cover",
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-5.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/Jireh+cover.jpg",
     authorName: "Bose Adamson",
     musicLength: "11:15",
     src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/Jireh+cover+by+Bose+Adamson+(Elevation+worship).mp3",
   },
   {
     name: "Not to be moved",
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/music-img-6.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/Not+to+be+moved2.jpg",
     authorName: "Bose Adamson",
     musicLength: "11:15",
     src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",

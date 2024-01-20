@@ -9,7 +9,12 @@ import Carousel from "@/components/Carousel";
 import styles from "./sermons-carousel.module.scss";
 
 interface SermonCarouselProps {
-  sermonsList: Array<{ img: string; name: string }>;
+  sermonsList: Array<{
+    img: string;
+    name: string;
+    src?: string;
+    duration?: string;
+  }>;
   handleSermonDownload?: () => void;
 }
 
@@ -37,9 +42,13 @@ const SermonCarousel: React.FC<SermonCarouselProps> = ({ sermonsList }) => {
           {sermonsList?.map((sermon, index) => {
             return (
               <MusicCard
+                key={index + 1}
                 img={sermon?.img!}
                 name={sermon?.name!}
-                key={index + 1}
+                src={sermon?.src!}
+                duration={sermon?.duration!}
+                authorName={"Peter Adamson"}
+                downloadable
               />
             );
           })}
@@ -62,11 +71,3 @@ const LoadingSermons = () => {
     </>
   );
 };
-
-{
-  /* <SermonCard
-                img={sermon?.img!}
-                name={sermon?.name!}
-                key={index + 1}
-              /> */
-}

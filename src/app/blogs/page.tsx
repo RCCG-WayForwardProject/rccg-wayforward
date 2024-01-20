@@ -1,13 +1,14 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
 import Button from "@/components/Button";
 import BlogCard from "@/components/Blog/BlogCard";
+import Contact from "@/components/Contact";
 
 import { blogs } from "@/utils/constants";
 
 import styles from "./blogs.module.scss";
-import Link from "next/link";
 
 const BlogsPage: React.FC = () => {
   const [query, setQuery] = useState<string>("");
@@ -21,43 +22,46 @@ const BlogsPage: React.FC = () => {
   );
 
   return (
-    <div className={styles["blogs"]}>
-      <div className={styles["blogs__heading-wrapper"]}>
-        <h1 className={styles["blogs__heading"]}>Blogs</h1>
-        <p className={styles["blogs__heading-description"]}>
-          Catch up on our <span>Recent blogs</span>
-        </p>
-      </div>
-      <div className={styles["blogs__input-wrapper"]}>
-        <input
-          type="search"
-          className={styles["blogs__input"]}
-          placeholder="Search blog"
-          value={query}
-          onChange={handleSearchChange}
-        />
-        <Button type="submit" label="Search" variant="primary" size="mini" />
-      </div>
-      <div className={styles["blogs__blog-wrapper"]}>
-        {filteredBlogs?.map((blog, index) => {
-          return (
-            <Link
-              href={`/blogs/${encodeURIComponent(blog.slug)}`}
-              key={index + 1}
-            >
-              <BlogCard
+    <>
+      <div className={styles["blogs"]}>
+        <div className={styles["blogs__heading-wrapper"]}>
+          <h1 className={styles["blogs__heading"]}>Blogs</h1>
+          <p className={styles["blogs__heading-description"]}>
+            Catch up on our <span>Recent blogs</span>
+          </p>
+        </div>
+        <div className={styles["blogs__input-wrapper"]}>
+          <input
+            type="search"
+            className={styles["blogs__input"]}
+            placeholder="Search blog"
+            value={query}
+            onChange={handleSearchChange}
+          />
+          <Button type="submit" label="Search" variant="primary" size="mini" />
+        </div>
+        <div className={styles["blogs__blog-wrapper"]}>
+          {filteredBlogs?.map((blog, index) => {
+            return (
+              <Link
+                href={`/blogs/${encodeURIComponent(blog.slug)}`}
                 key={index + 1}
-                title={blog?.title}
-                description={blog?.description}
-                image={blog?.image}
-                creator={blog?.creator}
-                dateCreated={blog?.dateCreated}
-              />
-            </Link>
-          );
-        })}
+              >
+                <BlogCard
+                  key={index + 1}
+                  title={blog?.title}
+                  description={blog?.description}
+                  image={blog?.image}
+                  creator={blog?.creator}
+                  dateCreated={blog?.dateCreated}
+                />
+              </Link>
+            );
+          })}
+        </div>
       </div>
-    </div>
+      <Contact />
+    </>
   );
 };
 

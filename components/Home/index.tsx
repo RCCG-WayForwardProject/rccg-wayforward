@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 import Icon from "../Icon";
 import { homeBgImages } from "@/utils/constants";
@@ -51,6 +52,12 @@ const Home: React.FC = () => {
             </p>
             <div className={styles["home__content-mouse-animation"]}>
               <Icon icon="mouseDown" />
+              <Image
+                src={"/images/arrow-down-animation.gif"}
+                height={60}
+                width={50}
+                alt={"Arrow down"}
+              />
             </div>
           </div>
         </div>

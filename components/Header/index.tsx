@@ -56,7 +56,7 @@ const HeaderDropdown: React.FC<HeaderDropdownProps> = ({ dropdownList }) => {
                   type="button"
                   aria-label="Counselling button link"
                 >
-                  {/* {dropdownListItem?.name} */}
+                  {dropdownListItem?.name}
                 </button>
               )}
             </li>

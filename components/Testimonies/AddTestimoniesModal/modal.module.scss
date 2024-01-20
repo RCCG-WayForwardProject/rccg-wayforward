@@ -1,0 +1,107 @@
+@import "../../../styles/functions";
+@import "../../../styles/typography";
+@import "../../../styles/variables";
+@import "../../../styles/base/mixins";
+
+.modal {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    width: 500px;
+    padding: 30px;
+    background-color: $col-white;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
+    @include border-radius(20px);
+    @include respond(mobile-screen) {
+      width: 95%;
+      padding: 30px;
+      height: 53%;
+    }
+  }
+  &__heading {
+    color: #575555;
+    text-align: justify;
+    font-size: toRem(24px);
+    font-weight: 700;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    width: 100%;
+    @include respond(mobile-screen) {
+      width: 100%;
+    }
+
+    &-info {
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      &-heading {
+        color: $col-dark-8;
+        font-size: toRem(14px);
+        font-weight: 600;
+        & span {
+          color: $col-red-1;
+          font-weight: 500;
+        }
+      }
+      &-input {
+        font-size: 14px;
+        padding: 4px 16px;
+        height: 24px;
+        box-sizing: content-box;
+        border: 1px solid $col-grey-4;
+        background: $col-white;
+        @include border-radius(8px);
+        &::placeholder {
+          color: #999ca0;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+      &-textarea {
+        font-size: 14px;
+        padding: 7px 16px;
+        height: 76px;
+        box-sizing: content-box;
+        border: 1px solid $col-grey-4;
+        background: $col-white;
+        @include border-radius(8px);
+        &::placeholder {
+          color: #999ca0;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+    }
+    &-button {
+      margin-top: 16px;
+      align-self: center;
+      @include respond(mobile-screen) {
+        width: 50%;
+        & button {
+          width: 100%;
+        }
+      }
+    }
+    &--success {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    &-icon--checkmark {
+      & svg {
+        width: 90px;
+      }
+    }
+  }
+}
