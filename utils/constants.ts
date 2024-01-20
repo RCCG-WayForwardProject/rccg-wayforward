@@ -12,29 +12,34 @@ export const slidesContent: Array<{ img: string }> = [
 
 export const sermonsList = [
   {
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/holy+spirit1.jpg",
+    name: "The Holy Spirit Pt 1",
+    duration: "5:27",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/holy-spirit.mp3",
+  },
+  {
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/holy+spirit2.jpg",
+    name: "The Holy Spirit Pt 2",
+    duration: "3:13",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/holy-spirit-2.mp3",
+  },
+  {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/devine+widom.jpg",
     name: "Divine Wisdom",
     duration: "5:11",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/divine-wisdom.mp3.mp3",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/forgiveness.jpg",
     name: "Forgiveness",
     duration: "3:05",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/forgiveness-audio.mp3",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/marriage+unknown.jpg",
     name: "Marriage- Divine institution",
     duration: "3:07",
-  },
-  {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/holy+spirit1.jpg",
-    name: "The Holy Spirit Pt 1",
-    duration: "3:00",
-  },
-  {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/holy+spirit2.jpg",
-    name: "The Holy Spirit Pt 2",
-    duration: "3:05",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/marriage-audio.mp3",
   },
 ];
 

@@ -43,7 +43,13 @@ const SermonsPage: React.FC = () => {
         <div className={styles["sermons__sermon-wrapper"]}>
           {filteredSermons.map((sermon, index) => (
             <div className={styles["sermons__sermon-card"]} key={index + 1}>
-              <MusicCard name={sermon.name} img={sermon.img} />
+              <MusicCard
+                name={sermon.name}
+                img={sermon.img}
+                src={sermon?.src}
+                duration={sermon?.duration}
+                downloadable
+              />
             </div>
           ))}
         </div>
