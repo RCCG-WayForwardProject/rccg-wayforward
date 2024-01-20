@@ -46,20 +46,20 @@ export const services = [
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/bible-service.jpg",
     name: "Bible Study",
-    day: "Every Wednesday by 5:00pm",
-    location: "Gotham Fan 221b , New York",
+    day: "Every Wednesday by 7pm - 8pm",
+    location: "Weddington Rd, North Carolina",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/prayer-service.jpg",
-    name: "Prayer Service",
-    day: "Every Thursday by 5:00pm",
-    location: "Gotham Fan 221b , New York",
+    name: "Prayer meeting",
+    day: "Every Friday by 7pm - 8pm",
+    location: "Weddington Rd, North Carolina",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sunday-service.jpg",
     name: "Sunday Service",
-    day: "Every Sunday by 10:00am",
-    location: "Gotham Fan 221b , New York",
+    day: "Every Sunday by 10:15am",
+    location: "Weddington Rd, North Carolina",
   },
 ];
 
@@ -144,27 +144,27 @@ export const musics = [
 
 export const testimonies = [
   {
-    name: "Olivia Maxwell",
+    name: "Anonymous",
     testimony:
       "Since I became a part of the Wayforward Cathedral family, my life has turned around for the better. I feel loved, cherished, and truly blessed. God bless Pastor Adamson for his counsel and support and for welcoming me into the fold.",
   },
   {
-    name: "Caleb Donovan",
+    name: "Anonymous",
     testimony:
       "I remember being at my lowest at one point, having lost my job and falling into an old addiction. The Wayforward family found out about my situation and visited me constantly, supporting me throughout my time of need and even referring me to my new employer. ",
   },
   {
-    name: "Isabella Harper",
+    name: "Anonymous",
     testimony:
       "Praise the Lord! I had been battling health issues for the better part of three years until one day, when I got invited to the church to connect to the annual convention. I remember deeply connecting during a healing prayer session and instantly being relieved. Children of God, I got tested a few days later, and the results showed I was free of my ailment.",
   },
   {
-    name: "Ethan Johnson",
+    name: "Anonymous",
     testimony:
       "In my darkest hours, Wayforward Church became my beacon of hope. The caring community rallied behind me when I faced financial hardships, providing assistance and genuine friendship. Through their kindness, I found a renewed sense of purpose. I'll forever cherish the love and support I received during my toughest times.",
   },
   {
-    name: "Sophia Amara",
+    name: "Anonymous",
     testimony:
       "Since joining Wayforward Church, my life has been transformed. The supportive community helped me overcome personal struggles, and Pastor Adamson's sermons provided guidance and inspiration. The warmth and love here are unparalleled. I'm grateful to be part of this spiritual family that feels more like home with each passing day.",
   },
@@ -174,7 +174,7 @@ export const faq = [
   {
     title: "What time are your services?",
     content:
-      "Our Sunday worship services are held every Sunday at 8 am. We gather for Bible Study and Prayer meetings on Wednesdays and Fridays at 5:30 pm. We also have Holy Ghost sessions to tap into the spirit and deliverance services for the afflicted.",
+      "Our Sunday services starts with Sunday School at 9:45 am, Celebration and impartation service starts at 10:30 am - 12:00 noon. We gather for Bible Study on Wednesday @ 7:00 pm to 8:pm and Prayer meetings on  Friday at 7:00 pm to 8:pm. We also have Holy Ghost service, deliverance service, Healing and Anointing services.",
   },
   {
     title: "Is the church always open?",
@@ -189,7 +189,7 @@ export const faq = [
   {
     title: "How can I contact the church staff or pastor for pastoral care?",
     content:
-      "You can reach us at (704) 493-5062, email us at wayforwardcathedral@gmail.com, or stay behind after services to speak with the church staff or pastor. You can also book a counseling session with us on the Counselling section of this website.",
+      "You can reach us at (704) 493-5062, email us at wayforwardcathedral@gmail.com, or stay behind after services to speak with the church staff or pastor. ",
   },
   {
     title:
@@ -265,12 +265,11 @@ export const mission = [
 export const vision = [
   {
     title: "The Outcast",
-    content: `We have passion for them; we will rehabilitate them; we will introduce someone to them, Jesus Christ; we will make sure that they learn handwork; or if they still want to go to school, we will make the provision; and we will also make sure that there is no room for discrimination.`,
+    content: `For the outcast, we are driven by compassion. We will rehabilitate them, introduce them to Jesus Christ, provide opportunities to learn profitable skills, and support their desire for education. We will also ensure there is no room for discrimination.`,
   },
   {
     title: "The Forgotten",
-    content: `We commit to restoring the forgotten by providing an environment where everyone is recognized not only by the Lord but also by our loving members. Through community engagement and personalized care, we aim to reintegrate them into a network where their stories are heard and valued.
-    `,
+    content: `We commit to restoring the forgotten by providing an environment where everyone is recognized not only by the Lord but also by our loving members. Through spiritual support and personalized care, we aim to reintegrate them into a godly network where their stories are heard and valued.`,
   },
   {
     title: "The Ex-Convicts",
@@ -278,24 +277,26 @@ export const vision = [
   },
   {
     title: "The Orphans",
-    content: `We embrace orphans with open hearts, creating a church family that becomes their home. Through mentorship, educational assistance, and a nurturing environment, we aim to provide them with the love and guidance they need to flourish in the love of Christ.
+    content: `We embrace orphans with open hearts, creating a church family that becomes their home. Through mentorship, spiritual assistance, and a nurturing environment, we aim to provide them with the love and guidance they need to flourish in the love of Christ.
     `,
   },
   {
     title: "The Motherless",
-    content: `Our commitment to the motherless is to offer a supportive community that acts as an extended family. Through Christ-centered love, we aim to fill the void left by maternal absence, ensuring they find comfort and care in our church community.`,
+    content: `Our commitment to the motherless is to offer a supportive community that acts as an extended family. Through Christ-centered love, we aim to fill the void left by maternal absence, ensuring they find comfort and care in our church community.
+    `,
   },
   {
     title: "The Less Privileged",
-    content: `Our mission is to uplift the less privileged by extending Christ's love through practical assistance, educational opportunities, and spiritual guidance. We aim to break the cycle of poverty, empowering individuals and families to overcome challenges and find hope in God's grace.`,
+    content: `Our mission is to uplift the less privileged by extending Christ's love through practical assistance and spiritual guidance. We aim to show them the source of eternal wealth, the Lord Jesus, empowering individuals and families to overcome challenges and find hope in God's grace.`,
   },
   {
     title: "Senior Citizens",
-    content: `For our senior citizens, we aspire to create a church environment where they feel honored, valued, and included. We aim to enrich their spiritual journey through tailored programs, fellowship, and pastoral care and ensure they continue to play meaningful roles in our church community.`,
+    content: `For our senior citizens, we aspire to create a church environment where they feel honored, valued, and included. We aim to enrich their spiritual journey through tailored programs, fellowship, and pastoral care and ensure they continue to play meaningful roles in our church community.
+    `,
   },
   {
-    title: "The Outcast",
-    content: `We have passion for them; we will rehabilitate them; we will introduce someone to them, Jesus Christ; we will make sure that they learn handwork; or if they still want to go to school, we will make the provision; and we will also make sure that there is no room for discrimination.`,
+    title: "The Depressed",
+    content: `Our commitment to those battling depression is unwavering. Through compassionate care, counseling, and a supportive church community, we aim to be a source of comfort and understanding. By fostering an environment where individuals feel safe to share their struggles, we seek to provide solace, hope, and the healing power of God's love to guide them through challenging times.`,
   },
 ];
 

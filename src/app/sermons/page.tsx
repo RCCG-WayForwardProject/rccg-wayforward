@@ -3,12 +3,12 @@ import React, { useState } from "react";
 
 import Button from "@/components/Button";
 import { SermonCard } from "@/components/Sermons/SermonCard";
+import MusicCard from "@/components/Songs/MusicCard";
 import Contact from "@/components/Contact";
 
 import { sermonsList } from "@/utils/constants";
 
 import styles from "./sermons.module.scss";
-import MusicCard from "@/components/Songs/MusicCard";
 
 const SermonsPage: React.FC = () => {
   const [query, setQuery] = useState<string>("");
