@@ -19,7 +19,7 @@ const Vision: React.FC = () => {
           aged brethren still see themselves as relevant in society.
         </p>
       </div>
-      <div className={styles["vision__content-wrapper"]}>
+      {/* <div className={styles["vision__content-wrapper"]}>
         {vision?.map((vision, index) => {
           return (
             <VisionCard
@@ -29,7 +29,7 @@ const Vision: React.FC = () => {
             />
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 };
