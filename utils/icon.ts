@@ -25,7 +25,6 @@ export type IconNames =
   | "twitter"
   | "checkmark"
   | "loading"
-  | "comingSoon"
   | "cancel"
   | "error"
   | "download";
