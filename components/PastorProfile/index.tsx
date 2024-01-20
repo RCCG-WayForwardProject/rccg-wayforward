@@ -28,15 +28,16 @@ const PastorProfile: React.FC = () => {
           place where you can grow in community. We believe that true
           fulfillment comes from serving others and making a positive difference
           in the world. As your pastor, my wife and I are here because we have a
-          deep love for God and people. It's our heartfelt desire to see lives
-          transformed by the power and love of God. Witnessing the incredible
-          ways in which God changes lives brings us immeasurable joy.
+          deep love for God and people. It&apos;s our heartfelt desire to see
+          lives transformed by the power and love of God. Witnessing the
+          incredible ways in which God changes lives brings us immeasurable joy.
         </p>
         <br />
         <p className={styles["profile__content"]}>
-          We invite you to join us at WayForward Cathedral, where you'll find a
-          warm and welcoming community. Come and experience the transformative
-          power of God's presence and the support of a faith-filled family.
+          We invite you to join us at WayForward Cathedral, where you&apos;ll
+          find a warm and welcoming community. Come and experience the
+          transformative power of God&apos;s presence and the support of a
+          faith-filled family.
           <br />
           During your visit, please make sure to stop by and introduce yourself.
           We would love to personally meet you, answer any questions you may
