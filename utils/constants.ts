@@ -12,51 +12,47 @@ export const slidesContent: Array<{ img: string }> = [
 
 export const sermonsList = [
   {
-    img: "/images/divine-wisdom-image.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/devine+widom.jpg",
     name: "Divine Wisdom",
     duration: "5:11",
   },
   {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-3.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/forgiveness.jpg",
     name: "Forgiveness",
     duration: "3:05",
   },
   {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-4.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/marriage+unknown.jpg",
     name: "Marriage- Divine institution",
     duration: "3:07",
   },
   {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-2.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/holy+spirit1.jpg",
     name: "The Holy Spirit Pt 1",
     duration: "3:00",
   },
   {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-5.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/holy+spirit2.jpg",
     name: "The Holy Spirit Pt 2",
     duration: "3:05",
-  },
-  {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-6.jpg",
-    name: "Forgiveness",
   },
 ];
 
 export const services = [
   {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/bible-service.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/bible+study.jpg",
     name: "Bible Study",
     day: "Every Wednesday by 7pm - 8pm",
     location: "Weddington Rd, North Carolina",
   },
   {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/prayer-service.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/prayer+service.jpg",
     name: "Prayer meeting",
     day: "Every Friday by 7pm - 8pm",
     location: "Weddington Rd, North Carolina",
   },
   {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sunday-service.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/worship+with+us.jpg",
     name: "Sunday Service",
     day: "Every Sunday by 10:15am",
     location: "Weddington Rd, North Carolina",
@@ -65,25 +61,25 @@ export const services = [
 
 export const upComingEvents = [
   {
-    img: "worshipImage_3.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/bible-service.jpg",
     name: "Praise Night",
     day: "Wednesday 22, 2024",
     location: "Gotham Fan 221b , New York",
   },
   {
-    img: "worshipImage_2.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/prayer-service.jpg",
     name: "Let's go a fishing",
     day: "Thursday May 22, 2024",
     location: "Gotham Fan 221b , New York",
   },
   {
-    img: "worshipImage_3.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sunday-service.jpg",
     name: "Bible Study",
     day: "Wednesday",
     location: "Gotham Fan 221b , New York",
   },
   {
-    img: "worshipImage_2.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sunday-service.jpg",
     name: "Prayer Service",
     day: "Thursday",
     location: "Gotham Fan 221b , New York",
