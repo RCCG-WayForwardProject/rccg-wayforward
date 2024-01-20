@@ -43,19 +43,19 @@ export const services = [
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/bible+study.jpg",
     name: "Bible Study",
     day: "Every Wednesday by 7pm - 8pm",
-    location: "Weddington Rd, North Carolina",
+    location: "7156 Weddington Dr Concod NC",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/prayer+service.jpg",
     name: "Prayer meeting",
     day: "Every Friday by 7pm - 8pm",
-    location: "Weddington Rd, North Carolina",
+    location: "7156 Weddington Dr Concod NC",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/worship+with+us.jpg",
     name: "Sunday Service",
     day: "Every Sunday by 10:15am",
-    location: "Weddington Rd, North Carolina",
+    location: "7156 Weddington Dr Concod NC",
   },
 ];
 
@@ -312,8 +312,21 @@ export const homeBgImages = [
 
 export const blogs = [
   {
+    slug: "divine-wisdom",
+    image:
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/The+Timelessness+of+Divine+Wisdom.jpg",
+    title: "The Timelessness of Divine Wisdom",
+    description: `The pursuit of knowledge is ingrained in our nature, and as we
+    navigate the labours and peculiarities of life, we believers are
+    encouraged to turn to divine wisdom as a source of clarity and
+    purpose. `,
+    dateCreated: "19 Jan",
+    creator: "Peter Adamson",
+  },
+  {
     slug: "chastity",
-    image: "background_image.jpg",
+    image:
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/chasity.jpg",
     title: "Chastity",
     description: `Beloved in Christ, let us explore the spiritual significance of the divine virtue of Chastity. In a world that often glorifies
     self-indulgence and instant gratification...`,
@@ -322,7 +335,8 @@ export const blogs = [
   },
   {
     slug: "nurturing-godly-marriages",
-    image: "prayer-service.jpg",
+    image:
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/Nurturing+Godly+Marriages.jpg",
     title: "Nurturing Godly Marriages",
     description: `The divine institution of marriage is a sacred covenant designed by God for the flourishing of human relationships. It is an umbrella under which chastity, unity, godliness, peace, and love are upheld`,
     dateCreated: "19 Jan",
@@ -330,7 +344,8 @@ export const blogs = [
   },
   {
     slug: "mercy-of-god",
-    image: "home-baptism-image.jpg",
+    image:
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/enlees+mercy++of+god.jpg",
     title: "Endless Mercy of God",
     description: `Dearly beloved in Christ, let us for a moment explore the profound and life-changing reality of the Holy Spirit. As believers, we are
     blessed with the presence and guidance of the Holy Spirit...`,
@@ -339,7 +354,8 @@ export const blogs = [
   },
   {
     slug: "holy-spirit",
-    image: "prayer-service.jpg",
+    image:
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/holy+spirit.jpg",
     title: "The Holy Spirit",
     description: `Beloved in Christ, let us dwell today on the concept of the
     boundless mercy of God—a divine attribute that extends a merciful
@@ -349,7 +365,8 @@ export const blogs = [
   },
   {
     slug: "divine-wisdom",
-    image: "home-baptism-image.jpg",
+    image:
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/The+Timelessness+of+Divine+Wisdom.jpg",
     title: "The Timelessness of Divine Wisdom",
     description: `The pursuit of knowledge is ingrained in our nature, and as we
     navigate the labours and peculiarities of life, we believers are

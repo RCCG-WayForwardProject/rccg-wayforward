@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
+import Button from "../Button";
 import Icon from "@/components/Icon";
 import SermonCarousel from "./SermonsCarousel";
+
 import { sermonsList } from "@/utils/constants";
 
 import styles from "./sermons.module.scss";
-import Button from "../Button";
 
 interface SermonsProps {}
 
