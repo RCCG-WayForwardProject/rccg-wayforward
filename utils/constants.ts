@@ -12,33 +12,29 @@ export const slidesContent: Array<{ img: string }> = [
 
 export const sermonsList = [
   {
-    img: "/images/divine-wisdom-image.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/devine+widom.jpg",
     name: "Divine Wisdom",
     duration: "5:11",
   },
   {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-3.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/forgiveness.jpg",
     name: "Forgiveness",
     duration: "3:05",
   },
   {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-4.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/marriage+unknown.jpg",
     name: "Marriage- Divine institution",
     duration: "3:07",
   },
   {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-2.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/holy+spirit1.jpg",
     name: "The Holy Spirit Pt 1",
     duration: "3:00",
   },
   {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-5.jpg",
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/holy+spirit2.jpg",
     name: "The Holy Spirit Pt 2",
     duration: "3:05",
-  },
-  {
-    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sermon-image-6.jpg",
-    name: "Forgiveness",
   },
 ];
 
