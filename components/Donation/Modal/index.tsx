@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 
 import styles from "./modal.module.scss";
 
@@ -43,8 +44,32 @@ const Modal: React.FC<ModalProps> = () => {
 
   const tabList: Record<string, JSX.Element> = {
     "Bank Transfer": <BankTransfer />,
-    Paypal: <h2>Paypal</h2>,
-    "Cash App": <h1>Cashapp</h1>,
+    Paypal: (
+      <div className={styles["modal__content-coming-soon"]}>
+        <Image
+          src={"/images/coming_soon.svg"}
+          height={150}
+          width={100}
+          alt={"coming soon"}
+        />
+        <p className={styles["modal__content-coming-soon-heading"]}>
+          Coming soon
+        </p>
+      </div>
+    ),
+    "Cash App": (
+      <div className={styles["modal__content-coming-soon"]}>
+        <Image
+          src={"/images/coming_soon.svg"}
+          height={200}
+          width={100}
+          alt={"coming soon"}
+        />
+        <p className={styles["modal__content-coming-soon-heading"]}>
+          Coming soon
+        </p>
+      </div>
+    ),
   };
 
   const tabHeader: Array<string> = Object.keys(tabList);

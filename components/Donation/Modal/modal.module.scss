@@ -68,5 +68,18 @@
         font-weight: 400;
       }
     }
+    &-coming-soon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-heading {
+        font-size: toRem(30px);
+        color: #4a4a4a;
+        font-weight: 500;
+        @include respond(mobile-screen) {
+          font-size: 20px;
+        }
+      }
+    }
   }
 }
