@@ -326,7 +326,7 @@ export const blogs = [
   {
     slug: "chastity",
     image:
-      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/chasity.jpg",
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/chas+(1).jpeg",
     title: "Chastity",
     description: `Beloved in Christ, let us explore the spiritual significance of the divine virtue of Chastity. In a world that often glorifies
     self-indulgence and instant gratification...`,
@@ -336,7 +336,7 @@ export const blogs = [
   {
     slug: "nurturing-godly-marriages",
     image:
-      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/Nurturing+Godly+Marriages.jpg",
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/godly+marriages.jpg",
     title: "Nurturing Godly Marriages",
     description: `The divine institution of marriage is a sacred covenant designed by God for the flourishing of human relationships. It is an umbrella under which chastity, unity, godliness, peace, and love are upheld`,
     dateCreated: "19 Jan",
@@ -355,23 +355,11 @@ export const blogs = [
   {
     slug: "holy-spirit",
     image:
-      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/holy+spirit.jpg",
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/new+holy+(1).jpeg",
     title: "The Holy Spirit",
     description: `Beloved in Christ, let us dwell today on the concept of the
     boundless mercy of God—a divine attribute that extends a merciful
     hand of forgiveness to all who seek it. `,
-    dateCreated: "19 Jan",
-    creator: "Peter Adamson",
-  },
-  {
-    slug: "divine-wisdom",
-    image:
-      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/The+Timelessness+of+Divine+Wisdom.jpg",
-    title: "The Timelessness of Divine Wisdom",
-    description: `The pursuit of knowledge is ingrained in our nature, and as we
-    navigate the labours and peculiarities of life, we believers are
-    encouraged to turn to divine wisdom as a source of clarity and
-    purpose. `,
     dateCreated: "19 Jan",
     creator: "Peter Adamson",
   },
