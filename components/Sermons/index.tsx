@@ -21,7 +21,7 @@ const Sermons: React.FC<SermonsProps> = ({}) => {
         <p className={styles["sermons__image-heading"]}>Sermons</p>
         <div className={styles["sermons__image-container"]}>
           <Image
-            src={"/images/pastor_and_wife.jpg"}
+            src={"/images/pastor_image.png"}
             width={351}
             height={462}
             priority={false}

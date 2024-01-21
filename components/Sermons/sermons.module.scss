@@ -42,7 +42,7 @@
       }
     }
     &-container {
-      background-color: $col-green-1;
+      // background-color: $col-green-1;
       width: 90%;
       @include respond(mobile-screen) {
         display: none;
