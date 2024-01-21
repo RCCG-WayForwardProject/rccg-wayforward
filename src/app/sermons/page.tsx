@@ -2,8 +2,7 @@
 import React, { useState } from "react";
 
 import Button from "@/components/Button";
-import { SermonCard } from "@/components/Sermons/SermonCard";
-import MusicCard from "@/components/Songs/MusicCard";
+import MusicCard from "./MusicCard";
 import Contact from "@/components/Contact";
 
 import { sermonsList } from "@/utils/constants";

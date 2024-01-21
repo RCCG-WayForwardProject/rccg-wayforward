@@ -33,7 +33,7 @@ export const sermonsList = [
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/forgiveness.jpg",
     name: "Forgiveness",
     duration: "3:05",
-    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/forgiveness-audio.mp3",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/forgiveness.mp3",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/marriage+unknown.jpg",

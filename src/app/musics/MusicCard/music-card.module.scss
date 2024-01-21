@@ -1,0 +1,168 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/functions.scss";
+@import "../../../../styles/base/mixins";
+@import "../../../../styles/typography";
+
+.music-card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 17px;
+  @include border-radius(13px);
+  @include respond(mobile-screen) {
+    background: none;
+    border-radius: 8px;
+    border: 1px solid #edeff5;
+    background: #f8f9fb !important;
+    padding: 16px;
+  }
+  &__wrapper {
+    height: 100%;
+    width: 200px;
+    background-size: cover;
+    @include border-radius(13px);
+    @include respond(mobile-screen) {
+      background-image: none !important;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 90%;
+    }
+    &-column-wrapper {
+      @include respond(mobile-screen) {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+      }
+    }
+  }
+  &__download-icon {
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    & img {
+      filter: grayscale(1) invert(1);
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__image-mobile {
+    display: none;
+    @include respond(mobile-screen) {
+      display: block;
+      height: 49px;
+      width: 55px;
+      border-radius: 7px;
+    }
+    &-column-wrapper {
+      @include respond(mobile-screen) {
+        display: flex;
+        gap: 11px;
+      }
+    }
+  }
+  &__name {
+    color: $col-white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    @include respond(mobile-screen) {
+      color: #2c2c30;
+      font-size: toRem(15px);
+      font-style: normal;
+      font-weight: 600;
+    }
+  }
+  &__author {
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    &-name {
+      color: $col-white;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 500;
+      @include respond(mobile-screen) {
+        color: #757575;
+      }
+    }
+  }
+  &__player {
+    &-wrapper {
+      position: relative;
+      display: flex;
+      background-color: rgba(73, 70, 70, 0.52);
+      height: 20px;
+      width: 100%;
+      @include border-radius(20px);
+      @include respond(mobile-screen) {
+        height: 29px;
+        background: rgba(73, 70, 70, 0.06);
+        justify-content: flex-start;
+      }
+    }
+    &-icon {
+      width: initial;
+      @include respond(mobile-screen) {
+        width: 80%;
+        & span {
+          & svg {
+            height: 26px;
+          }
+        }
+      }
+    }
+    &-button {
+      width: 21px;
+      height: 21px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $col-green-1;
+      margin-left: 3px;
+      @include border-radius(50%);
+      & span {
+        & svg {
+          width: 16px;
+        }
+      }
+      @include respond(mobile-screen) {
+        height: 100%;
+        width: 26px;
+        justify-self: flex-end;
+        position: absolute;
+        right: 0px;
+      }
+    }
+    &-duration {
+      position: absolute;
+      top: 27%;
+      right: 27%;
+      color: $col-white;
+      font-size: toRem(8px);
+      font-style: normal;
+      font-weight: 500;
+
+      @include respond(mobile-screen) {
+        right: 17%;
+        position: initial;
+        display: flex;
+        align-items: center;
+        color: #2c2c30;
+      }
+    }
+  }
+}

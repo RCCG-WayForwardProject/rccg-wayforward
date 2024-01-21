@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 import Button from "@/components/Button";
-import MusicCard from "@/components/Songs/MusicCard";
+import MusicCard from "./MusicCard";
 import Contact from "@/components/Contact";
 
 import { musics } from "@/utils/constants";
