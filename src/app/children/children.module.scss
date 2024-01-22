@@ -1,0 +1,14 @@
+@import "../../../styles/functions";
+@import "../../../styles/typography";
+@import "../../../styles/variables";
+@import "../../../styles/base/mixins";
+
+.children {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 55px 95px;
+  @include respond(mobile-screen) {
+    padding: 45px 6%;
+  }
+}

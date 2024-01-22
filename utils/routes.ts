@@ -12,12 +12,12 @@ export const pageRoutes = [
     name: "Sermons",
   },
   {
-    path: "musics",
-    name: "Musics",
-  },
-  {
     name: "Archive",
     children: [
+      {
+        path: "musics",
+        name: "Musics",
+      },
       {
         path: "books",
         name: "Books",
@@ -41,10 +41,19 @@ export const pageRoutes = [
       },
     ],
   },
-  // {
-  //   name: "Counselling",
-  //   path: "counselling",
-  // },
+  {
+    name: "Ministries",
+    children: [
+      {
+        path: "children",
+        name: "Children",
+      },
+      {
+        path: "young-adults",
+        name: "Young Adults",
+      },
+    ],
+  },
 ];
 
 export const mobilePageRoutes = [
