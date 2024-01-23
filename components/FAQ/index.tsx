@@ -5,11 +5,13 @@ import Image from "next/image";
 import Icon from "../Icon";
 import Accordion from "./Accordion";
 
-import { faq } from "@/utils/constants";
-
 import styles from "./faq.module.scss";
 
-const FAQ: React.FC = () => {
+interface FAQProps {
+  faq: Array<{ title: string; content: string }>;
+}
+
+const FAQ: React.FC<FAQProps> = ({ faq }) => {
   return (
     <div className={styles["faq"]}>
       <h1 className={styles["faq__heading"]}>FAQ&apos;s</h1>
