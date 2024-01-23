@@ -11,6 +11,7 @@ import Newsletter from "@/components/Newsletter";
 import Blogs from "@/components/Blog";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
+import { faq } from "@/utils/constants";
 
 import styles from "./page.module.scss";
 
@@ -28,7 +29,7 @@ export default function Page() {
       <Prayer />
       <Newsletter />
       <Blogs />
-      <FAQ />
+      <FAQ faq={faq} />
       <Contact />
     </div>
   );

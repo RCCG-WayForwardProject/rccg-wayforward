@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 import Icon from "@/components/Icon";
@@ -30,10 +29,6 @@ const MusicCard: React.FC<MusicCardProps> = ({
   const [audioDownloading, setAudioDownloading] =
     useState<AudioDownloadType>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
-
-  const pathname = usePathname();
-  const home = pathname === "/";
-  const homePage = home ? "home" : "otherPages";
 
   const togglePlay = async () => {
     const audioElement = audioRef.current;

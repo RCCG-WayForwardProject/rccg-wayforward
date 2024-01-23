@@ -1,7 +1,7 @@
-@import "../../../styles/variables";
-@import "../../../styles/functions.scss";
-@import "../../../styles/base/mixins";
-@import "../../../styles/typography";
+@import "../../../../styles/variables";
+@import "../../../../styles/functions.scss";
+@import "../../../../styles/base/mixins";
+@import "../../../../styles/typography";
 
 .music-card {
   position: relative;
@@ -12,20 +12,21 @@
   justify-content: flex-end;
   align-items: center;
   padding-bottom: 17px;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 11.56%,
-    rgba(0, 0, 0, 0.5) 72.88%
-  );
   @include border-radius(13px);
-
+  @include respond(mobile-screen) {
+    background: none;
+    border-radius: 8px;
+    border: 1px solid #edeff5;
+    background: #f8f9fb !important;
+    padding: 16px;
+  }
   &__wrapper {
     height: 100%;
     width: 200px;
     background-size: cover;
-    background-repeat: no-repeat;
     @include border-radius(13px);
     @include respond(mobile-screen) {
+      background-image: none !important;
       width: 100%;
     }
   }
@@ -58,7 +59,12 @@
 
   &__image-mobile {
     display: none;
-
+    @include respond(mobile-screen) {
+      display: block;
+      height: 49px;
+      width: 55px;
+      border-radius: 7px;
+    }
     &-column-wrapper {
       @include respond(mobile-screen) {
         display: flex;
@@ -71,6 +77,12 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
+    @include respond(mobile-screen) {
+      color: #2c2c30;
+      font-size: toRem(15px);
+      font-style: normal;
+      font-weight: 600;
+    }
   }
   &__author {
     &-wrapper {
@@ -83,6 +95,9 @@
       font-size: 10px;
       font-style: normal;
       font-weight: 500;
+      @include respond(mobile-screen) {
+        color: #757575;
+      }
     }
   }
   &__player {
@@ -93,10 +108,21 @@
       height: 20px;
       width: 100%;
       @include border-radius(20px);
+      @include respond(mobile-screen) {
+        height: 29px;
+        background: rgba(73, 70, 70, 0.06);
+        justify-content: flex-start;
+      }
     }
     &-icon {
+      width: initial;
       @include respond(mobile-screen) {
-        width: 85%;
+        width: 80%;
+        & span {
+          & svg {
+            height: 26px;
+          }
+        }
       }
     }
     &-button {
@@ -113,6 +139,13 @@
           width: 16px;
         }
       }
+      @include respond(mobile-screen) {
+        height: 100%;
+        width: 26px;
+        justify-self: flex-end;
+        position: absolute;
+        right: 0px;
+      }
     }
     &-duration {
       position: absolute;
@@ -122,8 +155,13 @@
       font-size: toRem(8px);
       font-style: normal;
       font-weight: 500;
+
       @include respond(mobile-screen) {
         right: 17%;
+        position: initial;
+        display: flex;
+        align-items: center;
+        color: #2c2c30;
       }
     }
   }

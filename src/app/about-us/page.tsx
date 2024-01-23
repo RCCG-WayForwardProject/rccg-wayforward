@@ -11,6 +11,7 @@ import Donation from "@/components/Donation";
 import Prayer from "@/components/Prayer";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
+import { faq } from "@/utils/constants";
 
 import styles from "./about-us.module.scss";
 
@@ -26,7 +27,7 @@ const AboutPage: React.FC = () => {
       <Testimonies style={{ justifyContent: "center" }} />
       <Donation />
       <Prayer />
-      <FAQ />
+      <FAQ faq={faq} />
       <Contact />
     </div>
   );

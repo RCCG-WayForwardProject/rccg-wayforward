@@ -1,0 +1,213 @@
+@import "../../../styles/functions";
+@import "../../../styles/typography";
+@import "../../../styles/variables";
+@import "../../../styles/base/mixins";
+
+.children {
+  &__banner {
+    &-image {
+      position: relative;
+      height: 90vh;
+      background-image: url("/images/children-banner-2.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    &-content {
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      &-heading {
+        width: 50%;
+        color: $col-white;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 64px;
+        @include respond(mobile-screen) {
+          width: 80%;
+          font-size: toRem(30px);
+          line-height: 44px;
+        }
+      }
+      &-description {
+        width: 50%;
+        color: $col-white;
+        text-align: justify;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        margin-top: 14px;
+        @include respond(mobile-screen) {
+          width: 80%;
+          line-height: 20px;
+          font-size: 13px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  &__content {
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 55px 95px;
+      @include respond(mobile-screen) {
+        padding: 45px 6%;
+      }
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 30px 0px;
+    }
+    &-heading {
+      font-size: toRem(40px);
+      color: $col-dark-10;
+      font-weight: 700;
+      @include respond(mobile-screen) {
+        font-size: toRem(32px);
+      }
+    }
+    &-list-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 60px;
+      @include respond(mobile-screen) {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+    &-image {
+      position: relative;
+      height: 300px;
+      width: 100%;
+      @include respond(mobile-screen) {
+        height: 200px;
+      }
+    }
+    &-title {
+      color: $col-grey-7;
+      font-weight: 600;
+      font-size: toRem(32px);
+      margin-top: 10px;
+      @include respond(mobile-screen) {
+        font-size: toRem(24px);
+      }
+    }
+    &-age {
+      color: $col-grey-7;
+      font-weight: 600;
+      font-size: toRem(16px);
+    }
+    &-description {
+      color: $col-dark-10;
+      font-size: toRem(14px);
+    }
+  }
+
+  &__music {
+    height: 281px;
+    @include border-radius(13px);
+    @include respond(mobile-screen) {
+      margin-right: 16px;
+    }
+    &-section {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding: 30px 0px;
+      @include respond(mobile-screen) {
+        padding: 0px;
+      }
+    }
+    &-heading {
+      color: $col-grey-7;
+      font-weight: 600;
+      font-size: toRem(40px);
+      @include respond(mobile-screen) {
+        font-size: 32px;
+      }
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+    &-description {
+      width: 40%;
+      font-size: 14px;
+      color: $col-dark-10;
+      @include respond(mobile-screen) {
+        width: 100%;
+      }
+    }
+    &-loader {
+      display: flex;
+      gap: 24px;
+    }
+  }
+  &__pastor-profile {
+    &-section {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 60px;
+      align-items: center;
+      padding: 30px 0px;
+      @include respond(mobile-screen) {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+      }
+    }
+    &-image {
+      position: relative;
+      height: 420px;
+      width: 320px;
+      @include respond(mobile-screen) {
+        width: 100%;
+        height: 350px;
+      }
+    }
+    &-content {
+      @include description;
+      color: $col-dark-10;
+      &-heading {
+        color: $col-dark-3;
+        width: 100%;
+        font-size: toRem(32px);
+        font-weight: 600;
+        & span {
+          font-weight: 400;
+        }
+        @include respond(mobile-screen) {
+          font-size: toRem(22px);
+          width: 90%;
+        }
+      }
+    }
+  }
+  &__faq {
+    &-wrapper {
+      padding: 30px 0px;
+    }
+  }
+}

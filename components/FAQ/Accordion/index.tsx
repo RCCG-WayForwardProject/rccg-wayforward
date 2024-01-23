@@ -16,12 +16,12 @@ const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
 
   return (
     <div className={styles["accordion"]}>
-      <div className={styles["accordion__heading-wrapper"]}>
+      <div
+        className={styles["accordion__heading-wrapper"]}
+        onClick={handleToggleAccordion}
+      >
         <p className={styles["accordion__heading"]}>{title} </p>
-        <button
-          className={styles["accordion__heading-button"]}
-          onClick={handleToggleAccordion}
-        >
+        <button className={styles["accordion__heading-button"]}>
           {openAccordion ? "-" : "+"}
         </button>
       </div>

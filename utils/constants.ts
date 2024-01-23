@@ -33,7 +33,7 @@ export const sermonsList = [
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/forgiveness.jpg",
     name: "Forgiveness",
     duration: "3:05",
-    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/forgiveness-audio.mp3",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/forgiveness.mp3",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/marriage+unknown.jpg",
@@ -367,5 +367,57 @@ export const blogs = [
     hand of forgiveness to all who seek it. `,
     dateCreated: "19 Jan",
     creator: "Peter Adamson",
+  },
+];
+
+export const childrenGroup = [
+  {
+    image: "/images/nursery-child.jpg",
+    heading: "Little Lambs Nursery",
+    age: "6 months - 3 years old",
+    description:
+      "Our youngest children will enjoy a nurturing playroom environment tailored for their age with songs, stories, and activities led by our loving nursery staff and volunteers. ",
+  },
+  {
+    image: "/images/nursery-child-2.jpg",
+    heading: "Preschool Playtime",
+    age: "Pre-K - 1st grade",
+    description:
+      "Using hands-on learning, preschoolers discover God's love through age-appropriate Bible lessons, crafts and play in a supervised classroom.",
+  },
+  {
+    image: "/images/children-image-3.jpg",
+    heading: "Kids' Church",
+    age: "2nd - 6th grade",
+    description:
+      "Elementary kids join energetic Bible study, service projects and fun fellowship to grow their faith and friendships.",
+  },
+];
+
+export const childrenFaq = [
+  {
+    title: "What age groups do you have?",
+    content:
+      "We have classes for Nursery (0-2), Preschool (3-5), Elementary (grades K-5).",
+  },
+  {
+    title: "When do classes meet?",
+    content:
+      "All children's programming takes place during the 9am and 11am Sunday services.",
+  },
+  {
+    title: "Are background checks done on volunteers?",
+    content:
+      "Absolutely. Child safety is our top priority and all teachers undergo background checks.",
+  },
+  {
+    title: "Can parents stay with their child?",
+    content:
+      "For younger kids, yes! Our nursery has an observation window so parents can stay nearby.",
+  },
+  {
+    title: "What safety procedures do you have?",
+    content:
+      "We follow strict child protection policies including teacher ratios and check-in/out procedures.",
   },
 ];
