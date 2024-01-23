@@ -246,7 +246,7 @@ export const footerLink = [
   },
   {
     icon: "youtube",
-    link: "https://youtube.com/@boseadamsonmusic8208?si=Bz_D9XW_Hz6of8H2",
+    link: "https://www.youtube.com/channel/UCNx25yX0Lu6sDT8P12Pmnvw",
   },
   {
     icon: "twitter",
@@ -419,5 +419,33 @@ export const childrenFaq = [
     title: "What safety procedures do you have?",
     content:
       "We follow strict child protection policies including teacher ratios and check-in/out procedures.",
+  },
+];
+
+export const youthFaq = [
+  {
+    title: "What kinds of activities do you do?",
+    content:
+      "Expect games, worship, Bible study, service projects and lots of fun hangout time. No two nights are ever the same! ",
+  },
+  {
+    title: "How can I get involved?",
+    content:
+      "We'd love for you to join us! Just show up or talk to a leader about volunteering. Many hands make light work.",
+  },
+  {
+    title: "What if I have questions about faith?",
+    content:
+      "That's what we're here for! Any question is valid - just ask a leader or bring it up during our discussion time.",
+  },
+  {
+    title: "How can parents get involved?",
+    content:
+      "We welcome parent volunteers or if you just want to check-in on our ministry.",
+  },
+  {
+    title: "How can I follow updates?",
+    content:
+      "Like our Facebook page or subscribe to our newsletter. You'll be the first to know about events, prayer requests and more.",
   },
 ];

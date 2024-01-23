@@ -41,7 +41,7 @@ const Home: React.FC = () => {
               <Icon icon="worshipWordIcon" />
             </div>
             <h2 className={styles["home__content-heading"]}>
-              Impacting Lives Through God's Word and Genuine Fellowship.
+              Impacting Lives Through God&apos;s Word and Genuine Fellowship.
             </h2>
             <p className={styles["home__content-text"]}>
               Welcome to The Redeemed Christian Church of God WayForward in
