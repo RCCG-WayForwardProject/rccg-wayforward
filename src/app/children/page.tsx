@@ -30,7 +30,7 @@ const ChildrenPage: React.FC = () => {
         <div className={styles["children__banner-image"]}>
           <div className={styles["children__banner-content"]}>
             <h1 className={styles["children__banner-content-heading"]}>
-              Kids' Kingdom: Fun Learning & Spiritual Growth
+              Kids&apos; Kingdom: Fun Learning & Spiritual Growth
             </h1>
             <p className={styles["children__banner-content-description"]}>
               Let the little children come to me and do not hinder them, for to
@@ -119,23 +119,23 @@ const ChildrenPage: React.FC = () => {
               <h1
                 className={styles["children__pastor-profile-content-heading"]}
               >
-                Sarah Joe <span>/ Children's Pastor</span>
+                Sarah Joe <span>/ Children&apos;s Pastor</span>
               </h1>
               <p className={styles["children__pastor-profile-content"]}>
-                I'm Sarah Joe, your Childrens Pastor here at WayForward Church.
-                My goal is to provide a nurturing environment where your kids
-                can develop a lifelong love for God.
+                I&apos;m Sarah Joe, your Childrens Pastor here at WayForward
+                Church. My goal is to provide a nurturing environment where your
+                kids can develop a lifelong love for God.
                 <br />
                 <br />
-                As Jesus said in Mark 10:14, "Let the little children come to
-                me, and do not hinder them, for the kingdom of God belongs to
-                such as these." In this spirit, we strive to make faith
+                As Jesus said in Mark 10:14, &quot;Let the little children come
+                to me, and do not hinder them, for the kingdom of God belongs to
+                such as these.&quot; In this spirit, we strive to make faith
                 exploration fun through interactive Bible lessons, crafts and
                 other activities.
                 <br />
                 <br />
                 It brings me such joy witnessing the smiles and laughter of
-                little ones discovering their unique talents, made in God's
+                little ones discovering their unique talents, made in God&apos;s
                 image. My hope is that with guidance, each child will find ways
                 to use their gifts to serve others.
                 <br />
@@ -146,10 +146,10 @@ const ChildrenPage: React.FC = () => {
                 cultivate meaningful faith in families.
                 <br />
                 <br />
-                Do stop by after service should you want to discuss your child's
-                experience. It would be my privilege to walk alongside you on
-                this journey. Thank you for partnering with us in children's
-                ministry. God bless!
+                Do stop by after service should you want to discuss your
+                child&apos;s experience. It would be my privilege to walk
+                alongside you on this journey. Thank you for partnering with us
+                in children&apos;s ministry. God bless!
               </p>
             </div>
           </div>
