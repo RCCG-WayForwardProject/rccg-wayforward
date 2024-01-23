@@ -31,10 +31,6 @@ const MusicCard: React.FC<MusicCardProps> = ({
     useState<AudioDownloadType>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  const pathname = usePathname();
-  const home = pathname === "/";
-  const homePage = home ? "home" : "otherPages";
-
   const togglePlay = async () => {
     const audioElement = audioRef.current;
 
