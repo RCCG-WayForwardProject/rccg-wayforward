@@ -49,8 +49,8 @@ export const pageRoutes = [
         name: "Children",
       },
       {
-        path: "young-adults",
-        name: "Young Adults",
+        path: "youths",
+        name: "Youths",
       },
     ],
   },
@@ -92,5 +92,9 @@ export const mobilePageRoutes = [
   {
     path: "children",
     name: "Children",
+  },
+  {
+    path: "youths",
+    name: "Youths",
   },
 ];

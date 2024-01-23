@@ -88,13 +88,13 @@
     }
     &-heading {
       color: $col-white;
-      font-size: 56px;
+      font-size: 52px;
       font-style: normal;
       font-weight: 600;
       line-height: 64px;
       letter-spacing: -1px;
       @include respond(mobile-screen) {
-        font-size: toRem(30px);
+        font-size: toRem(26px);
         line-height: 44px;
       }
     }
