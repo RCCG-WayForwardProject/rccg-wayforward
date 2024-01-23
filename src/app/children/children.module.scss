@@ -33,6 +33,7 @@
         font-weight: 600;
         line-height: 64px;
         @include respond(mobile-screen) {
+          width: 80%;
           font-size: toRem(30px);
           line-height: 44px;
         }
@@ -47,6 +48,7 @@
         line-height: 24px;
         margin-top: 14px;
         @include respond(mobile-screen) {
+          width: 80%;
           line-height: 20px;
           font-size: 13px;
           margin-top: 30px;
@@ -78,8 +80,11 @@
     }
     &-heading {
       font-size: toRem(40px);
-      color: #3d3d3d;
+      color: $col-dark-10;
       font-weight: 700;
+      @include respond(mobile-screen) {
+        font-size: toRem(32px);
+      }
     }
     &-list-wrapper {
       display: grid;
@@ -88,27 +93,33 @@
       @include respond(mobile-screen) {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
       }
     }
     &-image {
       position: relative;
       height: 300px;
       width: 100%;
+      @include respond(mobile-screen) {
+        height: 200px;
+      }
     }
     &-title {
-      color: #11142d;
+      color: $col-grey-7;
       font-weight: 600;
       font-size: toRem(32px);
       margin-top: 10px;
+      @include respond(mobile-screen) {
+        font-size: toRem(24px);
+      }
     }
     &-age {
-      color: #11142d;
+      color: $col-grey-7;
       font-weight: 600;
       font-size: toRem(16px);
     }
     &-description {
-      color: #3d3d3d;
+      color: $col-dark-10;
       font-size: toRem(14px);
     }
   }
@@ -117,18 +128,24 @@
     height: 281px;
     @include border-radius(13px);
     @include respond(mobile-screen) {
-      width: 100% !important;
+      margin-right: 16px;
     }
     &-section {
       display: flex;
       flex-direction: column;
       gap: 24px;
       padding: 30px 0px;
+      @include respond(mobile-screen) {
+        padding: 0px;
+      }
     }
     &-heading {
-      color: #11142d;
+      color: $col-grey-7;
       font-weight: 600;
       font-size: toRem(40px);
+      @include respond(mobile-screen) {
+        font-size: 32px;
+      }
       &-wrapper {
         display: flex;
         flex-direction: column;
@@ -138,7 +155,10 @@
     &-description {
       width: 40%;
       font-size: 14px;
-      color: #3d3d3d;
+      color: $col-dark-10;
+      @include respond(mobile-screen) {
+        width: 100%;
+      }
     }
     &-loader {
       display: flex;
@@ -155,6 +175,7 @@
       @include respond(mobile-screen) {
         display: flex;
         flex-direction: column;
+        padding: 0px;
       }
     }
     &-image {
@@ -163,12 +184,12 @@
       width: 320px;
       @include respond(mobile-screen) {
         width: 100%;
-        height: 250px;
+        height: 350px;
       }
     }
     &-content {
       @include description;
-      color: #3d3d3d;
+      color: $col-dark-10;
       &-heading {
         color: $col-dark-3;
         width: 100%;

@@ -14,8 +14,7 @@ interface MusicCarouselProps {
 
 const MusicCarousel: React.FC<MusicCarouselProps> = ({ children }) => {
   const [responsive] = useState({
-    0: { items: 3 },
-    500: { items: 2 },
+    0: { items: 1.7 },
     1000: { items: 6 },
   });
 

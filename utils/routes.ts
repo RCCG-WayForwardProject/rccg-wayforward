@@ -89,4 +89,8 @@ export const mobilePageRoutes = [
     path: "blogs",
     name: "Blogs",
   },
+  {
+    path: "children",
+    name: "Children",
+  },
 ];

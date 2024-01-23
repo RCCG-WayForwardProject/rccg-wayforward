@@ -78,12 +78,11 @@ const MusicCard: React.FC<MusicCardProps> = ({
   return (
     <div
       className={styles["music-card__wrapper"]}
-      data-page={homePage}
       style={{
         backgroundImage: `url(${img})`,
       }}
     >
-      <div className={styles["music-card"]} data-page={homePage}>
+      <div className={styles["music-card"]}>
         <audio ref={audioRef} onEnded={() => setIsPlaying(false)}>
           <source src={src} type="audio/mp3" />
           Your browser does not support the audio tag.
@@ -116,12 +115,9 @@ const MusicCard: React.FC<MusicCardProps> = ({
               style={{
                 backgroundImage: `url(${img})`,
               }}
-              data-page={homePage}
             ></div>
             <div className={styles["music-card__name-column-wrapper"]}>
-              <p className={styles["music-card__name"]} data-page={homePage}>
-                {name}{" "}
-              </p>
+              <p className={styles["music-card__name"]}>{name} </p>
               <div className={styles["music-card__author-wrapper"]}>
                 <div>
                   <Image
@@ -132,37 +128,22 @@ const MusicCard: React.FC<MusicCardProps> = ({
                     style={{ borderRadius: "50%" }}
                   />
                 </div>
-                <p
-                  className={styles["music-card__author-name"]}
-                  data-page={homePage}
-                >
+                <p className={styles["music-card__author-name"]}>
                   {authorName ?? "N/A"}
                 </p>
               </div>
             </div>
           </div>
-          <div
-            className={styles["music-card__player-wrapper"]}
-            data-page={homePage}
-          >
-            <div
-              className={styles["music-card__player-icon"]}
-              data-page={homePage}
-            >
+          <div className={styles["music-card__player-wrapper"]}>
+            <div className={styles["music-card__player-icon"]}>
               <Icon icon="audioWave" />
             </div>
-            <p
-              className={styles["music-card__player-duration"]}
-              data-page={homePage}
-            >
-              {duration}{" "}
-            </p>
+            <p className={styles["music-card__player-duration"]}>{duration} </p>
             <button
               onClick={togglePlay}
               className={styles["music-card__player-button"]}
               type="button"
               aria-label="music button"
-              data-page={homePage}
             >
               {isPlaying ? <Icon icon="pause" /> : <Icon icon="play" />}
             </button>

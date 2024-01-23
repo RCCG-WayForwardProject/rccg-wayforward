@@ -18,15 +18,7 @@
     rgba(0, 0, 0, 0.5) 72.88%
   );
   @include border-radius(13px);
-  &[data-page="otherPages"] {
-    @include respond(mobile-screen) {
-      background: none;
-      border-radius: 8px;
-      border: 1px solid #edeff5;
-      background: #f8f9fb !important;
-      padding: 16px;
-    }
-  }
+
   &__wrapper {
     height: 100%;
     width: 200px;
@@ -35,11 +27,6 @@
     @include border-radius(13px);
     @include respond(mobile-screen) {
       width: 100%;
-    }
-    &[data-page="otherPages"] {
-      @include respond(mobile-screen) {
-        background-image: none !important;
-      }
     }
   }
 
@@ -71,14 +58,7 @@
 
   &__image-mobile {
     display: none;
-    &[data-page="otherPages"] {
-      @include respond(mobile-screen) {
-        display: block;
-        height: 49px;
-        width: 55px;
-        border-radius: 7px;
-      }
-    }
+
     &-column-wrapper {
       @include respond(mobile-screen) {
         display: flex;
@@ -91,14 +71,6 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    &[data-page="otherPages"] {
-      @include respond(mobile-screen) {
-        color: #2c2c30;
-        font-size: toRem(15px);
-        font-style: normal;
-        font-weight: 600;
-      }
-    }
   }
   &__author {
     &-wrapper {
@@ -111,11 +83,6 @@
       font-size: 10px;
       font-style: normal;
       font-weight: 500;
-      &[data-page="otherPages"] {
-        @include respond(mobile-screen) {
-          color: #757575;
-        }
-      }
     }
   }
   &__player {
@@ -126,27 +93,10 @@
       height: 20px;
       width: 100%;
       @include border-radius(20px);
-      &[data-page="otherPages"] {
-        @include respond(mobile-screen) {
-          height: 29px;
-          background: rgba(73, 70, 70, 0.06);
-          justify-content: center;
-        }
-      }
     }
     &-icon {
       @include respond(mobile-screen) {
         width: 85%;
-      }
-      &[data-page="otherPages"] {
-        width: initial;
-        @include respond(mobile-screen) {
-          & span {
-            & svg {
-              height: 26px;
-            }
-          }
-        }
       }
     }
     &-button {
@@ -163,15 +113,6 @@
           width: 16px;
         }
       }
-      &[data-page="otherPages"] {
-        @include respond(mobile-screen) {
-          height: 100%;
-          width: 26px;
-          justify-self: flex-end;
-          position: absolute;
-          right: 0px;
-        }
-      }
     }
     &-duration {
       position: absolute;
@@ -183,14 +124,6 @@
       font-weight: 500;
       @include respond(mobile-screen) {
         right: 17%;
-      }
-      &[data-page="otherPages"] {
-        @include respond(mobile-screen) {
-          position: initial;
-          display: flex;
-          align-items: center;
-          color: #2c2c30;
-        }
       }
     }
   }

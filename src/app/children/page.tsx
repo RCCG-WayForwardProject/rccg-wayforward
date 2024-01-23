@@ -5,7 +5,7 @@ import Image from "next/image";
 import LoadingCard from "@/components/LoadingCard";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
-import MusicCard from "../musics/MusicCard";
+import MusicCard from "@/components/Songs/MusicCard";
 import MusicCarousel from "./MusicCarousel";
 
 import { childrenFaq, childrenGroup } from "@/utils/constants";
