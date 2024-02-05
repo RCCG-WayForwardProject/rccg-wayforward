@@ -51,7 +51,12 @@
       font-weight: 400;
       line-height: 24px;
       text-transform: capitalize;
-      color: #4a4a4a;
+      // color: #4a4a4a;
+      color: $col-white;
+      &[data-sticky="true"],
+      &[data-page="true"] {
+        color: #4a4a4a;
+      }
 
       & span {
         color: #219653;
