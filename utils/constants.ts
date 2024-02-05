@@ -24,6 +24,12 @@ export const sermonsList = [
     src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/holy-spirit-2.mp3",
   },
   {
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/holy+spirit2.jpg",
+    name: "Diligence",
+    duration: "7:16",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/diligence.mp3",
+  },
+  {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/devine+widom.jpg",
     name: "Divine Wisdom",
     duration: "5:11",
