@@ -97,7 +97,7 @@ const Events: React.FC = () => {
             <input
               type="search"
               className={styles["events__input"]}
-              placeholder="Search book"
+              placeholder="Search event"
             />
             <Button
               type="submit"

@@ -24,6 +24,12 @@ export const sermonsList = [
     src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/holy-spirit-2.mp3",
   },
   {
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/holy+spirit2.jpg",
+    name: "Diligence",
+    duration: "7:16",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/diligence.mp3",
+  },
+  {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/devine+widom.jpg",
     name: "Divine Wisdom",
     duration: "5:11",
@@ -69,25 +75,25 @@ export const upComingEvents = [
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/bible-service.jpg",
     name: "Praise Night",
     day: "Wednesday 22, 2024",
-    location: "Gotham Fan 221b , New York",
+    location: "7156 Weddington Dr Concod NC",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/prayer-service.jpg",
     name: "Let's go a fishing",
     day: "Thursday May 22, 2024",
-    location: "Gotham Fan 221b , New York",
+    location: "7156 Weddington Dr Concod NC",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sunday-service.jpg",
     name: "Bible Study",
     day: "Wednesday",
-    location: "Gotham Fan 221b , New York",
+    location: "7156 Weddington Dr Concod NC",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sunday-service.jpg",
     name: "Prayer Service",
     day: "Thursday",
-    location: "Gotham Fan 221b , New York",
+    location: "7156 Weddington Dr Concod NC",
   },
 ];
 
@@ -331,7 +337,7 @@ export const blogs = [
   {
     slug: "chastity",
     image:
-      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/chas+(1).jpeg",
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/chastity-img.png",
     title: "Chastity",
     description: `Beloved in Christ, let us explore the spiritual significance of the divine virtue of Chastity. In a world that often glorifies
     self-indulgence and instant gratification...`,
@@ -372,21 +378,24 @@ export const blogs = [
 
 export const childrenGroup = [
   {
-    image: "/images/nursery-child.jpg",
+    image:
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/childrens-img-2.jpeg",
     heading: "Little Lambs Nursery",
     age: "6 months - 3 years old",
     description:
       "Our youngest children will enjoy a nurturing playroom environment tailored for their age with songs, stories, and activities led by our loving nursery staff and volunteers. ",
   },
   {
-    image: "/images/nursery-child-2.jpg",
+    image:
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/childrens-img-1.png",
     heading: "Preschool Playtime",
     age: "Pre-K - 1st grade",
     description:
       "Using hands-on learning, preschoolers discover God's love through age-appropriate Bible lessons, crafts and play in a supervised classroom.",
   },
   {
-    image: "/images/children-image-3.jpg",
+    image:
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/children-img-3.png",
     heading: "Kids' Church",
     age: "2nd - 6th grade",
     description:

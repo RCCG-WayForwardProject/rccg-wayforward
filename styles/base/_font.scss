@@ -135,3 +135,32 @@
   font-style: italic;
   font-display: swap;
 }
+
+// Lobster
+
+@font-face {
+  font-family: "Lobster";
+  src: local("Lobster-Regular"), local("Lobster-Regular"),
+    url("../../public/assests/fonts/Lobster-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lobster";
+  src: local("Lobster-Italic"), local("Lobster-Italic"),
+    url("../../public/assests/fonts/Lobster-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lobster";
+  src: local("Lobster-Bold"), local("Lobster-Bold"),
+    url("../../public/assests/fonts/Lobster-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
