@@ -75,25 +75,25 @@ export const upComingEvents = [
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/bible-service.jpg",
     name: "Praise Night",
     day: "Wednesday 22, 2024",
-    location: "Gotham Fan 221b , New York",
+    location: "7156 Weddington Dr Concod NC",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/prayer-service.jpg",
     name: "Let's go a fishing",
     day: "Thursday May 22, 2024",
-    location: "Gotham Fan 221b , New York",
+    location: "7156 Weddington Dr Concod NC",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sunday-service.jpg",
     name: "Bible Study",
     day: "Wednesday",
-    location: "Gotham Fan 221b , New York",
+    location: "7156 Weddington Dr Concod NC",
   },
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/sunday-service.jpg",
     name: "Prayer Service",
     day: "Thursday",
-    location: "Gotham Fan 221b , New York",
+    location: "7156 Weddington Dr Concod NC",
   },
 ];
 
