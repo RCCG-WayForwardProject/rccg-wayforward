@@ -73,11 +73,9 @@ const Header: React.FC<HeaderProps> = ({}) => {
     >
       <div className={styles["header__logo-wrapper"]}>
         <Icon icon="appLogo" />
-        {headerPage === "home" ? (
-          <Icon icon={headerSticky ? "appNameBlack" : "appName"} />
-        ) : (
-          <Icon icon={"appNameBlack"} />
-        )}
+        <p className={styles["header__logo-name"]}>
+          Wayforward <br /> <span>Cathedral</span>
+        </p>
       </div>
 
       <ul className={styles["header__link-wrapper"]}>

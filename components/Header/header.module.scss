@@ -45,8 +45,8 @@
       gap: 10px;
     }
     &-name {
-      font-family: "Segoe UI", sans-serif;
-      font-size: 17px;
+      font-family: $Lobster;
+      font-size: 20px;
       font-style: normal;
       font-weight: 400;
       line-height: 24px;
@@ -55,7 +55,7 @@
 
       & span {
         color: #219653;
-        font-weight: 700;
+        font-weight: 600;
         text-transform: uppercase;
       }
     }
