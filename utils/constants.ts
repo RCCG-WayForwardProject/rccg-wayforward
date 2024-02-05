@@ -337,7 +337,7 @@ export const blogs = [
   {
     slug: "chastity",
     image:
-      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/chas+(1).jpeg",
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/chastity-img.png",
     title: "Chastity",
     description: `Beloved in Christ, let us explore the spiritual significance of the divine virtue of Chastity. In a world that often glorifies
     self-indulgence and instant gratification...`,
@@ -378,21 +378,24 @@ export const blogs = [
 
 export const childrenGroup = [
   {
-    image: "/images/nursery-child.jpg",
+    image:
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/childrens-img-2.jpeg",
     heading: "Little Lambs Nursery",
     age: "6 months - 3 years old",
     description:
       "Our youngest children will enjoy a nurturing playroom environment tailored for their age with songs, stories, and activities led by our loving nursery staff and volunteers. ",
   },
   {
-    image: "/images/nursery-child-2.jpg",
+    image:
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/childrens-img-1.png",
     heading: "Preschool Playtime",
     age: "Pre-K - 1st grade",
     description:
       "Using hands-on learning, preschoolers discover God's love through age-appropriate Bible lessons, crafts and play in a supervised classroom.",
   },
   {
-    image: "/images/children-image-3.jpg",
+    image:
+      "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/children-img-3.png",
     heading: "Kids' Church",
     age: "2nd - 6th grade",
     description:
