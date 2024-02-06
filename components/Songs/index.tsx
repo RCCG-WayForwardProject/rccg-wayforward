@@ -12,7 +12,17 @@ import { musics } from "@/utils/constants";
 
 import styles from "./songs.module.scss";
 
-const Songs: React.FC = () => {
+// interface SongsProps {
+//   musics: Array<{
+//     name: string;
+//     img: string;
+//     authorName: string;
+//     musicLength: string;
+//     src: string;
+//   }>;
+// }
+
+const Songs: React.FC = ({}) => {
   const [loading, setLoading] = useState<boolean>(true);
   const { push } = useRouter();
 

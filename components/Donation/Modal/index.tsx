@@ -47,7 +47,8 @@ const Modal: React.FC<ModalProps> = () => {
     "Cash App": (
       <div className={styles["modal__content-container"]}>
         <div className={styles["modal__content-details-wrapper"]}>
-          <p className={styles["modal__content-details-heading"]}>
+          <p className={styles["modal__content-details-heading"]}>CashTag</p>
+          <p className={styles["modal__content-details-description"]}>
             $Rccgwayforward
           </p>
         </div>

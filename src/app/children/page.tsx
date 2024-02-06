@@ -8,7 +8,7 @@ import FAQ from "@/components/FAQ";
 import MusicCard from "@/components/Songs/MusicCard";
 import MusicCarousel from "./MusicCarousel";
 
-import { childrenFaq, childrenGroup } from "@/utils/constants";
+import { childrenFaq, childrenGroup, childrenMusics } from "@/utils/constants";
 import { musics } from "@/utils/constants";
 
 import styles from "./children.module.scss";
@@ -84,7 +84,7 @@ const ChildrenPage: React.FC = () => {
               ) : (
                 <div className={styles["children__music-carousel-wrapper"]}>
                   <MusicCarousel>
-                    {musics?.map((music, index) => {
+                    {childrenMusics?.map((music, index) => {
                       return (
                         <div
                           className={styles["children__music"]}
