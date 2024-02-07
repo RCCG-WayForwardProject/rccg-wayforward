@@ -1,0 +1,58 @@
+@import "../../styles/functions";
+@import "../../styles/typography";
+@import "../../styles/variables";
+@import "../../styles/base/mixins";
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 687px;
+  padding: 50px 60px;
+  background-color: $col-white;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
+  @include border-radius(20px);
+  @include respond(mobile-screen) {
+    width: 95%;
+    padding: 30px;
+  }
+  &__logo {
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &-name {
+      font-family: $Lobster;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: capitalize;
+      color: #4a4a4a;
+
+      & span {
+        color: #219653;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &__heading {
+    font-size: toRem(42px);
+    color: $col-dark-2;
+    @include respond(mobile-screen) {
+      font-size: 32px;
+    }
+  }
+  &__subheading {
+    font-size: toRem(24px);
+    color: $col-dark-2;
+    @include respond(mobile-screen) {
+      font-size: 20px;
+    }
+  }
+  &__description {
+    font-size: toRem(14px);
+  }
+}
