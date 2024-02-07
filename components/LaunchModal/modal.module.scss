@@ -8,15 +8,13 @@
   flex-direction: column;
   gap: 10px;
   width: 687px;
-  height: 427px;
-  padding: 67px;
+  padding: 50px 60px;
   background-color: $col-white;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
   @include border-radius(20px);
   @include respond(mobile-screen) {
     width: 95%;
     padding: 30px;
-    height: 53%;
   }
   &__logo {
     &-wrapper {
@@ -42,7 +40,19 @@
   }
   &__heading {
     font-size: toRem(42px);
-    font-weight: 600;
-    color: $col-grey-5;
+    color: $col-dark-2;
+    @include respond(mobile-screen) {
+      font-size: 32px;
+    }
+  }
+  &__subheading {
+    font-size: toRem(24px);
+    color: $col-dark-2;
+    @include respond(mobile-screen) {
+      font-size: 20px;
+    }
+  }
+  &__description {
+    font-size: toRem(14px);
   }
 }

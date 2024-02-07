@@ -21,19 +21,27 @@ import { useClickOutside } from "@/utils/useClickOutside";
 
 import styles from "./page.module.scss";
 
-export default function Page() {
+const Page: React.FC = () => {
   const [openLaunchModal, setOpenLaunchModal] = useState<boolean>(false);
   const modalRef = useRef<HTMLDivElement>(null);
+  const isModalOpenedRef = useRef<boolean>(false);
 
   useClickOutside(modalRef, setOpenLaunchModal, false);
 
   useEffect(() => {
-    if (typeof window !== undefined) {
-      window.addEventListener("scroll", () => {
-        setOpenLaunchModal(Boolean(window.scrollY > 2700));
-      });
-    }
-  });
+    const handleScroll = () => {
+      if (window.scrollY > 2500 && !isModalOpenedRef.current) {
+        setOpenLaunchModal(true);
+        isModalOpenedRef.current = true;
+      }
+    };
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [openLaunchModal]);
 
   return (
     <div className={styles["page"]}>
@@ -51,10 +59,12 @@ export default function Page() {
       <FAQ faq={faq} />
       <Contact />
       {openLaunchModal && (
-        <div className={styles["page__modal-wrapper"]}>
+        <div className={styles["page__modal-wrapper"]} ref={modalRef}>
           <LaunchModal />
         </div>
       )}
     </div>
   );
-}
+};
+
+export default Page;

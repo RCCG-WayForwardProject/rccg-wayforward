@@ -6,7 +6,7 @@ export const useClickOutside = (
   toggleState: boolean
 ) => {
   useEffect(() => {
-    const listener = (event: any) => {
+    const listener = (event: TouchEvent | MouseEvent) => {
       if (containerRef?.current === event.target) {
         setToggleState(toggleState);
       }
