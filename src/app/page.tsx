@@ -30,7 +30,7 @@ const Page: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 2500 && !isModalOpenedRef.current) {
+      if (window.scrollY > 1300 && !isModalOpenedRef.current) {
         setOpenLaunchModal(true);
         isModalOpenedRef.current = true;
       }
