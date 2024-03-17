@@ -375,7 +375,8 @@ export const booksList = [
 ];
 
 export const homeBgImages = [
-  "background_image.jpg",
+  // "background_image.jpg",
+  "wayforward-family-image.jpg",
   "prayer-service.jpg",
   "home-baptism-image.jpg",
 ];
