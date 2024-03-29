@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
 
-import styles from "./footer.module.scss";
+import Icon from "../Icon";
+
 import { footerInfo, footerLink } from "@/utils/constants";
 import { IconNames } from "@/utils/icon";
-import Icon from "../Icon";
+
+import styles from "./footer.module.scss";
 
 const Footer: React.FC = () => {
   return (

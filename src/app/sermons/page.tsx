@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 import MusicCard from "./MusicCard";
 import Contact from "@/components/Contact";
 
-import { sermonsList } from "@/utils/constants";
+import { sermons } from "@/utils/constants";
 
 import styles from "./sermons.module.scss";
 
@@ -16,7 +16,7 @@ const SermonsPage: React.FC = () => {
     setQuery(event.target.value);
   };
 
-  const filteredSermons = sermonsList.filter((sermon) =>
+  const filteredSermons = sermons.filter((sermon) =>
     sermon.name.toLowerCase().includes(query.toLowerCase())
   );
 
