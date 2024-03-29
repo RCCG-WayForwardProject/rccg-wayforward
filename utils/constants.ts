@@ -49,6 +49,57 @@ export const sermonsList = [
   },
 ];
 
+export const sermons = [
+  {
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/holy+spirit1.jpg",
+    name: "The Holy Spirit Pt 1",
+    duration: "5:27",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/holy-spirit.mp3",
+  },
+  {
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/holy+spirit2.jpg",
+    name: "The Holy Spirit Pt 2",
+    duration: "3:13",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/holy-spirit-2.mp3",
+  },
+  {
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/diligence-2.jpg",
+    name: "Diligence",
+    duration: "7:16",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/diligence.mp3",
+  },
+  {
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/devine+widom.jpg",
+    name: "Divine Wisdom",
+    duration: "5:11",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/divine-wisdom.mp3.mp3",
+  },
+  {
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/forgiveness.jpg",
+    name: "Forgiveness",
+    duration: "3:05",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/forgiveness.mp3",
+  },
+  {
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/marriage+unknown.jpg",
+    name: "Marriage- Divine institution",
+    duration: "3:07",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/marriage-audio.mp3",
+  },
+  {
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/devine+widom.jpg",
+    name: "The Lifter of My Head",
+    duration: "14:27",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/Pastor-Peter-Adamson-The-Lifter-of-My-Head.mp3",
+  },
+  {
+    img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/devine+widom.jpg",
+    name: "The Power of Laughter",
+    duration: "21:37",
+    src: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Audio/Pastor+Peter+Adamson+The+Power+of+Laughter.mp3",
+  },
+];
+
 export const services = [
   {
     img: "https://wayforwarddevbucket.s3.us-west-1.amazonaws.com/Images/bible+study.jpg",
@@ -282,10 +333,10 @@ export const footerInfo = [
     onClick: () => {
       const address =
         "7156 Weddington Rd, Suite 170, Concord,North Carolina, 28027";
-      const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+      const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
         address
       )}`;
-      window.open(mapsUrl);
+      window.open(mapUrl);
     },
   },
   {
