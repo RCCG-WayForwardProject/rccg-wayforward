@@ -354,7 +354,7 @@ export const footerInfo = [
 export const footerLink = [
   {
     icon: "facebook",
-    link: "",
+    link: "https://www.facebook.com/RccgWayforwardCathedral?mibextid=ZbWKwL",
   },
   {
     icon: "instagram",
