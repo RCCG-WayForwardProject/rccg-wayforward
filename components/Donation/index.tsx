@@ -19,7 +19,7 @@ const Donation: React.FC = () => {
   useClickOutside(modalRef, setOpenModal, false);
 
   return (
-    <div className={styles["donation__page"]}>
+    <div className={styles["donation__page"]} id="donation">
       <div className={styles["donation__content-wrapper"]}>
         <div className={styles["donation__content-icon"]}>
           <Image
