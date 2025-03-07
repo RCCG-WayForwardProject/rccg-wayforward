@@ -1,0 +1,118 @@
+@import "../../styles/variables";
+@import "../../styles/functions.scss";
+@import "../../styles/base/mixins";
+@import "../../styles/typography";
+
+.video {
+  &__wrapper {
+    // height: 90vh;
+    padding: 0px 95px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    position: relative;
+    @include respond(mobile-screen) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      height: initial;
+      overflow: hidden;
+      padding: 0px 6% 20px 6%;
+    }
+  }
+  &__heading {
+    color: $col-dark-3;
+    font-size: toRem(32px);
+    font-style: normal;
+    font-weight: 500;
+
+    & span {
+      color: $col-green-1;
+      font-weight: 700;
+    }
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include respond(mobile-screen) {
+        flex-direction: column;
+      }
+    }
+    &-button {
+      color: $col-green-1;
+      font-weight: 700;
+      font-size: toRem(24px);
+      font-style: normal;
+      font-weight: 600;
+    }
+    &-description {
+      @include description;
+      width: 75%;
+      @include respond(mobile-screen) {
+        display: none;
+      }
+    }
+    &-mobile {
+      color: $col-green-1;
+      font-weight: 700;
+      font-size: toRem(24px);
+      font-style: normal;
+      display: none;
+      @include respond(mobile-screen) {
+        display: block;
+      }
+    }
+  }
+  &__player {
+    &-list {
+      display: flex;
+      gap: 20px;
+      overflow: auto;
+      @include hide-scrollbar;
+      @include respond(mobile-screen) {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+    &-card {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      gap: 12px;
+      @include respond(mobile-screen) {
+        width: 100%;
+      }
+    }
+    &-details-wrapper {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      & img {
+        height: 36px;
+        width: 36px;
+      }
+    }
+    &-title {
+      font-size: 14px;
+      color: $col-dark-3;
+      font-weight: 500;
+    }
+    &-iframe {
+      width: 380px;
+      height: 215px;
+      border: none;
+      border-radius: 4px;
+      @include respond(mobile-screen) {
+        border-radius: 8px;
+        width: 100%;
+        height: 230px;
+      }
+    }
+  }
+}
