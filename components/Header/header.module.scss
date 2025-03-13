@@ -139,6 +139,14 @@
         }
       }
     }
+    &-button {
+      font-family: "Segoe UI", sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      color: white;
+      display: flex;
+    }
   }
   &__mobile-link {
     width: 100%;

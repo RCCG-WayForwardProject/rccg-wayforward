@@ -3,6 +3,7 @@ import React from "react";
 
 import Home from "@/components/Home";
 import AboutUs from "@/components/About";
+import YouTubeVideos from "@/components/YoutubeVideos";
 import Sermons from "@/components/Sermons";
 import Services from "@/components/Service";
 import VideoPlayer from "@/components/Video";
@@ -24,7 +25,8 @@ const Page: React.FC = () => {
     <div className={styles["page"]}>
       <Home />
       <AboutUs showViewButton />
-      <Sermons />
+      <YouTubeVideos />
+      {/* <Sermons /> */}
       <Services />
       <VideoPlayer />
       <Songs />

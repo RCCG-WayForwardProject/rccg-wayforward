@@ -44,10 +44,20 @@ const Sermons: React.FC<SermonsProps> = ({}) => {
             of living water that is God’s Word and be truly refreshed.
           </p>
         </div>
-        <div className={styles["sermons__sermons-carousel-wrapper"]}>
+        {/* <div className={styles["sermons__sermons-carousel-wrapper"]}>
           <SermonCarousel sermonsList={sermonsList} />
+        </div> */}
+        <div className={styles["sermons__youtube-video"]}>
+          <iframe
+            src="https://www.youtube.com/embed/EiiqGM9Vk7k?si=Y2rOv5DPA4E-CEnW"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
         </div>
-        {sermonsList?.length > 0 ? (
+        {/* {sermonsList?.length > 0 ? (
           <div className={styles["sermons__sermons-button-mobile"]}>
             <Button
               label="View More"
@@ -56,7 +66,7 @@ const Sermons: React.FC<SermonsProps> = ({}) => {
               type="button"
             />
           </div>
-        ) : null}
+        ) : null} */}
       </div>
     </section>
   );

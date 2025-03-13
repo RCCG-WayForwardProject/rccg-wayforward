@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 import NavLink from "@/components/Link";
 import Icon from "@/components/Icon";
@@ -114,6 +114,9 @@ const Header: React.FC<HeaderProps> = ({}) => {
             </li>
           );
         })}
+        <Link href="#donation" className={styles["header__link-button"]}>
+          Giving
+        </Link>
       </ul>
 
       <button
