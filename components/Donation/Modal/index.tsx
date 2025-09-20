@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import styles from "./modal.module.scss";
 
-type DonationTabType = "Bank Transfer" | "Paypal" | "Cash App";
+type DonationTabType = "Bank Transfer" | 'Venmo' | "Cash App";
 
 interface ModalProps {}
 
@@ -36,7 +36,7 @@ const BankTransfer: React.FC = () => {
 };
 
 const Modal: React.FC<ModalProps> = () => {
-  const [activeTab, setActiveTab] = useState<DonationTabType>("Bank Transfer");
+  const [activeTab, setActiveTab] = useState<DonationTabType>("Cash App");
 
   const handleActiveTab = (tab: DonationTabType) => {
     setActiveTab(tab);
@@ -53,19 +53,15 @@ const Modal: React.FC<ModalProps> = () => {
         </div>
       </div>
     ),
-    Paypal: (
-      <div className={styles["modal__content-coming-soon"]}>
-        <Image
-          src={"/images/coming_soon.svg"}
-          height={150}
-          width={100}
-          alt={"coming soon"}
-        />
-        <p className={styles["modal__content-coming-soon-heading"]}>
-          Coming soon
-        </p>
+    "Venmo": (
+      <div className={styles["modal__content-container"]}>
+        <div className={styles["modal__content-details-wrapper"]}>
+          <p className={styles["modal__content-details-heading"]}>
+            @wayforward24
+          </p>
+        </div>
       </div>
-    ),
+    )
   };
 
   const tabHeader: Array<string> = Object.keys(tabList);

@@ -41,7 +41,7 @@ const YouTubeVideos: React.FC = () => {
           process.env.NEXT_PUBLIC_YOUTUBE_API_KEY
         }&channelId=${
           process.env.NEXT_PUBLIC_YOUTUBE_CHANNEL_ID
-        }&part=snippet,id&order=date&maxResults=${6}`
+        }&part=snippet,id&type=video&order=date&maxResults=6`
       );
       const data = await response.json();
       if (data.items) {
